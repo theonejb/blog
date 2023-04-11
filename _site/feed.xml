@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-12T03:32:44+04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">State machines - Why and how to use them in web development.</title><link href="http://localhost:4000/blog/state-machines-in-web-development" rel="alternate" type="text/html" title="State machines - Why and how to use them in web development." /><published>2022-12-18T00:00:00+04:00</published><updated>2022-12-18T00:00:00+04:00</updated><id>http://localhost:4000/blog/state-machines-in-web-development</id><content type="html" xml:base="http://localhost:4000/blog/state-machines-in-web-development">&lt;h2 id=&quot;what-is-a-state-machine&quot;&gt;What is a state machine?&lt;/h2&gt;
+
+&lt;p&gt;I think Wikipedia does a very good job of &lt;a href=&quot;https://en.wikipedia.org/wiki/Finite-state_machine&quot;&gt;defining a state machine&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A finite-state machine (FSM) or finite-state automaton (FSA, plural: automata), finite automaton, or simply a state machine, is a mathematical model of computation. It is an abstract machine that can be in exactly one of a finite number of states at any given time. The FSM can change from one state to another in response to some inputs; the change from one state to another is called a transition. An FSM is defined by a list of its states, its initial state, and the inputs that trigger each transition.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In software development, a state machine is usually represented by some aggregate data structure; an object in an OOP language, or a hash-map in a functional language like Clojure. A state machine can also be saved to your DB as a row in a table.&lt;/p&gt;
+
+&lt;p&gt;This &lt;em&gt;object&lt;/em&gt; has fields for current state and the data in needs to do it’s job. There is also code associated with this object that defines how it transitions between it’s states.&lt;/p&gt;
+
+&lt;h2 id=&quot;an-example&quot;&gt;An example&lt;/h2&gt;
+
+&lt;p&gt;Let’s look at an example. A user trying to change their primary email address, which is also their username.&lt;/p&gt;
+
+&lt;p&gt;The states are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;initial =&amp;gt; This is the starting state in which the machine is initialized.&lt;/li&gt;
+  &lt;li&gt;change-in-progress =&amp;gt; The user has asked for the email address to be changed.
+verification-in-progress =&amp;gt; We have sent an email to the old email address, asking the user to confirm the change.&lt;/li&gt;
+  &lt;li&gt;verification-done =&amp;gt; The user has verified the change.
+validation-in-progress =&amp;gt; We have sent an email to the new email address, asking the user to validate that they can receive emails there.&lt;/li&gt;
+  &lt;li&gt;validation-done =&amp;gt; The user has validated their new email address.&lt;/li&gt;
+  &lt;li&gt;changed =&amp;gt; The change has been applied.&lt;/li&gt;
+  &lt;li&gt;request-cancelled =&amp;gt; The request has been cancelled.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Transitions are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;initial =&amp;gt; change-in-progress. Initiated when the user requests the change via a web form.
+change-in-progress =&amp;gt; verification-in-progress. We have sent the verification email to the current email address.&lt;/li&gt;
+  &lt;li&gt;verification-in-progress =&amp;gt; verification-done. The user has verified that they intended to make this change by clicking a link sent to their existing email.&lt;/li&gt;
+  &lt;li&gt;verification-done =&amp;gt; validation-in-progress. We have send the validation email to the new email address.
+validation-in-progress =&amp;gt; validation-done. The user has validated the new email address by clicking a link in the email sent to it.&lt;/li&gt;
+  &lt;li&gt;validation-done =&amp;gt; changed. We have made the change in our DBs, and run any other processing required for this change.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;any&lt;/em&gt; =&amp;gt; request-cancelled. The request was cancelled by either the user or our systems.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You could also add states for verification or validation failures. Also for failures of our system to send an email.&lt;/p&gt;
+
+&lt;p&gt;The reason to have states like change-in-progress and validation-done is to make sure we only change to the in-progress states after we have sent the email. A failure in our email sending system should not put the user in a state where they need an email to proceed further but our system thinks the email has been sent.
+There are more states that can be added to make this more robust. I’ve skipped any states that deal with error conditions (validation failure, etc). For this hypothetical system, we can transition to request-cancelled but you might want more granular states to record exact points of failure.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-do-we-communicatedocument-state-machines&quot;&gt;How do we communicate/document state machines?&lt;/h2&gt;
+
+&lt;p&gt;While we can describe state machines with written descriptions, it’s much easier to use state diagrams. These are the standard way of describing a state machine, and are great at communicating how a state machine functions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/state-machines-01.jpg&quot; alt=&quot;State diagram for changing a users email address&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-the-point&quot;&gt;What’s the point?&lt;/h2&gt;
+
+&lt;p&gt;Looking at the example above, you may be thinking; what’s the point of using a state machine? It seems like we’re needlessly adding a layer of complexity to a simple feature that most web applications built today support happily without a state machine.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Here’s a secret. All software development is building state machines.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wiki.c2.com/?FiniteStateMachine&quot;&gt;Computers are themselves FSMs&lt;/a&gt;. As is all the software we write on top of them. It’s just that we don’t normally think of the enormous space of possible states, instead we think in terms of values of variables and what they represent in our software.&lt;/p&gt;
+
+&lt;p&gt;Thinking explicitly in terms of FSMs for small parts of our software makes it easy to reason about  it, which is why it’s very useful to model our software as an FSM on smaller scales, in critical modules where we must be absolutely sure of how the software will react to different inputs.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-practical-example&quot;&gt;A practical example&lt;/h2&gt;
+
+&lt;p&gt;I think this whole state machine business is a lot easier to explain with a code sample. &lt;a href=&quot;https://github.com/davidkpiano/xstate&quot;&gt;Xstate&lt;/a&gt; is a popular JS library that makes it easy to build state machines. Instead of copying the code here, I’ll just link it.&lt;/p&gt;
+
+&lt;p&gt;Here’s a &lt;a href=&quot;https://xstate.js.org/docs/tutorials/reddit.html&quot;&gt;tutorial from the Xstate site&lt;/a&gt; that walks you through building an app that displays post from a sub-Reddit. Notice how the code is simpler to reason about. You’re almost breaking the functionality into it’s constituent pieces; what to do while the posts are loading, what behavior to expose when the posts are loaded, and how to react if loading fails.&lt;/p&gt;</content><author><name></name></author><summary type="html">What is a state machine?</summary></entry><entry><title type="html">My knowledge management system</title><link href="http://localhost:4000/blog/my-knowledge-management-system" rel="alternate" type="text/html" title="My knowledge management system" /><published>2022-08-09T00:00:00+04:00</published><updated>2022-08-09T00:00:00+04:00</updated><id>http://localhost:4000/blog/my-knowledge-management-system</id><content type="html" xml:base="http://localhost:4000/blog/my-knowledge-management-system">&lt;p&gt;This is a follow-up on my previous notes about Zettelkasten; &lt;a href=&quot;https://blog.asadjb.com/thoughts-on-zettelkasten-and-the-slip-box&quot;&gt;Thoughts on Zettelkasten and the slip box&lt;/a&gt;. Since then, I’ve had a chance to read and think more about the problems I listed out with trying to adapt a Zettelkasten style slip box for my knowledge management system.&lt;/p&gt;
+
+&lt;p&gt;I’ve found a few answers and I’ve come up with a new system that I hope will serve me better.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-did-i-struggle-with-using-the-zettelkasten&quot;&gt;Why did I struggle with using the Zettelkasten?&lt;/h2&gt;
+
+&lt;p&gt;The most important learning I’ve had while searching for an answer to this is something that should have been obvious to me from the start.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A Zettlekasten is a system designed to facilitate publishing. It’s wasn’t meant to be used as a general knowledge management system.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This fact very quickly cleared up why the slip box wasn’t working for me as a knowledge management system.&lt;/p&gt;
+
+&lt;p&gt;When you’re using a Zettelkasten system, you “ask” your slip box for questions you should find answers to. This “asking” can be by looking at questions you have open in your notes, or by seeing where you’re forming lumps or groups of notes and expanding on the knowledge already there.&lt;/p&gt;
+
+&lt;p&gt;Since the starting point for your reading and research is a bunch of notes already in your slip box, any new notes will be taken with an eye towards linking it to your existing notes. You naturally build up a group of interconnected notes.&lt;/p&gt;
+
+&lt;p&gt;This is the reason why a slip box doesn’t need much hierarchy or a well maintained index/table of contents. Most notes you add will be linked to older ones. You build up your graph by adding connected notes to it. You seldom add a completely unconnected note to your slip box.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I didn’t need a system to facilitate publishing. I needed a system to store knowledge. These 2 goals might overlap a bit, but they are quite distinct.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Most of my notes are on completely unrelated topics. I read based on whatever I find interesting on social media; Hacker News, Indie Hackers, my collection of books on disparate topics, etc. Sometimes I read to understand a topic better by trying to answer questions I had in older notes, in which case I can build a small network of notes - but that’s an infrequent activity for me.&lt;/p&gt;
+
+&lt;p&gt;A Zettelkasten is a poor system to hold notes on a wide variety of subjects, with only few notes per subject. It’s difficult to go back to disconnected notes you have written without maintaining some sort of hierarchy. Trying to shoe horn a hierarchy into a Zettelkasten felt foreign, and was frowned upon in most literature I read about the subject.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-new-system&quot;&gt;My new system&lt;/h2&gt;
+
+&lt;p&gt;With this new information, I can finally get rid of the self-inflicted pain of trying to use the Zettelkasten system to manage my knowledge. Using hierarchical tools makes sense, because my knowledge graph isn’t well connected. It’s mostly a set of disparate notes.&lt;/p&gt;
+
+&lt;p&gt;Some notes form lumps or groups when I become interested in researching something in detail. Most don’t. I need a system I can put my knowledge into and get it back out when needed, without relying on linking between notes.&lt;/p&gt;
+
+&lt;p&gt;I will use MOC (Map of content) instead of folders. Folder give me everything I need for building a hierarchy, but miss out on 1 important feature. There’s no way to demonstrate relationship b/w notes in the same folder. In a MOC, notes can be near to each other when they are related, can form a hierarchical relationship by being indented under other notes, etc.&lt;/p&gt;
+
+&lt;p&gt;I got introduced to the concept of MOCs by &lt;a href=&quot;https://medium.com/@nickmilo22/in-what-ways-can-we-form-useful-relationships-between-notes-9b9ec46973c6&quot;&gt;this excellent blog post&lt;/a&gt; from Nick Milo. He also has a course - &lt;a href=&quot;https://www.linkingyourthinking.com/&quot;&gt;Linking Your Thinking&lt;/a&gt;, that talks about building a personal knowledge management system.&lt;/p&gt;
+
+&lt;p&gt;I’ve decided to use Logseq as my writing tool. Here’s how my new system will work day to day.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I take fleeting or literature notes anywhere. They all come to my dashboard through the queries I have. Mostly this means these notes are in the journal pages.&lt;/li&gt;
+  &lt;li&gt;Once a fleeting or literature note is done, it’s marked as status:: complete and it disappears from the dashboard.&lt;/li&gt;
+  &lt;li&gt;Permanent notes have to be created from one of the MOC pages. This includes MOCs for topics, but also MOCs for courses, books, etc. This allows me to have a browsable list of notes in my system.&lt;/li&gt;
+  &lt;li&gt;What do I make permanent notes out of? To answer this, I need to answer a deeper question. What is the primary reason for my writing?
+    &lt;ul&gt;
+      &lt;li&gt;To make things clearer to me, to understand deeply. Thus I can make notes of things that I want to make sure I understand. Topics that I don’t care about don’t need a permanent note.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I can add any tags that I think are necessary. Not sure how I can make this more efficient now, but I will add tags for now as another way to discover related notes.&lt;/li&gt;
+  &lt;li&gt;When I want to write for publishing, I will use Ulysses as I really like that interface and I can then easily copy to my blogging platform from there. This does mean that I end up writing twice, but I think of my notes in Logseq as a first draft. Rewriting them again before publishing makes the final piece better.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This system is very much an experiment. Once I have been using it for a few months, I should have a better idea of how effective it is in helping me manage my knowledge. I might do a follow-up post then.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is a follow-up on my previous notes about Zettelkasten; Thoughts on Zettelkasten and the slip box. Since then, I’ve had a chance to read and think more about the problems I listed out with trying to adapt a Zettelkasten style slip box for my knowledge management system.</summary></entry><entry><title type="html">Bootstrap with Ruby on Rails 7</title><link href="http://localhost:4000/blog/bootstrap-with-ror-7" rel="alternate" type="text/html" title="Bootstrap with Ruby on Rails 7" /><published>2022-08-07T00:00:00+04:00</published><updated>2022-08-07T00:00:00+04:00</updated><id>http://localhost:4000/blog/bootstrap-with-ror-7</id><content type="html" xml:base="http://localhost:4000/blog/bootstrap-with-ror-7">&lt;p&gt;If you have a brand new RoR 7 project that you created with the defaults by running &lt;code&gt;rails new &amp;lt;PROJECT&amp;gt;&lt;/code&gt; then you can safely follow the following steps to get Bootstrap 5 installed in your project.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Install gems&lt;/strong&gt;
+Add the following to your &lt;code&gt;Gemfile&lt;/code&gt; and run &lt;code&gt;bundle install&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;gem &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;bootstrap&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;~&amp;gt; 5.2.0&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;
+gem &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;jquery-rails&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;
+gem &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;sass-rails&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#777&quot;&gt;# This may already be present in the file in a commented line, in which case you should uncomment it.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Setup Javascript&lt;/strong&gt;
+In your &lt;code&gt;app/javascript/application.js&lt;/code&gt;, add the following at the top.
+    &lt;div class=&quot;language-javascript highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#777&quot;&gt;//= require jquery3&lt;/span&gt;
+&lt;span style=&quot;color:#777&quot;&gt;//= require popper&lt;/span&gt;
+&lt;span style=&quot;color:#777&quot;&gt;//= require bootstrap&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Load Javascript in your views&lt;/strong&gt;
+In the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; section of your &lt;code&gt;app/views/layouts/application.html.erb&lt;/code&gt;, add this:
+    &lt;div class=&quot;language-erb highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;background-color:hsla(0,0%,0%,0.07);color:black&quot;&gt;&lt;span style=&quot;font-weight:bold;color:#666&quot;&gt;&amp;lt;%=&lt;/span&gt; javascript_importmap_tags &lt;span style=&quot;font-weight:bold;color:#666&quot;&gt;%&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Import Bootstrap CSS&lt;/strong&gt;
+Rename the existing &lt;code&gt;app/assets/stylesheets/application.css&lt;/code&gt; to &lt;code&gt;app/assets/stylesheets/application.scss&lt;/code&gt; and add a line with &lt;code&gt;@import &quot;bootstrap&quot;&lt;/code&gt; near the top.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The &lt;code&gt;sass-rails&lt;/code&gt; Gem allows processing SCSS files to CSS on the fly. RoR 7 is already setup to make use of it without any additional configuration beyond installing the Gem.&lt;/p&gt;
+
+&lt;p&gt;In your HTML the CSS is loaded by the tag &lt;code&gt;&amp;lt;%= stylesheet_link_tag &quot;application&quot;, &quot;data-turbo-track&quot;: &quot;reload&quot; %&amp;gt;&lt;/code&gt; which should already be present in your &lt;code&gt;app/views/layouts/application.html.erb&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-did-i-write-this&quot;&gt;Why did I write this?&lt;/h2&gt;
+
+&lt;p&gt;I’ve been helping a non-tech fried learn programming for the past few months. He’s working through a Ruby on Rails course, and he’s now at the point where the course walks him through building mini apps; simple web socket based chat, stock trackers, etc…&lt;/p&gt;
+
+&lt;p&gt;Unfortunately the course uses Rail 6, and Rails 7 introduced a couple of new things that changed how JS and CSS files were processed and added. My friend has had constant problems getting Bootstrap to work nicely inside the apps he creates.&lt;/p&gt;
+
+&lt;p&gt;I’ve tried helping him by hacking away over Zoom, following instructions from a bunch of different sources. It worked sometimes, but the last few times he’s asked me to help, I couldn’t not get Bootstrap working, and I had to ask him to move to the next lesson without Bootstrap. It wasn’t a blocker, but it wasn’t a great experience either.&lt;/p&gt;
+
+&lt;p&gt;So today, I spent a few hours pouring over the documentation. What always confused me before was the 2 different ways of processing Javascript that RoR 7 has:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Import maps: &lt;a href=&quot;https://guides.rubyonrails.org/working_with_javascript_in_rails.html&quot;&gt;Working with Javascript in Rails&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://guides.rubyonrails.org/asset_pipeline.html&quot;&gt;The asset pipeline&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I thought these were 2 different systems and you had to choose one over the other. Unfortunately the official Rails Guides (linked above) don’t clarify this in the guides for both of these systems.&lt;/p&gt;
+
+&lt;p&gt;After reading the documentation and experimenting with a local Rails app, I was able to finally understand the basics of these two systems, and how they work together. I’ll describe it next for the next person who faces this confusion.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-import-maps-and-the-asset-pipeline-fit-together&quot;&gt;How import maps and the asset pipeline fit together&lt;/h2&gt;
+
+&lt;p&gt;Import maps are a way to import Javascript modules directly from the browser. Here’s a nice official (I think) resource about it: https://github.com/WICG/import-maps&lt;/p&gt;
+
+&lt;p&gt;Import maps in Rails 7 let you define mappings between the “bare” name you want to use in &lt;code&gt;import React from &quot;react&quot;&lt;/code&gt; and the ESM compatible specifier that must be one of; absolute path, relative path, or a URI.&lt;/p&gt;
+
+&lt;p&gt;That’s it. Import maps have no business in how the files are pre-processed on loaded. If you use the import map tag in your HTML file, it will spit out the following code in the HTML:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;script&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;type&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;importmap&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;data-turbo-track&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;reload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&quot;background-color:hsla(0,0%,0%,0.07);color:black&quot;&gt;    {
+      &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;imports&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: {
+        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;application&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/application-45b83ea01a8c68b3493391ceecb79f31baf4159ca091fee6fd122bf413d79500.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;@hotwired/turbo-rails&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/turbo.min-e5023178542f05fc063cd1dc5865457259cc01f3fba76a28454060d33de6f429.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;@hotwired/stimulus&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/stimulus.min-b8a9738499c7a8362910cd545375417370d72a9776fb4e766df7671484e2beb7.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;@hotwired/stimulus-loading&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;controllers/application&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;controllers/hello_controller&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;controllers&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+      }
+    }&lt;/span&gt;
+&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;rel&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;modulepreload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/application-45b83ea01a8c68b3493391ceecb79f31baf4159ca091fee6fd122bf413d79500.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;rel&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;modulepreload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/turbo.min-e5023178542f05fc063cd1dc5865457259cc01f3fba76a28454060d33de6f429.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;rel&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;modulepreload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/stimulus.min-b8a9738499c7a8362910cd545375417370d72a9776fb4e766df7671484e2beb7.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;rel&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;modulepreload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;script&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;src&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;async&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;async&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;data-turbo-track&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;reload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;script&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;type&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;module&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span style=&quot;background-color:hsla(0,0%,0%,0.07);color:black&quot;&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;application&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The actual loading of the files is left to the Asset Pipeline. Which is why you can use the import map tag in your HTML file, while still using the //= require jquery directives in your JS files. The Asset Pipeline also provides the fingerprinting that you see in the filenames above.&lt;/p&gt;</content><author><name></name></author><summary type="html">If you have a brand new RoR 7 project that you created with the defaults by running rails new &amp;lt;PROJECT&amp;gt; then you can safely follow the following steps to get Bootstrap 5 installed in your project.</summary></entry><entry><title type="html">Thoughts on Zettelkasten and the slip box</title><link href="http://localhost:4000/blog/thoughts-on-zetelkasten-and-the-slip-box" rel="alternate" type="text/html" title="Thoughts on Zettelkasten and the slip box" /><published>2022-07-28T00:00:00+04:00</published><updated>2022-07-28T00:00:00+04:00</updated><id>http://localhost:4000/blog/thoughts-on-zetelkasten-and-the-slip-box</id><content type="html" xml:base="http://localhost:4000/blog/thoughts-on-zetelkasten-and-the-slip-box">&lt;p&gt;I had a bunch of thoughts yesterday about the Zettelkasten method and how I could use it effectively to manage my knowledge base. I started the day by dumping my thoughts into Logseq. Here they are.&lt;/p&gt;
+
+&lt;p&gt;These are open questions for now. I plan to investigate this further and try out different iterations to see what works for me.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I’ve been in a place before where I used Roam to gather a small number of notes (&amp;gt; 100) but then found all of that to be an unmanageable mess.&lt;/li&gt;
+  &lt;li&gt;Issues that I see with this setup
+    &lt;ul&gt;
+      &lt;li&gt;With notes spread all over the place how do I find anything to link to? I can’t go through 200 notes every time I add a new one.&lt;/li&gt;
+      &lt;li&gt;All notes are in the same “directory”. Because there is no hierarchy, my notes about productivity are in the same place as my notes about data structures &amp;amp; algorithms. This seems unsustainable.&lt;/li&gt;
+      &lt;li&gt;There is 1 benefit I see to this. With everything being in the same place, I can find unexpected connections. Unfortunately, that doesn’t work for me because I don’t go through all my existing notes every time I add a new one.&lt;/li&gt;
+      &lt;li&gt;I am interested in many things; productivity, parentings, Islam, algorithms, data structures, system design, programming languages. Having everything in one place seems to add to the mess.&lt;/li&gt;
+      &lt;li&gt;As I understand, &lt;a href=&quot;https://en.wikipedia.org/wiki/Niklas_Luhmann&quot;&gt;Niklas Luhmann&lt;/a&gt; researched 1 topic extensively - social science. It would make sense for him to keep all his notes in 1 place.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The reason I’ve heard repeated for not having a hierarchy:
+    &lt;ul&gt;
+      &lt;li&gt;It promotes unexpected connections b/w notes&lt;/li&gt;
+      &lt;li&gt;A note isn’t tied to a single category. It can live in multiple places&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Is that a good enough reason to let go of the organization benefits of a hierarchical structure though?
+    &lt;ul&gt;
+      &lt;li&gt;It’s much easier to break down browsing notes to find connections if you can “save your place” in your notes. I can look through the notes in 5 folders today, and go through the 5 others later.&lt;/li&gt;
+      &lt;li&gt;Notes about the same thing fit differently in different categories. I can take 1 idea and have it fit differently in my notes on parenting and in my notes on productivity. It’s easy to copy and link notes together with our digital systems. I can even symlink the same note to multiple places in the hierarchy.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Zettelkasten also has index notes. Folders essentially serve the same purpose.&lt;/li&gt;
+  &lt;li&gt;Questions I have
+    &lt;ul&gt;
+      &lt;li&gt;Did Luhmann succeed because of his slip box, or in spite of it? Are there other examples of successful writers using such a system?&lt;/li&gt;
+      &lt;li&gt;Are slip boxes supposed (who decides?) to hold notes on disparate topics?&lt;/li&gt;
+      &lt;li&gt;How do people with large slip boxes navigate? Do they use index cards? If so, can I use folders to serve the same purpose as well as reduce the mental load of browsing through my knowledge base?
+        &lt;ul&gt;
+          &lt;li&gt;How did Luhmann manage his slip box with 90K notes? I can’t imagine he went through all 90K notes every time he added a new one.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I imagine most courses around “building a 2nd brain” or “cultivating your knowledge garden” answer this question. I haven’t taken any yet, but I plan to. That knowledge might change my perspective on this.&lt;/li&gt;
+  &lt;li&gt;Roam/Logseq vs. Obsidian
+    &lt;ul&gt;
+      &lt;li&gt;Logseq is very structured. Everything is a bullet point. This provides a number of benefits to me.
+        &lt;ul&gt;
+          &lt;li&gt;Writing is much easier. With a forced structure in place, I can think in outlines and short paragraphs, without getting into the weed of how to structure my writing.&lt;/li&gt;
+          &lt;li&gt;If every thing is a block, I can easily reference other blocks inline with my writing.&lt;/li&gt;
+          &lt;li&gt;I can write queries that show me subsets of my blocks. For example I have a query to show me all notes with a “status:: incomplete” tag on my dashboard.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The feature I like most about Logseq is the daily journal. I can write everything there and have it show up in different places. I was attracted to Roam due to this as well.
+        &lt;ul&gt;
+          &lt;li&gt;It’s great for gathering data and thinking, but didn’t work out for me when consolidating and keeping long term.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Obsidian offers free form writing. It’s not as great to think in, but I feel that it offers a better experience once the thinking is done and I’m writing the final artifact.&lt;/li&gt;
+      &lt;li&gt;Artifacts can be permanent notes, but also blog posts and other long form pieces.&lt;/li&gt;
+      &lt;li&gt;Here’s what I’m thinking of adapting
+        &lt;ul&gt;
+          &lt;li&gt;Temporary notes go in Logseq. These are fleeting notes, literature notes, my daily journals with todo items.&lt;/li&gt;
+          &lt;li&gt;Once I’ve gathered data and thought about it in Logseq, the final artifacts go into Obsidian, where they are neatly categorized in folders for easy browsing. I can then link b/w notes in Obsidian as well, using the folder hierarchy to easy searching.&lt;/li&gt;
+          &lt;li&gt;Because doing the same thing that I did in Roam again in Logseq isn’t useful. I’ll end up repeating the same situation where I get to a few 100 notes and then declare bankruptcy.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">I had a bunch of thoughts yesterday about the Zettelkasten method and how I could use it effectively to manage my knowledge base. I started the day by dumping my thoughts into Logseq. Here they are.</summary></entry><entry><title type="html">How Horo timer educates users</title><link href="http://localhost:4000/blog/how-horo-timer-educates-users" rel="alternate" type="text/html" title="How Horo timer educates users" /><published>2022-07-04T00:00:00+04:00</published><updated>2022-07-04T00:00:00+04:00</updated><id>http://localhost:4000/blog/how-horo-timer-educates-users</id><content type="html" xml:base="http://localhost:4000/blog/how-horo-timer-educates-users">&lt;p&gt;&lt;a href=&quot;https://apps.apple.com/us/app/horo-timer-for-menu-bar/id1437226581?mt=12&quot;&gt;Horo&lt;/a&gt; is a simple menu bar timer app for the Mac.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/horo-timer-01.png&quot; alt=&quot;Horo timer screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I use it like a pomodoro timer, but without limiting myself to just 25m blocks. It’s a very small application, but one that provides a lot of value for my workflow.&lt;/p&gt;
+
+&lt;p&gt;I recently noticed the really smart way in which it trains the user in its features, and I believe it has some great lessons for software developers and UX designers.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-challenge-of-educating-users&quot;&gt;The challenge of educating users&lt;/h2&gt;
+
+&lt;p&gt;Educating users about your apps features is the kind of problem that is often overlooked when starting a new project. Indie developers often don’t think about it until the app is complete. It’s not something that is often seen as an “interesting problem to solve”.&lt;/p&gt;
+
+&lt;p&gt;Like marketing however, which is often relegated to the “boring business things to do at the end” category, user education can often have a large impact on the success of your application. If you are unable to teach users how to get value out of you application, users will often stop using it – just because they didn’t know it could solve their problem. It’s must be frustrating to hear users stop using your application because they thought it didn’t have a feature that you spent hours working on.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-usual-solutions&quot;&gt;The usual solutions&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;User guide or manual&lt;/li&gt;
+  &lt;li&gt;Walkthrough videos&lt;/li&gt;
+  &lt;li&gt;In-product walkthrough or popups (like Clippy from Microsoft Office)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/horo-timer-02.gif&quot; alt=&quot;Microsoft Office Clippy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All of these require effort from the user. The user has to spend time:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reading the manual.&lt;/li&gt;
+  &lt;li&gt;Watching the videos.&lt;/li&gt;
+  &lt;li&gt;Going through the demo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most users won’t want to invest the time upfront in reading the manual or watching product videos. They’ll only search for solution when they encounter a roadblock. &lt;em&gt;As a side note, having a searchable manual is a must so that users can search for solutions when they want to. Product videos are worst than a manual in my opinion because users can’t skim through easily to the stuff they want.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In-product walkthroughs sound like a good idea. The user is in your application and has all the context in-front of them, so no need to jump b/w the manual and your app. Anecdotal evidence however suggests that users will usually skip demos, or forget the lessons afterwards. I honestly don’t believe in-product walkthroughs solve any problem other than discovery – you can tell users about new or unique features of you application and they might remember to use it later.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-horo-solution&quot;&gt;The Horo solution&lt;/h2&gt;
+
+&lt;p&gt;You might have noticed in the screenshot at the beginning the faded text “@9:30am”. This is &lt;em&gt;one&lt;/em&gt; of the placeholders that you see when you open Horo from the menubar.&lt;/p&gt;
+
+&lt;p&gt;The placeholder is shown in the only input field that Horo has. The user has to enter the duration they want the timer to run for. Horo allows “Natural Language” input in the field. From it’s description on the Mac App Store:&lt;/p&gt;
+
+&lt;p&gt;Some examples of Horo’s flexible Natural Language support:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“1:30:45” starts a timer for 1 hour, 30 minutes, and 45 seconds&lt;/li&gt;
+  &lt;li&gt;“1.5h” starts a timer for 1 hour, 30 minutes&lt;/li&gt;
+  &lt;li&gt;“45m” starts a 45 minute timer&lt;/li&gt;
+  &lt;li&gt;“1h 15m” becomes an hour and fifteen minutes&lt;/li&gt;
+  &lt;li&gt;“60s” will play a sound in a minute&lt;/li&gt;
+  &lt;li&gt;Leaving the input blank will start a stopwatch&lt;/li&gt;
+  &lt;li&gt;“@3pm” will set a countdown timer to go off at 3pm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While short, this is still a lot of possible formats. I would never be able to remember these just by reading the manual once. Luckily, Horo utilizes the placeholder in an intuitive way to educate users. Every time you open the app, you see a different example of the input formats you can use.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/horo-timer-gallery.png&quot; alt=&quot;Horo timer placeholder examples&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the first app I’ve used that I’ve noticed uses this way of educating the user. While the list of accepted formats is always available in the apps web page, presenting these formats in the placeholder does 2 things for the user:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Automatic discovery. The user intuitively builds a sense that they can use multiple formats for the input, and are shown a different format every time which educates them on the possibilities.&lt;/li&gt;
+  &lt;li&gt;Spaced repetition. By showing the formats repeatedly, the user ends up remembering more than they would just by reading a manual once. Spaced repetition is a well researched method of learning effectively, and I think Horo uses it to it’s advantage quite well.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-takeaway&quot;&gt;The takeaway&lt;/h2&gt;
+
+&lt;p&gt;The lesson I learned is to look for these opportunities in the applications I build. A great place to educate users is:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Where you can unobtrusively add hints on usage. The placeholder does not get in the way yet delivers the information.&lt;/li&gt;
+  &lt;li&gt;Where the user will see the hint multiple times during regular usage of the application.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finding places in your applications where this strategy can be used might take time and some luck, but if you find these, I believe capitalizing on the opportunity will lead to a much more &lt;strong&gt;delightful&lt;/strong&gt; user experience.&lt;/p&gt;
+
+&lt;p&gt;After all I ended up writing a whole blog post on how a simple timer app uses a placeholder. :)&lt;/p&gt;</content><author><name></name></author><summary type="html">Horo is a simple menu bar timer app for the Mac.</summary></entry><entry><title type="html">Follow up: Giving up on deadlines</title><link href="http://localhost:4000/blog/follow-up-giving-up-on-deadlines" rel="alternate" type="text/html" title="Follow up: Giving up on deadlines" /><published>2021-09-27T00:00:00+04:00</published><updated>2021-09-27T00:00:00+04:00</updated><id>http://localhost:4000/blog/follow-up-giving-up-on-deadlines</id><content type="html" xml:base="http://localhost:4000/blog/follow-up-giving-up-on-deadlines">&lt;p&gt;2 months ago I made the decision to not assign arbitrary deadlines to personal/side projects. You can read about that in the post &lt;a href=&quot;https://blog.asadjb.com/giving-up-on-deadlines&quot;&gt;Giving up on deadlines&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The short summary is that by assigning deadlines where not hitting them didn’t matter, I created a negative feedback loop. I would have too many tasks due every day, and I’d just move the deadlines further. This made me feel unproductive for not hitting the deadlines, and made real deadlines feel inconsequential to me.&lt;/p&gt;
+
+&lt;h2 id=&quot;gtd-has-entered-the-chat&quot;&gt;GTD has entered the chat&lt;/h2&gt;
+
+&lt;p&gt;Since that post, I have jumped head first into GTD. I bought the book and listened to it in a few days. I then implemented it in Notion as an upgrade to my older task management system and have been using it for all my task management.&lt;/p&gt;
+
+&lt;p&gt;While GTD uses a different system of organizing stuff, it also eschews inconsequential deadlines. In GTD, a deadline should only be assigned when there are &lt;em&gt;meaningful&lt;/em&gt; consequences to not hitting that deadline.&lt;/p&gt;
+
+&lt;p&gt;Having your apartment cleaned by a particular date does not have consequences, unless there are guests arriving the day after.&lt;/p&gt;
+
+&lt;p&gt;While following the GTD method &amp;amp; thinking has had a very positive impact on my productivity, it’s also made me feel better overall by not enforcing arbitrary deadlines.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-ive-accomplished-over-the-past-2-months&quot;&gt;What I’ve accomplished over the past 2 months&lt;/h2&gt;
+
+&lt;p&gt;Now for some numbers. In the past 2 months, I have:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Completed 30 projects of small to medium size.&lt;/li&gt;
+  &lt;li&gt;Abandoned 23 projects.&lt;/li&gt;
+  &lt;li&gt;Deleted ~10 projects from my “someday/maybe” list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is an almost equal number of projects I’ve finished and abandoned. Yet I’m happy with those numbers. The 30 projects I’ve not done are an equally important aspect of me being able to complete the 30 projects that I have.&lt;/p&gt;
+
+&lt;p&gt;Everything takes time, and I’m happy that I was able to make the conscious decision of what not to do, instead of having that decision made for me by projects being left incomplete forever.&lt;/p&gt;
+
+&lt;h2 id=&quot;closing-thoughts&quot;&gt;Closing thoughts&lt;/h2&gt;
+
+&lt;p&gt;I’m in a good place right now when it comes to personal productivity. I feel better than I did before, and I have the confidence that I can complete the projects that are important to me, even if it takes longer than I initially thought it would.&lt;/p&gt;
+
+&lt;p&gt;I believe that not having to deal with inconsequential deadlines in my calendar is a big reason for me not feeling overwhelmed. That was the reason why I had gravitated towards less deadlines, and I’m happy to say it worked.&lt;/p&gt;
+
+&lt;p&gt;Using GTD has also been an amazing experience, and I hope to share my thoughts on how GTD has helped me be more productive in the a future post.&lt;/p&gt;</content><author><name></name></author><summary type="html">2 months ago I made the decision to not assign arbitrary deadlines to personal/side projects. You can read about that in the post Giving up on deadlines.</summary></entry><entry><title type="html">Giving up on deadlines</title><link href="http://localhost:4000/blog/giving-up-on-deadlines" rel="alternate" type="text/html" title="Giving up on deadlines" /><published>2021-07-23T00:00:00+04:00</published><updated>2021-07-23T00:00:00+04:00</updated><id>http://localhost:4000/blog/giving-up-on-deadlines</id><content type="html" xml:base="http://localhost:4000/blog/giving-up-on-deadlines">&lt;p&gt;For the last few years, I’ve really struggled with making progress on my side projects.&lt;/p&gt;
+
+&lt;p&gt;5 or 6 years ago, this wasn’t a problem. I’d be working for hours on my side projects almost every day. Slowly however, this changed. I found new hobbies, started hanging out with friends, got married, became a father.&lt;/p&gt;
+
+&lt;p&gt;Life got in the way.&lt;/p&gt;
+
+&lt;p&gt;Looking back over the past 2 years, I don’t think I’ve finished any side project, of any size. That realization hit me like a brick a few days ago.&lt;/p&gt;
+
+&lt;p&gt;Something has to change.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-failed-system&quot;&gt;My failed system&lt;/h2&gt;
+
+&lt;p&gt;Up till now, I’ve tried to follow good task management practices.&lt;/p&gt;
+
+&lt;p&gt;I would break down a project into smaller tasks, made sure I wasn’t doing too much (build an MVP), and assigned deadlines to the tasks.&lt;/p&gt;
+
+&lt;p&gt;Problem is, deadlines don’t work for me when I’m the one who has to enforce them. These are soft deadlines. They would approach and I would push them forward by a week or two. Until a year had passed by and I couldn’t get through watching the 3 videos that would complete that course I started a year ago.&lt;/p&gt;
+
+&lt;p&gt;Deadlines only work for me when they are hard deadlines, like the kind at work where they mean something. A commitment to an external stakeholder, with real consequences for missing them.&lt;/p&gt;
+
+&lt;p&gt;Life getting in the way of side projects is not a bad thing, but because I had assigned deadlines to the tasks, not being able to complete them on the assigned day made me feel like a failure.&lt;/p&gt;
+
+&lt;p&gt;I had free time, but I would spend it watching TV or doing irrelevant things, because I couldn’t get myself to start on the tasks for my side projects, maybe because I feared I would fail to complete them by their new deadline anyway.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-new-system&quot;&gt;My new system&lt;/h2&gt;
+
+&lt;p&gt;I’m giving up on deadlines for my personal side projects.&lt;/p&gt;
+
+&lt;p&gt;Instead, I’m just going to have a list of in-progress projects. Each project is broken down into tasks, and every project has a next task that I can just pick up and go. Whenever I find free time, I’m going to pick one task from one project and work on it.&lt;/p&gt;
+
+&lt;p&gt;Deadlines don’t work for me because they are soft deadlines. So I’m getting rid of them.&lt;/p&gt;
+
+&lt;p&gt;Deadlines do serve another important role however, which I have another way of replicating.&lt;/p&gt;
+
+&lt;p&gt;Deadlines give you a finite amount of time to work on something, so you come up with a version of the solution that can be done in that time. Without a deadline, you could keep working on just one task, trying to complete it to perfection.&lt;/p&gt;
+
+&lt;p&gt;I’m replacing that with a well defined definition of &lt;strong&gt;DONE&lt;/strong&gt; for my side projects before I start working on them.&lt;/p&gt;
+
+&lt;p&gt;The definition of done should lead to an MVP, a small but working version of whatever it is I’m trying to build. This will serve the same purpose as a deadline, but without the artificial constraint of time or the feeling of failure when life get’s in the way and I have to move the deadline.&lt;/p&gt;
+
+&lt;p&gt;I’m starting on that now. This blog post is the first step in my journey towards this new system. I’ll check back in a few months to see how much progress I’ve made on my projects with this new way of working.&lt;/p&gt;</content><author><name></name></author><summary type="html">For the last few years, I’ve really struggled with making progress on my side projects.</summary></entry><entry><title type="html">2021 - Starting my first side business</title><link href="http://localhost:4000/blog/2021-starting-my-first-side-business" rel="alternate" type="text/html" title="2021 - Starting my first side business" /><published>2021-04-15T00:00:00+04:00</published><updated>2021-04-15T00:00:00+04:00</updated><id>http://localhost:4000/blog/2021-starting-my-first-side-business</id><content type="html" xml:base="http://localhost:4000/blog/2021-starting-my-first-side-business">&lt;p&gt;My plan for 2021 is to build a small side business that can generate some revenue. Not for the money, but for the experience of starting a business from scratch. I’m going to spend 2021 trying to make that happen.&lt;/p&gt;
+
+&lt;p&gt;I’ve wasted almost 10 years thinking about having a side business, but never taking that first step towards making it a reality. I recently started listening to a lot of Indie Hacker podcast episodes, and listening to the indie hackers and their journeys has given me a boost of inspiration to &lt;strong&gt;just start&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I might fail at this idea, or the next, or the one after that. But what I’ve learned by watching and listening to the stories of other entrepreneurs is that consistency of effort matters a lot more than having a great idea. So my goal is to keep trying. Spending a few months on each idea, and seeing if it’s something that looks viable. The time is going to pass anyway, I can either spend it trying to think of the perfect idea and how it will be used by thousands of people, or iterating on the less than perfect ideas I have right now and finding out which; if any, has the potential to be a solid side business.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I recently bought 2 3D printers, the Artillery Genius &amp;amp; the Prusa Mini. I got excited, and had a bunch of savings lying around from a year of not going out because of the COVID situation. So I ordered 2 printers, because why not.&lt;/p&gt;
+
+&lt;p&gt;I have printed many models; mostly stuff that I downloaded from sites like Thingiverse, Thangs, MyMiniFactory, and other similar sites. I’ve also designed a few smaller functional objects, like lamp shade holders, spare parts to fix broken vacuum cleaner hoses, etc. I’m having a lot of fun with this hobby and next I want to try SLA printing.&lt;/p&gt;
+
+&lt;p&gt;I want an SLA printer so I can experiment with printing in resin. I’m not that into miniatures, but I’m excited by the technology and would like to try it out. I might find some serious use of resin printing, but right now I only want to play around with the technology, I don’t have any practical uses of resin printing in mind.&lt;/p&gt;
+
+&lt;p&gt;I want to buy the the Prusa SL1. I like the reviews I’ve seen of the machine and I’m very happy with the quality of the Prusa Mini, so my hope is that the SL1 will be another solid machine from Prusa. The printer + wash/cure station combo is $2,300. While I can save that much in a few months, it will be difficult to justify such a large purchase for something which I might loose interest in after playing around with a few times.&lt;/p&gt;
+
+&lt;p&gt;I had the idea of using 3D printing (from those 2 printers 🤦‍♂️) to make money. My goal is to make at least $2,300 by doing something related to 3D printing. Then I could buy the SL1 kit guilt free.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I wrote a list of things I could print and sell online in a small e-commerce store. Some ideas were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Custom designed keychains.&lt;/li&gt;
+  &lt;li&gt;Lamps in various interesting shapes, like the Moon, or Mars, or some unique buildings here in the UAE.&lt;/li&gt;
+  &lt;li&gt;Cookie cutters.&lt;/li&gt;
+  &lt;li&gt;An Arduino based macro-keyboard for video editors.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are all reasonable ideas of things to sell and make money with. However, recently I was listening to an &lt;a href=&quot;https://www.indiehackers.com/podcast/191-yaroslaw-bagriy-of-newsletter-crew&quot;&gt;IndieHackers podcast episode&lt;/a&gt; in which they talked about people making money from curating things. They were talking about newsletters like “The Browser”, Hustle, etc. That got me thinking about starting a paid newsletter.&lt;/p&gt;
+
+&lt;p&gt;While the idea is interesting, and I might be able to get some income out of it, I wasn’t sure if I wanted to commit to writing a newsletter every week. I want a flexible side business where I don’t have to follow a fixed schedule.&lt;/p&gt;
+
+&lt;p&gt;After a bit more thinking, I had the idea of building a web application that can help people find the right 3D printer for their needs. There are many “best 3d printers of 2020” lists, but these are all static lists that suggest a few printers and hope you find the one that fits your requirements.&lt;/p&gt;
+
+&lt;p&gt;My idea is to have a database of the popular and easily available printers. Each printer would have it’s own page, with data associated with it, including attributes about it’s capabilities and pros &amp;amp; cons.&lt;/p&gt;
+
+&lt;p&gt;Users will be able to search based on these attributes and filter the list down to printers that suit what they are looking for. This will let them narrow the field of possibilities down to a reasonable amount, and also allow a more “apples-to-apples” comparison b/w the possibilities, instead of comparing for example a top of the line hobby printer to one aimed at kids.&lt;/p&gt;
+
+&lt;p&gt;Similar to the newsletter, this will involve writing a lot about 3D printing. This will be for the blog, as content marketing is what I’m going to use to attract users. However, once a critical mass of content has been written, I can slow down content production a bit. This is not something I can do with a paid newsletter.&lt;/p&gt;
+
+&lt;p&gt;Additionally, I can auto-generate pages doing “A vs B” comparisons on the printers. Once I have entered the attributes of the printers and their pros and cons, I can generate hundreds of these comparison pages on the fly. This should help with SEO as well.&lt;/p&gt;
+
+&lt;p&gt;I have 2 ideas of how I can make money from this:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Affiliate links on the printers.&lt;/li&gt;
+  &lt;li&gt;Ad banners on the blog and site.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My plan is to spend 3 months on building the site and writing on the blog. I’ve already setup the blog and will be adding content to it as regularly as possible. The domain I settled on is Which3DPrinter.com. The blog is live at https://which3dprinter.com/blog/.&lt;/p&gt;
+
+&lt;p&gt;I’ll be adding not only original content; which takes time to write, but also small posts about interesting things in 3D printing that I find. This will make it easier for me to start generating content on the blog because I’m already spending time everyday watching Youtube videos about 3D printing.&lt;/p&gt;
+
+&lt;p&gt;My hope is that by the time the app is ready and the data for the printers is uploaded, the blog should have started generating some traffic. I plan to have a usable app with data for a few dozen printers in about 2 months.&lt;/p&gt;
+
+&lt;p&gt;After 3 months, I’ll look at the progress and the user stats for the project, and make a decision about continuing with this idea. If I see hope for reaching my targeting of making $2,300 in 2021 by continuing working on this, I’ll do that. If not, I will pivot to selling 3D printed stuff online via an e-commerce store.&lt;/p&gt;</content><author><name></name></author><summary type="html">My plan for 2021 is to build a small side business that can generate some revenue. Not for the money, but for the experience of starting a business from scratch. I’m going to spend 2021 trying to make that happen.</summary></entry><entry><title type="html">Why start blogging again?</title><link href="http://localhost:4000/blog/why-start-blogging-again" rel="alternate" type="text/html" title="Why start blogging again?" /><published>2021-03-13T00:00:00+04:00</published><updated>2021-03-13T00:00:00+04:00</updated><id>http://localhost:4000/blog/why-start-blogging-again</id><content type="html" xml:base="http://localhost:4000/blog/why-start-blogging-again">&lt;p&gt;I have written blog posts on &lt;a href=&quot;https://medium.com/@asadjb&quot;&gt;Medium&lt;/a&gt; once or twice a year for the past decade. I have posted 14 times from 2011 to 2018. Every few years I would start blogging with renewed passion, and after 1 or 2 posts my enthusiasm would run out and I wouldn’t post for another year or so.&lt;/p&gt;
+
+&lt;p&gt;I realize now that I could not blog consistently because I was trying to blog for the wrong reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Becoming visible in the community.&lt;/li&gt;
+  &lt;li&gt;Because all the cool kids have blogs.&lt;/li&gt;
+  &lt;li&gt;To build a portfolio site to show my knowledge as a software developer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I was blogging for &lt;strong&gt;external&lt;/strong&gt; reasons. My motivation for blogging was to either fit some mold that I thought others wanted me to fit, or to gain recognition from others. I’ve found over time that anything I do for external reasons doesn’t tend to last long and I loose motivation pretty quickly.&lt;/p&gt;
+
+&lt;p&gt;But when I do things for myself, for &lt;strong&gt;internal&lt;/strong&gt; reasons, I tend to stick with them longer. To be clear, I’m not saying that writing for external reasons is wrong or doesn’t work. It works for a very large number of people. &lt;strong&gt;Just not for me&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have decided that I’d like to start writing again. I’m doing it in public because that’s the best way to gather feedback and improve myself, but I’m no longer doing it for visibility or internet brownie points. While visibility is something that may come out of it, it’s not my primary goal.&lt;/p&gt;
+
+&lt;p&gt;I want to write because that’s the best way to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Refine my ideas.&lt;/li&gt;
+  &lt;li&gt;Share and get feedback on my ideas.&lt;/li&gt;
+  &lt;li&gt;Understand what I consume.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;understand-what-i-consume&quot;&gt;Understand what I consume&lt;/h2&gt;
+
+&lt;p&gt;I think this is the most important benefit, and why I decided to start writing again. I decided this after watching a couple of videos by Shu Omi, a YouTuber focusing on productivity and writing. One video which really inspired me to start writing again is &lt;a href=&quot;https://www.youtube.com/watch?v=S0b_Q4r7vro&quot;&gt;this one&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It’s not new information that writing about and summarizing content that you consume is a great way to judge how well you understand it. This is similar to the Richard Feynman technique of learning. If you can’t explain something in your own words, you don’t understand it yet.&lt;/p&gt;
+
+&lt;p&gt;Writing about a topic or some content doesn’t make you understand it better. Instead, it highlights the parts which you don’t fully understand yet. It’s difficult to write about something you don’t understand. Writing notes about it helps you to identify those weak points and work on it.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-much-will-i-blog&quot;&gt;How much will I blog&lt;/h2&gt;
+
+&lt;p&gt;‘m not sure yet. I’m trying to get in the habit of taking notes of any article I read that I feel has useful information. There are many articles or books which I read just for fun or to waste some time. I don’t make notes for those articles.&lt;/p&gt;
+
+&lt;p&gt;But for ones that have information which I feel is relevant &amp;amp; useful to me, I plan to make notes on. I’m using &lt;a href=&quot;https://roamresearch.com/&quot;&gt;Roam Research&lt;/a&gt; to keep my notes, because the idea of having notes linked with each other really resonates with me. I might write about this in a future blog post.&lt;/p&gt;
+
+&lt;p&gt;I don’t plan to share all my notes on this blog. Instead, I plan to use this as a space to explore, refine, and share my ideas on various topics. My notes in Roam will become the source of ideas for my blog.&lt;/p&gt;
+
+&lt;p&gt;Blogging will hopefully force me to think deeper, and refine my thoughts on the different things I take notes on. I don’t plan to regurgitate my notes on here. That would not be useful to you or me.&lt;/p&gt;
+
+&lt;h2 id=&quot;increasing-my-luck-surface-area&quot;&gt;Increasing my luck surface area&lt;/h2&gt;
+
+&lt;p&gt;Becoming more visible is another benefit of blogging. While it’s no longer my primary goal, I am aware that it’s a benefit that I could (and hope to) get out of my writing habit.&lt;/p&gt;
+
+&lt;p&gt;I’ve lately started believing in the concept of “Luck Surface Area”. Luck is mostly being in the right place at the right time. If you have a lot of visibility in a community, your luck surface area tends to increase.&lt;/p&gt;
+
+&lt;p&gt;The more things you try out, the greater the chances of you getting lucky. Starting writing again should increase my luck surface area. Time will tell.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-im-building-my-writing-habit&quot;&gt;How I’m building my writing habit&lt;/h2&gt;
+
+&lt;p&gt;Instead of just consuming content (articles, videos, books) and then moving on to the next one, I’m deliberately trying to make notes on all content that I feel is useful.&lt;/p&gt;
+
+&lt;p&gt;This blog post came from the notes I made on the &lt;a href=&quot;https://www.youtube.com/watch?v=S0b_Q4r7vro&quot;&gt;video by Shu Omi&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I now put articles, videos, Twitter threads that I find can provide value in a “Consumption List”. I then go through it in my downtime and pick something to consume and make notes on.&lt;/p&gt;
+
+&lt;p&gt;I’ve been doing this only for the past few days, but I’ve noticed that making notes has forced me to read more carefully, and pay attention to the content, as I know I’m going to have to summarize it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I have written blog posts on Medium once or twice a year for the past decade. I have posted 14 times from 2011 to 2018. Every few years I would start blogging with renewed passion, and after 1 or 2 posts my enthusiasm would run out and I wouldn’t post for another year or so.</summary></entry></feed>

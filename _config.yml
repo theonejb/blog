@@ -1,0 +1,41 @@
+title: Jibran’s Perspective
+email: me@asadjb.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A collection of my thoughts and stuff.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.asadjb.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: asadjibranahmed
+github_username:  theonejb
+
+# Build settings
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
+
+markdown: kramdown
+
+kramdown:
+  syntax_highlighter: coderay
+  syntax_highlighter_opts:
+    line_numbers:
+
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+permalink: /blog/:slug
+timezone: Asia/Dubai
+future: false
+
+Blog: /blog
+
+links:
+  "About Me": /about-me/
+special_links:
