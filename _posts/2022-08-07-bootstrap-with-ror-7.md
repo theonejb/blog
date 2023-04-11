@@ -8,13 +8,11 @@ If you have a brand new RoR 7 project that you created with the defaults by runn
 
 1. **Install gems**
 Add the following to your `Gemfile` and run `bundle install`.
-
 ```ruby
 gem 'bootstrap', '~> 5.2.0'
 gem 'jquery-rails'
 gem 'sass-rails' # This may already be present in the file in a commented line, in which case you should uncomment it.
 ```
-
 
 2. **Setup Javascript**
 In your `app/javascript/application.js`, add the following at the top.
