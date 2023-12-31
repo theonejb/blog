@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://blog.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.asadjb.com/" rel="alternate" type="text/html" /><updated>2023-06-17T14:25:49+04:00</updated><id>https://blog.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">My buildspace project</title><link href="https://blog.asadjb.com/blog/my-buildspace-project" rel="alternate" type="text/html" title="My buildspace project" /><published>2023-04-13T00:00:00+04:00</published><updated>2023-04-13T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/my-buildspace-project</id><content type="html" xml:base="https://blog.asadjb.com/blog/my-buildspace-project">&lt;p&gt;&lt;img src=&quot;/assets/images/my-buildspace-project-01.png&quot; alt=&quot;My buildspace project idea launch post image&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://blog.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.asadjb.com/" rel="alternate" type="text/html" /><updated>2023-12-31T14:38:14+04:00</updated><id>https://blog.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">I have not failed enough</title><link href="https://blog.asadjb.com/blog/i-have-not-failed-enough" rel="alternate" type="text/html" title="I have not failed enough" /><published>2023-12-31T00:00:00+04:00</published><updated>2023-12-31T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/i-have-not-failed-enough</id><content type="html" xml:base="https://blog.asadjb.com/blog/i-have-not-failed-enough">&lt;p&gt;I was recently listening through the &lt;a href=&quot;https://freakonomics.com/podcast-tag/how-to-succeed-at-failing/&quot;&gt;How to succeed at failing&lt;/a&gt; series on the Freakonomics podcast and started to think about how often I had failed in the past few years. The first answer was - not too much. I couldn’t think of too many instances of where I had “failed”.&lt;/p&gt;
+
+&lt;p&gt;This was not a good thing. It was very much a sad thing that I couldn’t quickly think of many things I had failed at.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-is-not-failing-bad&quot;&gt;Why is not failing bad?&lt;/h2&gt;
+&lt;p&gt;I realized I didn’t fail a lot because - &lt;strong&gt;I didn’t try a lot.&lt;/strong&gt; I didn’t fail because I didn’t have good goals.&lt;/p&gt;
+
+&lt;p&gt;Sure, I have a folder full of projects I thought of, researched, some that I even started working on; that I gave up on pretty soon after starting. &lt;em&gt;But those don’t count as failures right?&lt;/em&gt; I was just &lt;em&gt;playing around&lt;/em&gt;, not really aiming for anything. It was just a fun side project.&lt;/p&gt;
+
+&lt;p&gt;That’s why I didn’t fail a lot, and that’s also why it’s not a good thing.&lt;/p&gt;
+
+&lt;h2 id=&quot;i-need-to-fail-more&quot;&gt;I need to fail more&lt;/h2&gt;
+&lt;p&gt;Which means that I need to set goals and work towards them. Without goals to aim for, I keep spending my time in the same unproductive loop.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Think of a shiny new project.&lt;/li&gt;
+  &lt;li&gt;Play around a bit, maybe learn a few things.&lt;/li&gt;
+  &lt;li&gt;Give up when things get hard or boring.&lt;/li&gt;
+  &lt;li&gt;Repeat&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;While I do learn some things, I don’t really learn new things. Picking up another web backend framework when I’m very good at 1 already (Django if you’re looking to get something built 🙂) is very small incremental progress.&lt;/p&gt;
+
+&lt;p&gt;I should be learning about running a business, marketing, sales, how to talk to people, cold calling, etc. Instead I’m playing around with NextJS/Remix because it’s easier to do and there’s very little chance of me failing at it.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-im-planning-to-do&quot;&gt;What I’m planning to do&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Any new project that I start, I will have an achievable goal for it. Something that can be called “done”.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;Achievable&lt;/em&gt; is different for everyone. Creating a small SaaS and have 5 people pay for it might be childs play for some, it’s my Everest for now.&lt;/li&gt;
+      &lt;li&gt;The plan is to aim for things just outside of my reach – to work towards those and grow in the process.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Have a deadline. For now I’m starting with 6 week cycles of project work.&lt;/li&gt;
+  &lt;li&gt;In order meet deadlines, I need to have a clear picture of the goal. Goes back to the first thing on this list. Having a clear definition of “done” is important. But being able to cut scope to achieve some version of the goal is also important.
+    - I’ve just finished reading Shape Up by Jason Fried and I like the Basecamp approach of deciding on an appetite (time commitment) to a project and cutting scope to meet that appetite.
+    - That’s my plan moving forward. Each project I work on will be “shapped” into an achievable outcome and will have an allocated appetite - when I want to launch it or decide to abandon it. Continuing it for the next 6 week cycle will be another option but should be done sparingly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This approach of timeboxing projects and having an achievable goal is also discussed by Zack Freedman in this video &lt;a href=&quot;https://www.youtube.com/watch?v=L1j93RnIxEo&quot;&gt;Here’s what’s preventing you from finishing projects&lt;/a&gt;. See it when you get the chance.&lt;/p&gt;
+
+&lt;h2 id=&quot;this-wasnt-supposed-to-be-a-new-years-resolution&quot;&gt;This wasn’t supposed to be a new years resolution&lt;/h2&gt;
+&lt;p&gt;I started thinking about this over 2 months ago and have been planning to write a post on it. Today seemed like a good day for it. So I guess this is my new year’s resolution. &lt;strong&gt;Fail more, fail better.&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I was recently listening through the How to succeed at failing series on the Freakonomics podcast and started to think about how often I had failed in the past few years. The first answer was - not too much. I couldn’t think of too many instances of where I had “failed”.</summary></entry><entry><title type="html">My buildspace project</title><link href="https://blog.asadjb.com/blog/my-buildspace-project" rel="alternate" type="text/html" title="My buildspace project" /><published>2023-04-13T00:00:00+04:00</published><updated>2023-04-13T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/my-buildspace-project</id><content type="html" xml:base="https://blog.asadjb.com/blog/my-buildspace-project">&lt;p&gt;&lt;img src=&quot;/assets/images/my-buildspace-project-01.png&quot; alt=&quot;My buildspace project idea launch post image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;For the next 6 weeks, I’m taking part in &lt;a href=&quot;https://twitter.com/_buildspace&quot;&gt;buildspace&lt;/a&gt; &lt;a href=&quot;https://buildspace.so/more&quot;&gt;nights &amp;amp; weekends&lt;/a&gt;. It’s a cohort of people that participate in a 6-week long “school” where they work towards any idea they have. The goal is to launch a “product” by the end of these 6 weeks, and to gain as much traction as possible.&lt;/p&gt;
 
@@ -502,62 +543,4 @@ Rename the existing &lt;code&gt;app/assets/stylesheets/application.css&lt;/code&
 
 &lt;p&gt;My hope is that by the time the app is ready and the data for the printers is uploaded, the blog should have started generating some traffic. I plan to have a usable app with data for a few dozen printers in about 2 months.&lt;/p&gt;
 
-&lt;p&gt;After 3 months, I’ll look at the progress and the user stats for the project, and make a decision about continuing with this idea. If I see hope for reaching my targeting of making $2,300 in 2021 by continuing working on this, I’ll do that. If not, I will pivot to selling 3D printed stuff online via an e-commerce store.&lt;/p&gt;</content><author><name></name></author><summary type="html">My plan for 2021 is to build a small side business that can generate some revenue. Not for the money, but for the experience of starting a business from scratch. I’m going to spend 2021 trying to make that happen.</summary></entry><entry><title type="html">Why start blogging again?</title><link href="https://blog.asadjb.com/blog/why-start-blogging-again" rel="alternate" type="text/html" title="Why start blogging again?" /><published>2021-03-13T00:00:00+04:00</published><updated>2021-03-13T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/why-start-blogging-again</id><content type="html" xml:base="https://blog.asadjb.com/blog/why-start-blogging-again">&lt;p&gt;I have written blog posts on &lt;a href=&quot;https://medium.com/@asadjb&quot;&gt;Medium&lt;/a&gt; once or twice a year for the past decade. I have posted 14 times from 2011 to 2018. Every few years I would start blogging with renewed passion, and after 1 or 2 posts my enthusiasm would run out and I wouldn’t post for another year or so.&lt;/p&gt;
-
-&lt;p&gt;I realize now that I could not blog consistently because I was trying to blog for the wrong reasons:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Becoming visible in the community.&lt;/li&gt;
-  &lt;li&gt;Because all the cool kids have blogs.&lt;/li&gt;
-  &lt;li&gt;To build a portfolio site to show my knowledge as a software developer.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I was blogging for &lt;strong&gt;external&lt;/strong&gt; reasons. My motivation for blogging was to either fit some mold that I thought others wanted me to fit, or to gain recognition from others. I’ve found over time that anything I do for external reasons doesn’t tend to last long and I loose motivation pretty quickly.&lt;/p&gt;
-
-&lt;p&gt;But when I do things for myself, for &lt;strong&gt;internal&lt;/strong&gt; reasons, I tend to stick with them longer. To be clear, I’m not saying that writing for external reasons is wrong or doesn’t work. It works for a very large number of people. &lt;strong&gt;Just not for me&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;I have decided that I’d like to start writing again. I’m doing it in public because that’s the best way to gather feedback and improve myself, but I’m no longer doing it for visibility or internet brownie points. While visibility is something that may come out of it, it’s not my primary goal.&lt;/p&gt;
-
-&lt;p&gt;I want to write because that’s the best way to:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Refine my ideas.&lt;/li&gt;
-  &lt;li&gt;Share and get feedback on my ideas.&lt;/li&gt;
-  &lt;li&gt;Understand what I consume.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;understand-what-i-consume&quot;&gt;Understand what I consume&lt;/h2&gt;
-
-&lt;p&gt;I think this is the most important benefit, and why I decided to start writing again. I decided this after watching a couple of videos by Shu Omi, a YouTuber focusing on productivity and writing. One video which really inspired me to start writing again is &lt;a href=&quot;https://www.youtube.com/watch?v=S0b_Q4r7vro&quot;&gt;this one&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;It’s not new information that writing about and summarizing content that you consume is a great way to judge how well you understand it. This is similar to the Richard Feynman technique of learning. If you can’t explain something in your own words, you don’t understand it yet.&lt;/p&gt;
-
-&lt;p&gt;Writing about a topic or some content doesn’t make you understand it better. Instead, it highlights the parts which you don’t fully understand yet. It’s difficult to write about something you don’t understand. Writing notes about it helps you to identify those weak points and work on it.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-much-will-i-blog&quot;&gt;How much will I blog&lt;/h2&gt;
-
-&lt;p&gt;‘m not sure yet. I’m trying to get in the habit of taking notes of any article I read that I feel has useful information. There are many articles or books which I read just for fun or to waste some time. I don’t make notes for those articles.&lt;/p&gt;
-
-&lt;p&gt;But for ones that have information which I feel is relevant &amp;amp; useful to me, I plan to make notes on. I’m using &lt;a href=&quot;https://roamresearch.com/&quot;&gt;Roam Research&lt;/a&gt; to keep my notes, because the idea of having notes linked with each other really resonates with me. I might write about this in a future blog post.&lt;/p&gt;
-
-&lt;p&gt;I don’t plan to share all my notes on this blog. Instead, I plan to use this as a space to explore, refine, and share my ideas on various topics. My notes in Roam will become the source of ideas for my blog.&lt;/p&gt;
-
-&lt;p&gt;Blogging will hopefully force me to think deeper, and refine my thoughts on the different things I take notes on. I don’t plan to regurgitate my notes on here. That would not be useful to you or me.&lt;/p&gt;
-
-&lt;h2 id=&quot;increasing-my-luck-surface-area&quot;&gt;Increasing my luck surface area&lt;/h2&gt;
-
-&lt;p&gt;Becoming more visible is another benefit of blogging. While it’s no longer my primary goal, I am aware that it’s a benefit that I could (and hope to) get out of my writing habit.&lt;/p&gt;
-
-&lt;p&gt;I’ve lately started believing in the concept of “Luck Surface Area”. Luck is mostly being in the right place at the right time. If you have a lot of visibility in a community, your luck surface area tends to increase.&lt;/p&gt;
-
-&lt;p&gt;The more things you try out, the greater the chances of you getting lucky. Starting writing again should increase my luck surface area. Time will tell.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-im-building-my-writing-habit&quot;&gt;How I’m building my writing habit&lt;/h2&gt;
-
-&lt;p&gt;Instead of just consuming content (articles, videos, books) and then moving on to the next one, I’m deliberately trying to make notes on all content that I feel is useful.&lt;/p&gt;
-
-&lt;p&gt;This blog post came from the notes I made on the &lt;a href=&quot;https://www.youtube.com/watch?v=S0b_Q4r7vro&quot;&gt;video by Shu Omi&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I now put articles, videos, Twitter threads that I find can provide value in a “Consumption List”. I then go through it in my downtime and pick something to consume and make notes on.&lt;/p&gt;
-
-&lt;p&gt;I’ve been doing this only for the past few days, but I’ve noticed that making notes has forced me to read more carefully, and pay attention to the content, as I know I’m going to have to summarize it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I have written blog posts on Medium once or twice a year for the past decade. I have posted 14 times from 2011 to 2018. Every few years I would start blogging with renewed passion, and after 1 or 2 posts my enthusiasm would run out and I wouldn’t post for another year or so.</summary></entry></feed>
+&lt;p&gt;After 3 months, I’ll look at the progress and the user stats for the project, and make a decision about continuing with this idea. If I see hope for reaching my targeting of making $2,300 in 2021 by continuing working on this, I’ll do that. If not, I will pivot to selling 3D printed stuff online via an e-commerce store.&lt;/p&gt;</content><author><name></name></author><summary type="html">My plan for 2021 is to build a small side business that can generate some revenue. Not for the money, but for the experience of starting a business from scratch. I’m going to spend 2021 trying to make that happen.</summary></entry></feed>
