@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://blog.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.asadjb.com/" rel="alternate" type="text/html" /><updated>2023-12-31T14:38:14+04:00</updated><id>https://blog.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">I have not failed enough</title><link href="https://blog.asadjb.com/blog/i-have-not-failed-enough" rel="alternate" type="text/html" title="I have not failed enough" /><published>2023-12-31T00:00:00+04:00</published><updated>2023-12-31T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/i-have-not-failed-enough</id><content type="html" xml:base="https://blog.asadjb.com/blog/i-have-not-failed-enough">&lt;p&gt;I was recently listening through the &lt;a href=&quot;https://freakonomics.com/podcast-tag/how-to-succeed-at-failing/&quot;&gt;How to succeed at failing&lt;/a&gt; series on the Freakonomics podcast and started to think about how often I had failed in the past few years. The first answer was - not too much. I couldn’t think of too many instances of where I had “failed”.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://blog.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.asadjb.com/" rel="alternate" type="text/html" /><updated>2024-02-16T00:53:56+04:00</updated><id>https://blog.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">Project 1: Django + NextJS Boilerplate</title><link href="https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate" rel="alternate" type="text/html" title="Project 1: Django + NextJS Boilerplate" /><published>2024-02-15T00:00:00+04:00</published><updated>2024-02-15T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate</id><content type="html" xml:base="https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate">&lt;p&gt;My &lt;em&gt;accidental&lt;/em&gt; &lt;a href=&quot;/blog/i-have-not-failed-enough&quot;&gt;new years resolution&lt;/a&gt; was to work on the 1 problem that has plagued me for my entire adult life; failure to commit and focus. I decided to work in 6 week “sprints” (inspired by &lt;a href=&quot;https://basecamp.com/shapeup&quot;&gt;Shape Up&lt;/a&gt;) and complete the projects I start - for some &lt;strong&gt;known&lt;/strong&gt; definition of complete.&lt;/p&gt;
+
+&lt;p&gt;This is the 1st project I have decided to work on. I’ll work on this from today (15th Feb 2024) to (28th Mar 2024). I’ll follow-up then with another post talking about how it went.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-project&quot;&gt;The project&lt;/h2&gt;
+&lt;p&gt;The goal is to make &amp;amp; sell a Django + NextJS boilerplate template. What’s a boilerplate template?&lt;/p&gt;
+
+&lt;p&gt;It’s the source code for a project that’s already setup with many things that are needed in a new project; for example:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Stripe subscriptions functionality&lt;/li&gt;
+  &lt;li&gt;Background jobs&lt;/li&gt;
+  &lt;li&gt;CSS framework&lt;/li&gt;
+  &lt;li&gt;User/team management&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A great example is &lt;a href=&quot;https://www.saaspegasus.com/&quot;&gt;Saas Pegasus&lt;/a&gt;, which seems like an amazing boilerplate loved by many people.&lt;/p&gt;
+
+&lt;p&gt;My boilerplate is going to be &lt;em&gt;much&lt;/em&gt; simpler - and also much cheaper. SaaS Pegasus comes with so many features that it’s worth the $249 starting price. I’m aiming for $5-$10.&lt;/p&gt;
+
+&lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;My goal is to sell this boilerplate to at least 10 people - and have them be happy using it. This means:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;talking to prospective customers and seeing if this can be useful to them. People will have the option of scheduling a 15 minute pre-purchase call with me for $5 to see if this would be useful to them. The payment is purely to make sure that I only spend time talking to people who are somewhat serious about purchasing.&lt;/li&gt;
+  &lt;li&gt;providing excellent after sales support. I’ll include a 60 minute setup call with me for any purchase. While a 60 minute call for a $10 sale isn’t scalable, it’s a great way for me to talk to customers at the start.&lt;/li&gt;
+  &lt;li&gt;having a no questions asked refund policy. My experiences with running an &lt;a href=&quot;https://khalil-ahmed.com/&quot;&gt;e-commerce store&lt;/a&gt; in the past tell me this is an amazing way to build trust.&lt;/li&gt;
+  &lt;li&gt;provide on-going support, updates, and fixes over email.&lt;/li&gt;
+  &lt;li&gt;build a mailing list of people interested in my work who I can email when I launch my future projects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-deliverable&quot;&gt;The deliverable&lt;/h2&gt;
+&lt;p&gt;The boilerplate will allow developers to quickly start a project that uses Django for the backend and NextJS for the frontend. My recent experiences with another project in this tech stack required me to spend significant time on:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;figuring out how to setup authentication b/w Django &amp;amp; NextJS (this took the most time &amp;amp; effort)&lt;/li&gt;
+  &lt;li&gt;setting up Django Rest Framework so I could write APIs that would be used by the frontend&lt;/li&gt;
+  &lt;li&gt;writing Docker files that would build 2 containers - backend &amp;amp; frontend&lt;/li&gt;
+  &lt;li&gt;writing Terraform scripts to deploy those containers to AWS ECS&lt;/li&gt;
+  &lt;li&gt;writing config &amp;amp; scripts to run the project on Gitpod so it could be easily worked on by my team members&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My plan is to build a boilerplate that already has most those features built in, plus a few extras:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Celery with Redis for background task processing&lt;/li&gt;
+  &lt;li&gt;Tailwind CSS for the frontend (in my project I used ChakraUI but Tailwind would be a better option for a boilerplate)&lt;/li&gt;
+  &lt;li&gt;If there’s demand for it, a stretch goal is to include social auth (sign-in with Google/Apple/etc)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once complete, I’ll put this on Gumroad and create a landing page there. From then on, it’s all about marketing it; that’s the part which I have no experience with and hope to learn the most from.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-marketing-plan&quot;&gt;The marketing plan&lt;/h2&gt;
+&lt;p&gt;This is the area where I lack &lt;em&gt;any&lt;/em&gt; experience; so I’m not sure how I’m going to market this. Some ideas I have:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;build it in public on Twitter. I have a tiny Twitter following (312 followers) so not sure how useful this could be. But I have to try something.&lt;/li&gt;
+  &lt;li&gt;share it with people asking how to setup Django &amp;amp; NextJS on forums like Reddit, Stackoverflow, and others.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;maybe&lt;/em&gt; write a blog post on how to setup Django &amp;amp; NextJS and then link to the boilerplate from there. The blog post would provider all the steps necessary for the basic setup and the boilerplate would go beyond that with something that’s ready to use.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-build-log&quot;&gt;The build log&lt;/h2&gt;
+&lt;p&gt;I’d also like to create a build log with this project. This will be a daily note of what I did for this project. I’ll keep it in my notes app &lt;a href=&quot;https://reflect.app/&quot;&gt;Reflect&lt;/a&gt; and periodically put it here in this blog post. These daily notes might also serve as content for my build-in-public marketing strategy.&lt;/p&gt;</content><author><name></name></author><summary type="html">My accidental new years resolution was to work on the 1 problem that has plagued me for my entire adult life; failure to commit and focus. I decided to work in 6 week “sprints” (inspired by Shape Up) and complete the projects I start - for some known definition of complete.</summary></entry><entry><title type="html">I have not failed enough</title><link href="https://blog.asadjb.com/blog/i-have-not-failed-enough" rel="alternate" type="text/html" title="I have not failed enough" /><published>2023-12-31T00:00:00+04:00</published><updated>2023-12-31T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/i-have-not-failed-enough</id><content type="html" xml:base="https://blog.asadjb.com/blog/i-have-not-failed-enough">&lt;p&gt;I was recently listening through the &lt;a href=&quot;https://freakonomics.com/podcast-tag/how-to-succeed-at-failing/&quot;&gt;How to succeed at failing&lt;/a&gt; series on the Freakonomics podcast and started to think about how often I had failed in the past few years. The first answer was - not too much. I couldn’t think of too many instances of where I had “failed”.&lt;/p&gt;
 
 &lt;p&gt;This was not a good thing. It was very much a sad thing that I couldn’t quickly think of many things I had failed at.&lt;/p&gt;
 
@@ -488,59 +548,4 @@ Rename the existing &lt;code&gt;app/assets/stylesheets/application.css&lt;/code&
 
 &lt;p&gt;The definition of done should lead to an MVP, a small but working version of whatever it is I’m trying to build. This will serve the same purpose as a deadline, but without the artificial constraint of time or the feeling of failure when life get’s in the way and I have to move the deadline.&lt;/p&gt;
 
-&lt;p&gt;I’m starting on that now. This blog post is the first step in my journey towards this new system. I’ll check back in a few months to see how much progress I’ve made on my projects with this new way of working.&lt;/p&gt;</content><author><name></name></author><summary type="html">For the last few years, I’ve really struggled with making progress on my side projects.</summary></entry><entry><title type="html">2021 - Starting my first side business</title><link href="https://blog.asadjb.com/blog/2021-starting-my-first-side-business" rel="alternate" type="text/html" title="2021 - Starting my first side business" /><published>2021-04-15T00:00:00+04:00</published><updated>2021-04-15T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/2021-starting-my-first-side-business</id><content type="html" xml:base="https://blog.asadjb.com/blog/2021-starting-my-first-side-business">&lt;p&gt;My plan for 2021 is to build a small side business that can generate some revenue. Not for the money, but for the experience of starting a business from scratch. I’m going to spend 2021 trying to make that happen.&lt;/p&gt;
-
-&lt;p&gt;I’ve wasted almost 10 years thinking about having a side business, but never taking that first step towards making it a reality. I recently started listening to a lot of Indie Hacker podcast episodes, and listening to the indie hackers and their journeys has given me a boost of inspiration to &lt;strong&gt;just start&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;I might fail at this idea, or the next, or the one after that. But what I’ve learned by watching and listening to the stories of other entrepreneurs is that consistency of effort matters a lot more than having a great idea. So my goal is to keep trying. Spending a few months on each idea, and seeing if it’s something that looks viable. The time is going to pass anyway, I can either spend it trying to think of the perfect idea and how it will be used by thousands of people, or iterating on the less than perfect ideas I have right now and finding out which; if any, has the potential to be a solid side business.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I recently bought 2 3D printers, the Artillery Genius &amp;amp; the Prusa Mini. I got excited, and had a bunch of savings lying around from a year of not going out because of the COVID situation. So I ordered 2 printers, because why not.&lt;/p&gt;
-
-&lt;p&gt;I have printed many models; mostly stuff that I downloaded from sites like Thingiverse, Thangs, MyMiniFactory, and other similar sites. I’ve also designed a few smaller functional objects, like lamp shade holders, spare parts to fix broken vacuum cleaner hoses, etc. I’m having a lot of fun with this hobby and next I want to try SLA printing.&lt;/p&gt;
-
-&lt;p&gt;I want an SLA printer so I can experiment with printing in resin. I’m not that into miniatures, but I’m excited by the technology and would like to try it out. I might find some serious use of resin printing, but right now I only want to play around with the technology, I don’t have any practical uses of resin printing in mind.&lt;/p&gt;
-
-&lt;p&gt;I want to buy the the Prusa SL1. I like the reviews I’ve seen of the machine and I’m very happy with the quality of the Prusa Mini, so my hope is that the SL1 will be another solid machine from Prusa. The printer + wash/cure station combo is $2,300. While I can save that much in a few months, it will be difficult to justify such a large purchase for something which I might loose interest in after playing around with a few times.&lt;/p&gt;
-
-&lt;p&gt;I had the idea of using 3D printing (from those 2 printers 🤦‍♂️) to make money. My goal is to make at least $2,300 by doing something related to 3D printing. Then I could buy the SL1 kit guilt free.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I wrote a list of things I could print and sell online in a small e-commerce store. Some ideas were:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Custom designed keychains.&lt;/li&gt;
-  &lt;li&gt;Lamps in various interesting shapes, like the Moon, or Mars, or some unique buildings here in the UAE.&lt;/li&gt;
-  &lt;li&gt;Cookie cutters.&lt;/li&gt;
-  &lt;li&gt;An Arduino based macro-keyboard for video editors.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These are all reasonable ideas of things to sell and make money with. However, recently I was listening to an &lt;a href=&quot;https://www.indiehackers.com/podcast/191-yaroslaw-bagriy-of-newsletter-crew&quot;&gt;IndieHackers podcast episode&lt;/a&gt; in which they talked about people making money from curating things. They were talking about newsletters like “The Browser”, Hustle, etc. That got me thinking about starting a paid newsletter.&lt;/p&gt;
-
-&lt;p&gt;While the idea is interesting, and I might be able to get some income out of it, I wasn’t sure if I wanted to commit to writing a newsletter every week. I want a flexible side business where I don’t have to follow a fixed schedule.&lt;/p&gt;
-
-&lt;p&gt;After a bit more thinking, I had the idea of building a web application that can help people find the right 3D printer for their needs. There are many “best 3d printers of 2020” lists, but these are all static lists that suggest a few printers and hope you find the one that fits your requirements.&lt;/p&gt;
-
-&lt;p&gt;My idea is to have a database of the popular and easily available printers. Each printer would have it’s own page, with data associated with it, including attributes about it’s capabilities and pros &amp;amp; cons.&lt;/p&gt;
-
-&lt;p&gt;Users will be able to search based on these attributes and filter the list down to printers that suit what they are looking for. This will let them narrow the field of possibilities down to a reasonable amount, and also allow a more “apples-to-apples” comparison b/w the possibilities, instead of comparing for example a top of the line hobby printer to one aimed at kids.&lt;/p&gt;
-
-&lt;p&gt;Similar to the newsletter, this will involve writing a lot about 3D printing. This will be for the blog, as content marketing is what I’m going to use to attract users. However, once a critical mass of content has been written, I can slow down content production a bit. This is not something I can do with a paid newsletter.&lt;/p&gt;
-
-&lt;p&gt;Additionally, I can auto-generate pages doing “A vs B” comparisons on the printers. Once I have entered the attributes of the printers and their pros and cons, I can generate hundreds of these comparison pages on the fly. This should help with SEO as well.&lt;/p&gt;
-
-&lt;p&gt;I have 2 ideas of how I can make money from this:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Affiliate links on the printers.&lt;/li&gt;
-  &lt;li&gt;Ad banners on the blog and site.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;My plan is to spend 3 months on building the site and writing on the blog. I’ve already setup the blog and will be adding content to it as regularly as possible. The domain I settled on is Which3DPrinter.com. The blog is live at https://which3dprinter.com/blog/.&lt;/p&gt;
-
-&lt;p&gt;I’ll be adding not only original content; which takes time to write, but also small posts about interesting things in 3D printing that I find. This will make it easier for me to start generating content on the blog because I’m already spending time everyday watching Youtube videos about 3D printing.&lt;/p&gt;
-
-&lt;p&gt;My hope is that by the time the app is ready and the data for the printers is uploaded, the blog should have started generating some traffic. I plan to have a usable app with data for a few dozen printers in about 2 months.&lt;/p&gt;
-
-&lt;p&gt;After 3 months, I’ll look at the progress and the user stats for the project, and make a decision about continuing with this idea. If I see hope for reaching my targeting of making $2,300 in 2021 by continuing working on this, I’ll do that. If not, I will pivot to selling 3D printed stuff online via an e-commerce store.&lt;/p&gt;</content><author><name></name></author><summary type="html">My plan for 2021 is to build a small side business that can generate some revenue. Not for the money, but for the experience of starting a business from scratch. I’m going to spend 2021 trying to make that happen.</summary></entry></feed>
+&lt;p&gt;I’m starting on that now. This blog post is the first step in my journey towards this new system. I’ll check back in a few months to see how much progress I’ve made on my projects with this new way of working.&lt;/p&gt;</content><author><name></name></author><summary type="html">For the last few years, I’ve really struggled with making progress on my side projects.</summary></entry></feed>
