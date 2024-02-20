@@ -7,6 +7,10 @@ url: "https://blog.asadjb.com" # the base hostname & protocol for your site, e.g
 twitter_username: asadjibranahmed
 github_username:  theonejb
 
+collections:
+  build_logs:
+    output: true
+
 # Build settings
 
 destination: docs

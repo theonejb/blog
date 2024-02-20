@@ -4,7 +4,11 @@ title: "Project 1: Django + NextJS Boilerplate"
 date: 2024-02-15
 ---
 
-> The project now has a [Gumroad page](https://asadjb.gumroad.com/l/nextjs-django-template).
+Links:
+- [Gumroad page](https://asadjb.gumroad.com/l/nextjs-django-template)
+- [Build Log]({% link _build_logs/project-1.md %})
+
+---
 
 My _accidental_ [new years resolution]({% post_url 2023-12-31-i-have-not-failed-enough %}) was to work on the 1 problem that has plagued me for my entire adult life; failure to commit and focus. I decided to work in 6 week "sprints" (inspired by [Shape Up](https://basecamp.com/shapeup)) and complete the projects I start - for some **known** definition of complete.
 
