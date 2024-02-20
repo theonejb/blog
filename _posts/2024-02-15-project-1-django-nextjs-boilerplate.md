@@ -3,6 +3,9 @@ layout: post
 title: "Project 1: Django + NextJS Boilerplate"
 date: 2024-02-15
 ---
+
+> The project now has a [Gumroad page](https://asadjb.gumroad.com/l/nextjs-django-template).
+
 My _accidental_ [new years resolution]({% post_url 2023-12-31-i-have-not-failed-enough %}) was to work on the 1 problem that has plagued me for my entire adult life; failure to commit and focus. I decided to work in 6 week "sprints" (inspired by [Shape Up](https://basecamp.com/shapeup)) and complete the projects I start - for some **known** definition of complete.
 
 This is the 1st project I have decided to work on. I'll work on this from today (15th Feb 2024) to (28th Mar 2024). I'll follow-up then with another post talking about how it went.
