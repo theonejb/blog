@@ -5,6 +5,11 @@ date: 2024-02-20
 ---
 Build log for [Project 1: Django + NextJS Boilerplate]({% post_url 2024-02-15-project-1-django-nextjs-boilerplate %}).
 
+- 2/22/2024
+  - Completed initial Django project setup with Poetry
+- 2/20/2024
+  - Asked for feedback on Reddit & updated blog post with Gumroad link.
+  - Added build logs to blog.
 - 2/20/2024
     - Asked for feedback on Reddit & updated blog post with Gumroad link.
     - Added build log pages to my blog. This is the first one!
