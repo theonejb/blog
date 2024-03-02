@@ -15,14 +15,14 @@ Build log for [Project 1: Django + NextJS Boilerplate]({% post_url 2024-02-15-pr
       - Cross-domain cookies need HTTPS enabled. Will enable that with a simple self-signed cert and test it out.
         - **This isn't true. The problem was somewhere else.**
       - 3rd party/cross-domain cookies are being phased out. I'm only going through this to understand if/how I can make it work. This won't make it into the final template.
-        - I was of keeping this as the primary mechanism for authentication. Keeps things simple - and can be changed later if needed. However, further thoughts made me change my mind.
+        - I was thinking of keeping this as the primary mechanism for authentication. Keeps things simple - and can be changed later if needed. However, further thoughts made me change my mind.
           - Doesn't require the use of a context to keep an authenticated token to send with all requests.
           - Conversely, the frontend has no way of knowing if it's authenticated or not without making an API call. With a token, once you have a valid token you're much more likely to be authenticated.
-          - Django has no good way of setting the `Partitioned` flag on a cookie for now. There's an issue open (https://code.djangoproject.com/ticket/34613#comment:1), but no fix yet. Very soon (Q1 2024 according to MDN (https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/)) Chrome will roll out 3rd party cookie blocking and there won't be a simple fix.
+          - Django has no good way of setting the `Partitioned` flag on a cookie for now. There's an [issue open](https://code.djangoproject.com/ticket/34613), but no fix yet. Very soon ([Q1 2024 according to MDN](https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/)) Chrome will roll out 3rd party cookie blocking and there won't be a simple fix.
     - Cross-domain cookies being phased out and replaced with other technologies to allow the same use case; in our case it's using cookies to authenticate to our own backend on a different domain.
       - Some further reading on this:
-        - https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/
-        - https://developers.google.com/privacy-sandbox/3pcd
+        - [https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/]
+        - [https://developers.google.com/privacy-sandbox/3pcd]
       - Another very viable alternative (though not as developer friendly for the local development environment) is having the backend and frontend be on the same base domain; api.site.com & www.site.com for example.
         - Will try to check this out as well.
     - **Summary**
