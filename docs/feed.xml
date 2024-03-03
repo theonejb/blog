@@ -1,4 +1,148 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://blog.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.asadjb.com/" rel="alternate" type="text/html" /><updated>2024-03-03T10:02:55+04:00</updated><id>https://blog.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">Project 1: Django + NextJS Boilerplate</title><link href="https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate" rel="alternate" type="text/html" title="Project 1: Django + NextJS Boilerplate" /><published>2024-02-15T00:00:00+04:00</published><updated>2024-02-15T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate</id><content type="html" xml:base="https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate">&lt;p&gt;Links:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://blog.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.asadjb.com/" rel="alternate" type="text/html" /><updated>2024-03-03T19:17:27+04:00</updated><id>https://blog.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">Cookie Based Auth for Django and NextJS</title><link href="https://blog.asadjb.com/blog/cookie-based-auth-for-django-and-nextjs" rel="alternate" type="text/html" title="Cookie Based Auth for Django and NextJS" /><published>2024-03-03T00:00:00+04:00</published><updated>2024-03-03T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/cookie-based-auth-for-django-and-nextjs</id><content type="html" xml:base="https://blog.asadjb.com/blog/cookie-based-auth-for-django-and-nextjs">&lt;blockquote&gt;
+  &lt;p&gt;If you’re just looking for implementation instructions, skip my ramblings and go straight to the &lt;a href=&quot;#implementation&quot;&gt;code here&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’m currently working on my &lt;a href=&quot;/blog/project-1-django-nextjs-boilerplate&quot;&gt;first project&lt;/a&gt; after deciding that I needed to &lt;a href=&quot;/blog/i-have-not-failed-enough&quot;&gt;fail more&lt;/a&gt; and practice finishing projects instead of abandoning them midway once they got “boring”.&lt;/p&gt;
+
+&lt;p&gt;Anyways… This one is till in it’s interesting phase, so here’s a blog post with some things I learned yesterday while working on it.&lt;/p&gt;
+
+&lt;p&gt;The project is a &lt;a href=&quot;https://asadjb.gumroad.com/l/nextjs-django-template&quot;&gt;boilerplate template&lt;/a&gt; that should make it easy for devs. to start a new project with a Django backend and a Next.js frontend, something I had to struggle with recently.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
+
+&lt;p&gt;The first thing I’m looking to solve is authentication. That was my biggest challenge when working on the contracting project that inspired this template.&lt;/p&gt;
+
+&lt;p&gt;While there are a number of good posts around how to setup authentication b/w Django &amp;amp; Next.js, nothing “definitive” came up and I had to cobble together a
+weird mess of Django+DRF (Django Rest Framework) and Next.js+NextAuth, sharing
+a token from Django that was masquarading as a JWT token for Next.js. It wasn’t pretty and I knew I could do better.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-options&quot;&gt;The options&lt;/h2&gt;
+
+&lt;p&gt;I considered 2 options for authenticating the Next.js frontend with the Django backend:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Token based auth. On logging in, a user receives a token that is stored in local storage by the frontend and send with every request to the backend.&lt;/li&gt;
+  &lt;li&gt;Session/Cookie based auth. This is how authentication works in Django by default and is very easy to get started with - it basically comes for free out of the box when you start a new Django project.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;While token based auth. is what almost everyone suggests to use when using a Next.js frontend with any backend technology, I wanted to give session based auth. a try. I was curious what it would take to make it work - if it was even possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; It was possible to use cookie/session auth. b/w Django &amp;amp; Next.js - though with a few constraints which make it less appealing than the token based solution&lt;/p&gt;
+
+&lt;p&gt;What follows are my notes on how to set it up, the problems I faced, and why for the template I’m going to go with token based auth. instead.&lt;/p&gt;
+
+&lt;h2 id=&quot;learning-how-cors--set-cookie-works&quot;&gt;Learning how CORS &amp;amp; Set-Cookie works&lt;/h2&gt;
+
+&lt;p&gt;It took me a few hours to get my head around how cross-origin requests and cookies work together, but the actual implementation was surprisingly straight forward.&lt;/p&gt;
+
+&lt;p&gt;This “mini-quest” gave me a chance to learn a lot about how CORS and cookies work, and I’m happy with the time I spent on this. These are the resources which helped me the most (all are from MDN):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS&quot;&gt;Cross-Origin Resource Sharing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy&quot;&gt;Same-origin policy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies&quot;&gt;Using HTTP cookies&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#samesitesamesite-value&quot;&gt;Set-Cookie&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And finally, there was a surprise waiting for me! Browsers are almost universally making changes to restrict 3rd party or cross-domain cookies because of their privacy implications. Here’s a nice article from MDN about it: &lt;a href=&quot;https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/&quot;&gt;Saying goodbye to third-party cookies in 2024&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is the reason why; while this approach works, I won’t be using it in the template. &lt;a href=&quot;#why-not&quot;&gt;More on that later&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
+
+&lt;p&gt;Implementing the session based auth. b/w Django &amp;amp; Next.js is pretty simple.&lt;/p&gt;
+
+&lt;h3 id=&quot;django-configuration&quot;&gt;Django configuration&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Install the &lt;a href=&quot;https://github.com/adamchainz/django-cors-headers&quot;&gt;&lt;code&gt;django-cors-headers&lt;/code&gt;&lt;/a&gt; Python package.
+    &lt;ol&gt;
+      &lt;li&gt;Add &lt;code&gt;&quot;corsheaders&quot;,&lt;/code&gt; to your &lt;code&gt;INSTALLED_APPS&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;Add the &lt;code&gt;&quot;corsheaders.middleware.CorsMiddleware&quot;,&lt;/code&gt; middleware, right above the existing &lt;code&gt;CommonMiddleware&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;Set &lt;code&gt;CORS_ALLOWED_ORIGINS = [&quot;http://localhost:3000&quot;]&lt;/code&gt;, replacing the URL with your frontend URL.&lt;/li&gt;
+      &lt;li&gt;Set &lt;code&gt;CORS_ALLOW_CREDENTIALS = True&lt;/code&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Configure &lt;code&gt;settings.py&lt;/code&gt; to allow cross-domain access for the session cookie.
+    &lt;ol&gt;
+      &lt;li&gt;Set &lt;code&gt;SESSION_COOKIE_SAMESITE = &quot;None&quot;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Set &lt;code&gt;SESSION_COOKIE_SECURE = True&lt;/code&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;nextjs-configuration&quot;&gt;Next.js configuration&lt;/h3&gt;
+
+&lt;p&gt;No configuration is needed on the frontend. However, you do need to use the &lt;code&gt;credentials: &quot;include&quot;,&lt;/code&gt; option when using the &lt;code&gt;fetch()&lt;/code&gt; API to access your backend.&lt;/p&gt;
+
+&lt;p&gt;Here’s a minimal example.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;use client&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;;
+
+&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;import&lt;/span&gt; { BACKEND_URL } from &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;@/constants&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;;
+
+async &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/span&gt; &lt;span style=&quot;color:#06B;font-weight:bold&quot;&gt;signIn&lt;/span&gt;() {
+  const loginData = &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;new&lt;/span&gt; FormData();
+  loginData.append(&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;username&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;admin&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+  loginData.append(&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;password&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;admin&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+
+  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;return&lt;/span&gt; await fetch(&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;`&lt;/span&gt;&lt;span style=&quot;color:#369;font-weight:bold&quot;&gt;$&lt;/span&gt;{BACKEND_URL}/accounts/login/&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;`&lt;/span&gt;, {
+    &lt;span style=&quot;color:#606&quot;&gt;method&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;POST&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+    &lt;span style=&quot;color:#606&quot;&gt;body&lt;/span&gt;: loginData,
+    &lt;span style=&quot;color:#606&quot;&gt;credentials&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;include&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+  });
+}
+
+async &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/span&gt; &lt;span style=&quot;color:#06B;font-weight:bold&quot;&gt;whoAmI&lt;/span&gt;() {
+  console.log(
+    await fetch(&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;`&lt;/span&gt;&lt;span style=&quot;color:#369;font-weight:bold&quot;&gt;$&lt;/span&gt;{BACKEND_URL}/accounts/me/&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;`&lt;/span&gt;, {
+      &lt;span style=&quot;color:#606&quot;&gt;method&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;GET&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+      &lt;span style=&quot;color:#606&quot;&gt;credentials&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;include&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+    }),
+  );
+}
+
+&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;export&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;default&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/span&gt; &lt;span style=&quot;color:#06B;font-weight:bold&quot;&gt;Home&lt;/span&gt;() {
+  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;return&lt;/span&gt; (
+    &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;main&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;className&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;flex min-h-dvh w-full flex-col justify-around&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;className&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;text-center&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;Home&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+      &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;className&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;onClick&lt;/span&gt;=&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;color:#700&quot;&gt;signIn&lt;/span&gt;&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;}&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
+        Sign In
+      &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+      &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;onClick&lt;/span&gt;=&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;color:#700&quot;&gt;whoAmI&lt;/span&gt;&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;}&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;Who Am I&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+    &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/main&amp;gt;&lt;/span&gt;
+  );
+}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;That’s it. That simple piece of code &amp;amp; configuration took me hours to find. Hopefully you can use this example to skip all that time spent trying to figure things out.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Side quest log&lt;/em&gt;: Initially, I was not using the &lt;code&gt;credentials: &quot;include&quot;&lt;/code&gt; option in the &lt;code&gt;signIn()&lt;/code&gt; function above; thinking that I didn’t need to send any cookies with the login call, only the second API call to the &lt;code&gt;/accounts/me&lt;/code&gt; endpoint.&lt;/p&gt;
+
+&lt;p&gt;That mistake cost me about 2 hours of debugging time. If I had &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/fetch#credentials&quot;&gt;RTFM&lt;/a&gt; correctly the first time, I would have seen this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;include&lt;/code&gt;: Tells browsers to include credentials in both same- and cross-origin requests, and always use any credentials sent back in responses.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;code&gt;credentials: &quot;include&quot;&lt;/code&gt; not only controls if cookies are sent, but also if they are saved when returned by the server.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-not&quot;&gt;Why I won’t use this solution in the template&lt;/h2&gt;
+
+&lt;p&gt;Browsers are phasing out 3rd party cookies (&lt;a href=&quot;https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/&quot;&gt;Saying goodbye to third-party cookies in 2024&lt;/a&gt;) and adding features to work around that restriction where needed.&lt;/p&gt;
+
+&lt;p&gt;The simplest way that doesn’t require much change is to use &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Privacy/Privacy_sandbox/Partitioned_cookies&quot;&gt;Cookies Having Independent Partitioned State (CHIPS)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To enable CHIPS, you simply put a &lt;code&gt;Partitioned&lt;/code&gt; flag on your &lt;code&gt;Set-Cookie&lt;/code&gt; header, like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Set-Cookie: session_id=1234; SameSite=None; Secure; Path=/; Partitioned;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, there’s no straight forward way to do this in Django for now. There’s an open issue to resolve this, but looking at the comments, it won’t likely be solved anytime soon.&lt;/p&gt;
+
+&lt;p&gt;Considering this, I opted to use the token based auth. method for my template. I’ll write a blog on that once I get it working over the next few days.&lt;/p&gt;</content><author><name></name></author><summary type="html">If you’re just looking for implementation instructions, skip my ramblings and go straight to the code here.</summary></entry><entry><title type="html">Project 1: Django + NextJS Boilerplate</title><link href="https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate" rel="alternate" type="text/html" title="Project 1: Django + NextJS Boilerplate" /><published>2024-02-15T00:00:00+04:00</published><updated>2024-02-15T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate</id><content type="html" xml:base="https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate">&lt;p&gt;Links:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://asadjb.gumroad.com/l/nextjs-django-template&quot;&gt;Gumroad page&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/build_logs/project-1&quot;&gt;Build Log&lt;/a&gt;&lt;/li&gt;
@@ -516,44 +660,4 @@ Rename the existing &lt;code&gt;app/assets/stylesheets/application.css&lt;/code&
 
 &lt;p&gt;I believe that not having to deal with inconsequential deadlines in my calendar is a big reason for me not feeling overwhelmed. That was the reason why I had gravitated towards less deadlines, and I’m happy to say it worked.&lt;/p&gt;
 
-&lt;p&gt;Using GTD has also been an amazing experience, and I hope to share my thoughts on how GTD has helped me be more productive in the a future post.&lt;/p&gt;</content><author><name></name></author><summary type="html">2 months ago I made the decision to not assign arbitrary deadlines to personal/side projects. You can read about that in the post Giving up on deadlines.</summary></entry><entry><title type="html">Giving up on deadlines</title><link href="https://blog.asadjb.com/blog/giving-up-on-deadlines" rel="alternate" type="text/html" title="Giving up on deadlines" /><published>2021-07-23T00:00:00+04:00</published><updated>2021-07-23T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/giving-up-on-deadlines</id><content type="html" xml:base="https://blog.asadjb.com/blog/giving-up-on-deadlines">&lt;p&gt;For the last few years, I’ve really struggled with making progress on my side projects.&lt;/p&gt;
-
-&lt;p&gt;5 or 6 years ago, this wasn’t a problem. I’d be working for hours on my side projects almost every day. Slowly however, this changed. I found new hobbies, started hanging out with friends, got married, became a father.&lt;/p&gt;
-
-&lt;p&gt;Life got in the way.&lt;/p&gt;
-
-&lt;p&gt;Looking back over the past 2 years, I don’t think I’ve finished any side project, of any size. That realization hit me like a brick a few days ago.&lt;/p&gt;
-
-&lt;p&gt;Something has to change.&lt;/p&gt;
-
-&lt;h2 id=&quot;my-failed-system&quot;&gt;My failed system&lt;/h2&gt;
-
-&lt;p&gt;Up till now, I’ve tried to follow good task management practices.&lt;/p&gt;
-
-&lt;p&gt;I would break down a project into smaller tasks, made sure I wasn’t doing too much (build an MVP), and assigned deadlines to the tasks.&lt;/p&gt;
-
-&lt;p&gt;Problem is, deadlines don’t work for me when I’m the one who has to enforce them. These are soft deadlines. They would approach and I would push them forward by a week or two. Until a year had passed by and I couldn’t get through watching the 3 videos that would complete that course I started a year ago.&lt;/p&gt;
-
-&lt;p&gt;Deadlines only work for me when they are hard deadlines, like the kind at work where they mean something. A commitment to an external stakeholder, with real consequences for missing them.&lt;/p&gt;
-
-&lt;p&gt;Life getting in the way of side projects is not a bad thing, but because I had assigned deadlines to the tasks, not being able to complete them on the assigned day made me feel like a failure.&lt;/p&gt;
-
-&lt;p&gt;I had free time, but I would spend it watching TV or doing irrelevant things, because I couldn’t get myself to start on the tasks for my side projects, maybe because I feared I would fail to complete them by their new deadline anyway.&lt;/p&gt;
-
-&lt;h2 id=&quot;my-new-system&quot;&gt;My new system&lt;/h2&gt;
-
-&lt;p&gt;I’m giving up on deadlines for my personal side projects.&lt;/p&gt;
-
-&lt;p&gt;Instead, I’m just going to have a list of in-progress projects. Each project is broken down into tasks, and every project has a next task that I can just pick up and go. Whenever I find free time, I’m going to pick one task from one project and work on it.&lt;/p&gt;
-
-&lt;p&gt;Deadlines don’t work for me because they are soft deadlines. So I’m getting rid of them.&lt;/p&gt;
-
-&lt;p&gt;Deadlines do serve another important role however, which I have another way of replicating.&lt;/p&gt;
-
-&lt;p&gt;Deadlines give you a finite amount of time to work on something, so you come up with a version of the solution that can be done in that time. Without a deadline, you could keep working on just one task, trying to complete it to perfection.&lt;/p&gt;
-
-&lt;p&gt;I’m replacing that with a well defined definition of &lt;strong&gt;DONE&lt;/strong&gt; for my side projects before I start working on them.&lt;/p&gt;
-
-&lt;p&gt;The definition of done should lead to an MVP, a small but working version of whatever it is I’m trying to build. This will serve the same purpose as a deadline, but without the artificial constraint of time or the feeling of failure when life get’s in the way and I have to move the deadline.&lt;/p&gt;
-
-&lt;p&gt;I’m starting on that now. This blog post is the first step in my journey towards this new system. I’ll check back in a few months to see how much progress I’ve made on my projects with this new way of working.&lt;/p&gt;</content><author><name></name></author><summary type="html">For the last few years, I’ve really struggled with making progress on my side projects.</summary></entry></feed>
+&lt;p&gt;Using GTD has also been an amazing experience, and I hope to share my thoughts on how GTD has helped me be more productive in the a future post.&lt;/p&gt;</content><author><name></name></author><summary type="html">2 months ago I made the decision to not assign arbitrary deadlines to personal/side projects. You can read about that in the post Giving up on deadlines.</summary></entry></feed>

@@ -155,7 +155,7 @@ code {
     border-radius: 3px;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    overflow:auto;
+    overflow: auto;
 }
 
 blockquote {
@@ -275,7 +275,6 @@ ul.discover-posts li small a {
     color: #777 !important;
 }
 
-
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #01242e;
@@ -298,7 +297,7 @@ ul.discover-posts li small a {
     }
 
     code {
-        background-color: #777;
+        background-color: #aaa;
     }
 
     pre code {
@@ -312,9 +311,11 @@ ul.discover-posts li small a {
     .helptext {
         color: #aaa;
     }
+
+    .CodeRay > .code {
+        background-color: #ccc;
+    }
 }
-
-
 
 ul.blog-posts {
     padding-bottom: 0.61803rem;
@@ -333,10 +334,9 @@ hr {
 }
 
 body:hover {
-    border-image: ;
+    border-image:;
     border-width: 0;
 }
-
 
 small a {
     padding-right: 0.61803rem;
