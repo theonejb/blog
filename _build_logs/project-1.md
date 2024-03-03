@@ -21,8 +21,8 @@ Build log for [Project 1: Django + NextJS Boilerplate]({% post_url 2024-02-15-pr
           - Django has no good way of setting the `Partitioned` flag on a cookie for now. There's an [issue open](https://code.djangoproject.com/ticket/34613), but no fix yet. Very soon ([Q1 2024 according to MDN](https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/)) Chrome will roll out 3rd party cookie blocking and there won't be a simple fix.
     - Cross-domain cookies being phased out and replaced with other technologies to allow the same use case; in our case it's using cookies to authenticate to our own backend on a different domain.
       - Some further reading on this:
-        - [https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/]
-        - [https://developers.google.com/privacy-sandbox/3pcd]
+        - <https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/>
+        - <https://developers.google.com/privacy-sandbox/3pcd>
       - Another very viable alternative (though not as developer friendly for the local development environment) is having the backend and frontend be on the same base domain; api.site.com & www.site.com for example.
         - Will try to check this out as well.
     - **Summary**
