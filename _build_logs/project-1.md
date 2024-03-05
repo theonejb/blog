@@ -6,6 +6,9 @@ date: 2024-02-20
 
 Build log for [Project 1: Django + NextJS Boilerplate]({% post_url 2024-02-15-project-1-django-nextjs-boilerplate %}).
 
+- 3/6/2024
+  - Create a proof-of-concept for token based auth. The backend & frontend are able to work together to sign in and use the token for authentication.
+  - Made the [repo](https://github.com/Waraq-Labs/next.js-django-template/tree/Authentication) public for now. Will keep it public until finished. The hope is that this leads to conversations with people who're looking for a solution to the Django/Next.js integration and I can learn what they need.
 - 3/2/2024
   - Finished adding helper scripts that
     - Allow renaming the backend project to something more appropriate for the developer
