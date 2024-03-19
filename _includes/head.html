@@ -1,15 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>{{ page.title }} | {{ site.title }}</title>
+        <meta
+            name="description"
+            content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+        />
+        <link
+            href="{{ site.baseurl }}/feed.xml"
+            rel="alternate"
+            type="application/atom+xml"
+        />
+        <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <link href='{{ site.baseurl }}/feed.xml' rel='alternate' type='application/atom+xml'>
-    <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
-</head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-VXRED3HCM0"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-<body>
+            gtag("config", "G-VXRED3HCM0");
+        </script>
+    </head>
+
+    <body></body>
+</html>
