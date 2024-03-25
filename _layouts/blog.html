@@ -21,6 +21,9 @@ layout: compress
                 </i>
             </span>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            {% if post.build_log %}
+            &nbsp;(<a href="{{ post.build_log }}">build log</a>)
+            {% endif %}
         </li>
         {% endfor %}
 

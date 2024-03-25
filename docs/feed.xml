@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://blog.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.asadjb.com/" rel="alternate" type="text/html" /><updated>2024-03-20T00:37:54+04:00</updated><id>https://blog.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">Cookie Based Auth for Django and NextJS</title><link href="https://blog.asadjb.com/blog/cookie-based-auth-for-django-and-nextjs" rel="alternate" type="text/html" title="Cookie Based Auth for Django and NextJS" /><published>2024-03-03T00:00:00+04:00</published><updated>2024-03-03T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/cookie-based-auth-for-django-and-nextjs</id><content type="html" xml:base="https://blog.asadjb.com/blog/cookie-based-auth-for-django-and-nextjs">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://blog.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.asadjb.com/" rel="alternate" type="text/html" /><updated>2024-03-25T23:01:36+04:00</updated><id>https://blog.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">Cookie Based Auth for Django and NextJS</title><link href="https://blog.asadjb.com/blog/cookie-based-auth-for-django-and-nextjs" rel="alternate" type="text/html" title="Cookie Based Auth for Django and NextJS" /><published>2024-03-03T00:00:00+04:00</published><updated>2024-03-03T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/cookie-based-auth-for-django-and-nextjs</id><content type="html" xml:base="https://blog.asadjb.com/blog/cookie-based-auth-for-django-and-nextjs">&lt;blockquote&gt;
   &lt;p&gt;If you’re just looking for implementation instructions, skip my ramblings and go straight to the &lt;a href=&quot;#implementation&quot;&gt;code here&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -143,6 +143,7 @@ async &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/spa
 &lt;p&gt;Unfortunately, there’s no straight forward way to do this in Django for now. There’s an open issue to resolve this, but looking at the comments, it won’t likely be solved anytime soon.&lt;/p&gt;
 
 &lt;p&gt;Considering this, I opted to use the token based auth. method for my template. I’ll write a blog on that once I get it working over the next few days.&lt;/p&gt;</content><author><name></name></author><summary type="html">If you’re just looking for implementation instructions, skip my ramblings and go straight to the code here.</summary></entry><entry><title type="html">Project 1: Django + NextJS Boilerplate</title><link href="https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate" rel="alternate" type="text/html" title="Project 1: Django + NextJS Boilerplate" /><published>2024-02-15T00:00:00+04:00</published><updated>2024-02-15T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate</id><content type="html" xml:base="https://blog.asadjb.com/blog/project-1-django-nextjs-boilerplate">&lt;p&gt;Links:&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://asadjb.gumroad.com/l/nextjs-django-template&quot;&gt;Gumroad page&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/build_logs/project-1&quot;&gt;Build Log&lt;/a&gt;&lt;/li&gt;
@@ -155,9 +156,11 @@ async &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/spa
 &lt;p&gt;This is the 1st project I have decided to work on. I’ll work on this from today (15th Feb 2024) to (28th Mar 2024). I’ll follow-up then with another post talking about how it went.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-project&quot;&gt;The project&lt;/h2&gt;
+
 &lt;p&gt;The goal is to make &amp;amp; sell a Django + NextJS boilerplate template. What’s a boilerplate template?&lt;/p&gt;
 
 &lt;p&gt;It’s the source code for a project that’s already setup with many things that are needed in a new project; for example:&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;Stripe subscriptions functionality&lt;/li&gt;
   &lt;li&gt;Background jobs&lt;/li&gt;
@@ -170,6 +173,7 @@ async &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/spa
 &lt;p&gt;My boilerplate is going to be &lt;em&gt;much&lt;/em&gt; simpler - and also much cheaper. SaaS Pegasus comes with so many features that it’s worth the $249 starting price. I’m aiming for $5-$10.&lt;/p&gt;
 
 &lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
+
 &lt;p&gt;My goal is to sell this boilerplate to at least 10 people - and have them be happy using it. This means:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -181,6 +185,7 @@ async &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/spa
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;the-deliverable&quot;&gt;The deliverable&lt;/h2&gt;
+
 &lt;p&gt;The boilerplate will allow developers to quickly start a project that uses Django for the backend and NextJS for the frontend. My recent experiences with another project in this tech stack required me to spend significant time on:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -202,7 +207,9 @@ async &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/spa
 &lt;p&gt;Once complete, I’ll put this on Gumroad and create a landing page there. From then on, it’s all about marketing it; that’s the part which I have no experience with and hope to learn the most from.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-marketing-plan&quot;&gt;The marketing plan&lt;/h2&gt;
+
 &lt;p&gt;This is the area where I lack &lt;em&gt;any&lt;/em&gt; experience; so I’m not sure how I’m going to market this. Some ideas I have:&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;build it in public on Twitter. I have a tiny Twitter following (312 followers) so not sure how useful this could be. But I have to try something.&lt;/li&gt;
   &lt;li&gt;share it with people asking how to setup Django &amp;amp; NextJS on forums like Reddit, Stackoverflow, and others.&lt;/li&gt;
@@ -210,7 +217,8 @@ async &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/spa
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;the-build-log&quot;&gt;The build log&lt;/h2&gt;
-&lt;p&gt;I’d also like to create a build log with this project. This will be a daily note of what I did for this project. I’ll keep it in my notes app &lt;a href=&quot;https://reflect.app/&quot;&gt;Reflect&lt;/a&gt; and periodically put it here in this blog post. These daily notes might also serve as content for my build-in-public marketing strategy.&lt;/p&gt;</content><author><name></name></author><summary type="html">Links: Gumroad page Build Log</summary></entry><entry><title type="html">I have not failed enough</title><link href="https://blog.asadjb.com/blog/i-have-not-failed-enough" rel="alternate" type="text/html" title="I have not failed enough" /><published>2023-12-31T00:00:00+04:00</published><updated>2023-12-31T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/i-have-not-failed-enough</id><content type="html" xml:base="https://blog.asadjb.com/blog/i-have-not-failed-enough">&lt;p&gt;I was recently listening through the &lt;a href=&quot;https://freakonomics.com/podcast-tag/how-to-succeed-at-failing/&quot;&gt;How to succeed at failing&lt;/a&gt; series on the Freakonomics podcast and started to think about how often I had failed in the past few years. The first answer was - not too much. I couldn’t think of too many instances of where I had “failed”.&lt;/p&gt;
+
+&lt;p&gt;I’d also like to create a build log with this project. This will be a daily note of what I did for this project. I’ll keep it in my notes app &lt;a href=&quot;https://reflect.app/&quot;&gt;Reflect&lt;/a&gt; and periodically put it here in this blog post. These daily notes might also serve as content for my build-in-public marketing strategy.&lt;/p&gt;</content><author><name></name></author><summary type="html">Links:</summary></entry><entry><title type="html">I have not failed enough</title><link href="https://blog.asadjb.com/blog/i-have-not-failed-enough" rel="alternate" type="text/html" title="I have not failed enough" /><published>2023-12-31T00:00:00+04:00</published><updated>2023-12-31T00:00:00+04:00</updated><id>https://blog.asadjb.com/blog/i-have-not-failed-enough</id><content type="html" xml:base="https://blog.asadjb.com/blog/i-have-not-failed-enough">&lt;p&gt;I was recently listening through the &lt;a href=&quot;https://freakonomics.com/podcast-tag/how-to-succeed-at-failing/&quot;&gt;How to succeed at failing&lt;/a&gt; series on the Freakonomics podcast and started to think about how often I had failed in the past few years. The first answer was - not too much. I couldn’t think of too many instances of where I had “failed”.&lt;/p&gt;
 
 &lt;p&gt;This was not a good thing. It was very much a sad thing that I couldn’t quickly think of many things I had failed at.&lt;/p&gt;
 
