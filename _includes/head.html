@@ -17,6 +17,7 @@
         <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css" />
 
+        {% if jekyll.environment == "production" %}
         <!-- Google tag (gtag.js) -->
         <script
             async
@@ -31,6 +32,7 @@
 
             gtag("config", "G-VXRED3HCM0");
         </script>
+        {% endif %}
     </head>
 
     <body></body>
