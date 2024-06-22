@@ -1,9 +1,10 @@
 ---
 layout: post
 title: My buildspace project
+redirect_from: /my-buildspace-project
 ---
 ![My buildspace project idea launch post image](/assets/images/my-buildspace-project-01.png)
- 
+
 For the next 6 weeks, I'm taking part in [buildspace](https://twitter.com/_buildspace) [nights & weekends](https://buildspace.so/more). It's a cohort of people that participate in a 6-week long "school" where they work towards any idea they have. The goal is to launch a "product" by the end of these 6 weeks, and to gain as much traction as possible.
 
 It also includes helpful sessions by people who've done this before. This isn't an accelerator or an incubator though, it's more like a forcing function to get you motivated to build and launch. The community provides the motivation, and the sessions provide useful knowledge you can apply towards the goal of the program; show your product on demo day at the end of the 6-week period.

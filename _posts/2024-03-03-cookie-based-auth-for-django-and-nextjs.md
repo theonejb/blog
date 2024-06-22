@@ -2,6 +2,7 @@
 layout: post
 title: "Cookie Based Auth for Django and NextJS"
 date: 2024-03-03
+redirect_from: /cookie-based-auth-for-django-and-nextjs
 ---
 
 > If you're just looking for implementation instructions, skip my ramblings and go straight to the [code here](#implementation).
