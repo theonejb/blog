@@ -2,7 +2,7 @@
 layout: post
 title: "Project 1: Django + NextJS Boilerplate"
 date: 2024-02-15
-build_log: "/build_logs/project-1"
+build_log: "/build-logs/project-1"
 ---
 
 Links:
