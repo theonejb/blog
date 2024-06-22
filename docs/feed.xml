@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.asadjb.com/" rel="alternate" type="text/html" /><updated>2024-06-22T14:22:49+04:00</updated><id>https://www.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">Failure 1: Django + NextJS Boilerplate</title><link href="https://www.asadjb.com/blog/2024-06-16-failure-1" rel="alternate" type="text/html" title="Failure 1: Django + NextJS Boilerplate" /><published>2024-06-16T00:00:00+04:00</published><updated>2024-06-16T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/failure-1</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-06-16-failure-1">&lt;p&gt;I have failed, and that is exactly what I had hoped for a few months ago in &lt;a href=&quot;/blog/2023-12-31-i-have-not-failed-enough&quot;&gt;this blog post&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.asadjb.com/" rel="alternate" type="text/html" /><updated>2024-06-22T15:18:16+04:00</updated><id>https://www.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">Deploying Ruby on Rails to AWS with Kamal</title><link href="https://www.asadjb.com/blog/2024-06-22-deploying-ruby-on-rails-to-aws-with-kamal" rel="alternate" type="text/html" title="Deploying Ruby on Rails to AWS with Kamal" /><published>2024-06-22T00:00:00+04:00</published><updated>2024-06-22T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/deploying-ruby-on-rails-to-aws-with-kamal</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-06-22-deploying-ruby-on-rails-to-aws-with-kamal">&lt;p&gt;As part of a contracting project, I’ve been building an analytics dashboard for a feedback collection SaaS. The app is built in Ruby on Rails and given all the nice things I’ve heard about &lt;a href=&quot;https://kamal-deploy.org/&quot;&gt;Kamal&lt;/a&gt;; I decided to use it for deploying the app.&lt;/p&gt;
+
+&lt;p&gt;The experience has been phenomenal; outside of some frustration with the initial deployment.&lt;/p&gt;
+
+&lt;p&gt;The app is deployed on a pretty standard AWS setup; a couple of EC2 servers hosting the web app running inside Docker containers, and a load balancer in front.&lt;/p&gt;
+
+&lt;p&gt;One of the problems I faced during the initial deployment was forwarding headers from the AWS application load balancer to the RoR server running in the Docker container.&lt;/p&gt;
+
+&lt;p&gt;The challenge with Kamal is that it relies heavily on &lt;a href=&quot;https://traefik.io/traefik/&quot;&gt;Traefik&lt;/a&gt;, and while Traefik is a great tool, it takes some getting used to. It’s configuration is not very intuitive, and there’s no easy way to see how things are configured outside of looking at the text logs.&lt;/p&gt;
+
+&lt;p&gt;The Traefik document is pretty thorough, so a bit of searching led me to this CLI argument which needs to be passed to the Traefik container:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;entrypoints.http.forwardedheaders.insecure: true&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;However, no matter what I tried, when I added this, the app container would stop responding to web requests. Without the config the container would work but throw an exception related to the &lt;code&gt;Origin&lt;/code&gt; header not matching the configured hosts.&lt;/p&gt;
+
+&lt;p&gt;After a lot of experimentation, I stumbled upon the other config I needed to add by pure luck.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;entrypoints.http.address: &quot;:80&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;As far as I can tell, when I added the &lt;code&gt;forwardedheaders&lt;/code&gt; config, the entrypoint no longer got the correct &lt;code&gt;address&lt;/code&gt; configuration. I’m not sure if this is related to Kamal or Traefik.&lt;/p&gt;
+
+&lt;h2 id=&quot;kamal-deployyml&quot;&gt;Kamal &lt;code&gt;deploy.yml&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;If you’re looking to replicate a similar setup, here’s the Kamal &lt;code&gt;deploy.yml&lt;/code&gt; file that I am using with this project to deploy to AWS, with a load balancer terminating the SSL connection and forwarding traffic to web servers that are configured via Kamal. As a bonus, this config also deploys &lt;a href=&quot;https://sidekiq.org/&quot;&gt;Sidekiq&lt;/a&gt; for background tasks.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#606&quot;&gt;service&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;lt;SERVICE NAME&amp;gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span style=&quot;color:#606&quot;&gt;image&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;lt;IMAGE NAME&amp;gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span style=&quot;color:#606&quot;&gt;ssh&lt;/span&gt;:
+  &lt;span style=&quot;color:#606&quot;&gt;user&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;ubuntu&lt;/span&gt;&lt;/span&gt;
+  &lt;span style=&quot;color:#606&quot;&gt;proxy&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;ubuntu@A.B.C.D&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span style=&quot;color:#606&quot;&gt;servers&lt;/span&gt;:
+  &lt;span style=&quot;color:#606&quot;&gt;web&lt;/span&gt;:
+    &lt;span style=&quot;color:#606&quot;&gt;hosts&lt;/span&gt;:
+      - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;A.B.C.D&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+      - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;A.B.C.D&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+    &lt;span style=&quot;color:#606&quot;&gt;labels&lt;/span&gt;:
+      &lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;traefik.http.routers.&amp;lt;SERVICE NAME&amp;gt;-web.rule: Host(`&amp;lt;YOUR HOST NAME&amp;gt;`)&lt;/span&gt;
+  &lt;span style=&quot;color:#606&quot;&gt;sidekiq&lt;/span&gt;:
+    &lt;span style=&quot;color:#606&quot;&gt;hosts&lt;/span&gt;:
+      - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;A.B.C.D&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+      - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;A.B.C.D&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+    &lt;span style=&quot;color:#606&quot;&gt;traefik&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;false&lt;/span&gt;&lt;/span&gt;
+    &lt;span style=&quot;color:#606&quot;&gt;cmd&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;bundle exec sidekiq&lt;/span&gt;&lt;/span&gt;
+
+
+&lt;span style=&quot;color:#606&quot;&gt;registry&lt;/span&gt;:
+  &lt;span style=&quot;color:#606&quot;&gt;server&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;lt;AWS ACCOUNT ID&amp;gt;.dkr.ecr.&amp;lt;AWS REGION&amp;gt;.amazonaws.com&lt;/span&gt;&lt;/span&gt;
+  &lt;span style=&quot;color:#606&quot;&gt;username&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;AWS&lt;/span&gt;&lt;/span&gt;
+  &lt;span style=&quot;color:#606&quot;&gt;password&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;lt;%= %x(aws ecr get-login-password --region &amp;lt;AWS REGION&amp;gt;) %&amp;gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span style=&quot;color:#606&quot;&gt;builder&lt;/span&gt;:
+  &lt;span style=&quot;color:#606&quot;&gt;local&lt;/span&gt;:
+    &lt;span style=&quot;color:#606&quot;&gt;arch&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;amd64&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#777&quot;&gt;# Because I develop on a Apple Silicon machine, I need to use a build target&lt;/span&gt;
+
+&lt;span style=&quot;color:#606&quot;&gt;env&lt;/span&gt;:
+  &lt;span style=&quot;color:#606&quot;&gt;clear&lt;/span&gt;:
+    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;DATABASE_URL: &amp;lt;DATABASE URL&amp;gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span style=&quot;color:#606&quot;&gt;secret&lt;/span&gt;:
+    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;RAILS_MASTER_KEY&lt;/span&gt;&lt;/span&gt;
+    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;DB_PASSWORD&lt;/span&gt;&lt;/span&gt;
+
+&lt;span style=&quot;color:#606&quot;&gt;traefik&lt;/span&gt;:
+ &lt;span style=&quot;color:#606&quot;&gt;args&lt;/span&gt;:
+   &lt;span style=&quot;color:#606&quot;&gt;entrypoints.http.address&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;:80&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+   &lt;span style=&quot;color:#606&quot;&gt;entrypoints.http.forwardedheaders.insecure&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;true&lt;/span&gt;&lt;/span&gt;
+   &lt;span style=&quot;color:#606&quot;&gt;log.level&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;DEBUG&lt;/span&gt;&lt;/span&gt;
+   &lt;span style=&quot;color:#606&quot;&gt;accesslog&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;true&lt;/span&gt;&lt;/span&gt;
+   &lt;span style=&quot;color:#606&quot;&gt;accesslog.format&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;json&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">As part of a contracting project, I’ve been building an analytics dashboard for a feedback collection SaaS. The app is built in Ruby on Rails and given all the nice things I’ve heard about Kamal; I decided to use it for deploying the app.</summary></entry><entry><title type="html">Failure 1: Django + NextJS Boilerplate</title><link href="https://www.asadjb.com/blog/2024-06-16-failure-1" rel="alternate" type="text/html" title="Failure 1: Django + NextJS Boilerplate" /><published>2024-06-16T00:00:00+04:00</published><updated>2024-06-16T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/failure-1</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-06-16-failure-1">&lt;p&gt;I have failed, and that is exactly what I had hoped for a few months ago in &lt;a href=&quot;/blog/2023-12-31-i-have-not-failed-enough&quot;&gt;this blog post&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This is a good failure. It has taught me things, lessons I can use in the future to avoid failing this way again.&lt;/p&gt;
 
@@ -640,76 +714,4 @@ Rename the existing &lt;code&gt;app/assets/stylesheets/application.css&lt;/code&
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">I had a bunch of thoughts yesterday about the Zettelkasten method and how I could use it effectively to manage my knowledge base. I started the day by dumping my thoughts into Logseq. Here they are.</summary></entry><entry><title type="html">How Horo timer educates users</title><link href="https://www.asadjb.com/blog/2022-07-04-how-horo-timer-educates-users" rel="alternate" type="text/html" title="How Horo timer educates users" /><published>2022-07-04T00:00:00+04:00</published><updated>2022-07-04T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/how-horo-timer-educates-users</id><content type="html" xml:base="https://www.asadjb.com/blog/2022-07-04-how-horo-timer-educates-users">&lt;p&gt;&lt;a href=&quot;https://apps.apple.com/us/app/horo-timer-for-menu-bar/id1437226581?mt=12&quot;&gt;Horo&lt;/a&gt; is a simple menu bar timer app for the Mac.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/horo-timer-01.png&quot; alt=&quot;Horo timer screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I use it like a pomodoro timer, but without limiting myself to just 25m blocks. It’s a very small application, but one that provides a lot of value for my workflow.&lt;/p&gt;
-
-&lt;p&gt;I recently noticed the really smart way in which it trains the user in its features, and I believe it has some great lessons for software developers and UX designers.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-challenge-of-educating-users&quot;&gt;The challenge of educating users&lt;/h2&gt;
-
-&lt;p&gt;Educating users about your apps features is the kind of problem that is often overlooked when starting a new project. Indie developers often don’t think about it until the app is complete. It’s not something that is often seen as an “interesting problem to solve”.&lt;/p&gt;
-
-&lt;p&gt;Like marketing however, which is often relegated to the “boring business things to do at the end” category, user education can often have a large impact on the success of your application. If you are unable to teach users how to get value out of you application, users will often stop using it – just because they didn’t know it could solve their problem. It’s must be frustrating to hear users stop using your application because they thought it didn’t have a feature that you spent hours working on.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-usual-solutions&quot;&gt;The usual solutions&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;User guide or manual&lt;/li&gt;
-  &lt;li&gt;Walkthrough videos&lt;/li&gt;
-  &lt;li&gt;In-product walkthrough or popups (like Clippy from Microsoft Office)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/horo-timer-02.gif&quot; alt=&quot;Microsoft Office Clippy&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;All of these require effort from the user. The user has to spend time:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Reading the manual.&lt;/li&gt;
-  &lt;li&gt;Watching the videos.&lt;/li&gt;
-  &lt;li&gt;Going through the demo.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Most users won’t want to invest the time upfront in reading the manual or watching product videos. They’ll only search for solution when they encounter a roadblock. &lt;em&gt;As a side note, having a searchable manual is a must so that users can search for solutions when they want to. Product videos are worst than a manual in my opinion because users can’t skim through easily to the stuff they want.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;In-product walkthroughs sound like a good idea. The user is in your application and has all the context in-front of them, so no need to jump b/w the manual and your app. Anecdotal evidence however suggests that users will usually skip demos, or forget the lessons afterwards. I honestly don’t believe in-product walkthroughs solve any problem other than discovery – you can tell users about new or unique features of you application and they might remember to use it later.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-horo-solution&quot;&gt;The Horo solution&lt;/h2&gt;
-
-&lt;p&gt;You might have noticed in the screenshot at the beginning the faded text “@9:30am”. This is &lt;em&gt;one&lt;/em&gt; of the placeholders that you see when you open Horo from the menubar.&lt;/p&gt;
-
-&lt;p&gt;The placeholder is shown in the only input field that Horo has. The user has to enter the duration they want the timer to run for. Horo allows “Natural Language” input in the field. From it’s description on the Mac App Store:&lt;/p&gt;
-
-&lt;p&gt;Some examples of Horo’s flexible Natural Language support:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;“1:30:45” starts a timer for 1 hour, 30 minutes, and 45 seconds&lt;/li&gt;
-  &lt;li&gt;“1.5h” starts a timer for 1 hour, 30 minutes&lt;/li&gt;
-  &lt;li&gt;“45m” starts a 45 minute timer&lt;/li&gt;
-  &lt;li&gt;“1h 15m” becomes an hour and fifteen minutes&lt;/li&gt;
-  &lt;li&gt;“60s” will play a sound in a minute&lt;/li&gt;
-  &lt;li&gt;Leaving the input blank will start a stopwatch&lt;/li&gt;
-  &lt;li&gt;“@3pm” will set a countdown timer to go off at 3pm&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;While short, this is still a lot of possible formats. I would never be able to remember these just by reading the manual once. Luckily, Horo utilizes the placeholder in an intuitive way to educate users. Every time you open the app, you see a different example of the input formats you can use.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/horo-timer-gallery.png&quot; alt=&quot;Horo timer placeholder examples&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is the first app I’ve used that I’ve noticed uses this way of educating the user. While the list of accepted formats is always available in the apps web page, presenting these formats in the placeholder does 2 things for the user:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Automatic discovery. The user intuitively builds a sense that they can use multiple formats for the input, and are shown a different format every time which educates them on the possibilities.&lt;/li&gt;
-  &lt;li&gt;Spaced repetition. By showing the formats repeatedly, the user ends up remembering more than they would just by reading a manual once. Spaced repetition is a well researched method of learning effectively, and I think Horo uses it to it’s advantage quite well.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;the-takeaway&quot;&gt;The takeaway&lt;/h2&gt;
-
-&lt;p&gt;The lesson I learned is to look for these opportunities in the applications I build. A great place to educate users is:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Where you can unobtrusively add hints on usage. The placeholder does not get in the way yet delivers the information.&lt;/li&gt;
-  &lt;li&gt;Where the user will see the hint multiple times during regular usage of the application.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Finding places in your applications where this strategy can be used might take time and some luck, but if you find these, I believe capitalizing on the opportunity will lead to a much more &lt;strong&gt;delightful&lt;/strong&gt; user experience.&lt;/p&gt;
-
-&lt;p&gt;After all I ended up writing a whole blog post on how a simple timer app uses a placeholder. :)&lt;/p&gt;</content><author><name></name></author><summary type="html">Horo is a simple menu bar timer app for the Mac.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">I had a bunch of thoughts yesterday about the Zettelkasten method and how I could use it effectively to manage my knowledge base. I started the day by dumping my thoughts into Logseq. Here they are.</summary></entry></feed>
