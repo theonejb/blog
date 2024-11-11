@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.asadjb.com/" rel="alternate" type="text/html" /><updated>2024-06-22T15:18:16+04:00</updated><id>https://www.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">Deploying Ruby on Rails to AWS with Kamal</title><link href="https://www.asadjb.com/blog/2024-06-22-deploying-ruby-on-rails-to-aws-with-kamal" rel="alternate" type="text/html" title="Deploying Ruby on Rails to AWS with Kamal" /><published>2024-06-22T00:00:00+04:00</published><updated>2024-06-22T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/deploying-ruby-on-rails-to-aws-with-kamal</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-06-22-deploying-ruby-on-rails-to-aws-with-kamal">&lt;p&gt;As part of a contracting project, I’ve been building an analytics dashboard for a feedback collection SaaS. The app is built in Ruby on Rails and given all the nice things I’ve heard about &lt;a href=&quot;https://kamal-deploy.org/&quot;&gt;Kamal&lt;/a&gt;; I decided to use it for deploying the app.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.asadjb.com/" rel="alternate" type="text/html" /><updated>2024-11-11T22:47:17+04:00</updated><id>https://www.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">Project 2: Gift cards to Pakistan</title><link href="https://www.asadjb.com/blog/2024-11-11-project-2-gift-cards-to-pakistan" rel="alternate" type="text/html" title="Project 2: Gift cards to Pakistan" /><published>2024-11-11T00:00:00+04:00</published><updated>2024-11-11T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/project-2-gift-cards-to-pakistan</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-11-11-project-2-gift-cards-to-pakistan">&lt;p&gt;I’ve completed a freelance project I was working on for a few months, and have started saying no to new opportunities. &lt;em&gt;It’s time to work on one of my own ideas again.&lt;/em&gt; This is part of my plan to &lt;a href=&quot;/blog/2023-12-31-i-have-not-failed-enough&quot;&gt;start failing more&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’ve decided to build a business sending gift cards to Pakistan - and eventually other countries in that corner of the world.&lt;/p&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+&lt;p&gt;A few years ago I had sent a gift card to a colleague in the UK. I found a number of very good options. They all had websites that inspired confidence, and used robust payment methods (Stripe in my example) that I could trust with my credit card.&lt;/p&gt;
+
+&lt;p&gt;I recently had to send a gift card to a colleague in Pakistan. I was confident that I would find a bunch of great options; instead I only &lt;a href=&quot;https://www.giftkarte.com/&quot; target=&quot;_new&quot;&gt;found one&lt;/a&gt; that I could think of trusting with my money.&lt;/p&gt;
+
+&lt;p&gt;I ended up using their services and the card was delivered, but there were a number of problems I saw:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;No trust building around card payments. There was no clear mention of which provider they used. I did a bank transfer instead of using a CC. This meant my payment was manually verified and the card was only sent after a few hours.&lt;/li&gt;
+  &lt;li&gt;There was no confirmation email about my order. I was worried enough to call their helpline to confirm that my order had gone through.&lt;/li&gt;
+  &lt;li&gt;Once they had sent the card (which I also had to confirm via phone), I only got a confirmation email the next day.&lt;/li&gt;
+  &lt;li&gt;To get an invoice to expense this, I had to send them an email. I’m still waiting on an invoice.&lt;/li&gt;
+  &lt;li&gt;There were multiple colleagues who chipped in on this gift card. I had to collect the money from them and then pay for the card myself. In my previous experience of sending a gift card to the UK, I was able to include my colleagues in the process. They were able to add their contributions directly to the gift card I selected and a card of the total amount was sent to the recipient.&lt;/li&gt;
+  &lt;li&gt;Finally, there was no option for the receiver to choose which gift card they wanted. Instead I had to choose for them. There is a “Universal Gift Card” they claim works at all merchants and is the one I got, but redeeming that would be slightly more complicated.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Interestingly, my colleague didn’t open the email they received with the gift card because they thought it was a spam/scam/malicious email. Only after I asked if they had received the card did they end up opening it.&lt;/p&gt;
+
+&lt;p&gt;I know a better user experience exists. I want to bring the same to Pakistan and solve my own problem at the same time.&lt;/p&gt;
+
+&lt;p&gt;Is there a market for this? I believe so, because:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It’s a problem I’ve just faced.&lt;/li&gt;
+  &lt;li&gt;I’ve seen my wife having to deal with low-trust companies sending gifts to Pakistan. Gift cards are different, but eventually I could also add the option to send physical gifts to the recipient.&lt;/li&gt;
+  &lt;li&gt;I’ve seen my employer deal with this. Recently a baby gift basket arrived 2 months after the baby was born. 🤯&lt;/li&gt;
+  &lt;li&gt;This is a recurring problem. People &amp;amp; companies need to send gift cards on birthdays, weddings, etc.&lt;/li&gt;
+  &lt;li&gt;With more companies starting to hire remotely in Pakistan, this could be a valuable service for businesses to subscribe to.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;validation&quot;&gt;Validation?&lt;/h2&gt;
+&lt;p&gt;I haven’t found an easy way to validate this idea. There is no community of “people sending gift cards to Pakistan” that I can tap into. That isn’t a cohort I can find in one place.&lt;/p&gt;
+
+&lt;p&gt;I could make a list of B2B customers; companies that hire remotely in Pakistan.&lt;/p&gt;
+
+&lt;p&gt;However, I want to start with individual customers - because I’m starting from a place of solving my own problem. It should be possible to pivot to B2B if I don’t find any interest from individual customers.&lt;/p&gt;
+
+&lt;p&gt;Validation then involves me starting with a blog - suggesting gift cards to send to Pakistan. I’ll use SEO to bring in traffic. If I see enough visitors, I could start building a business. This also means that if/when the actual product launches, I’ll have a distribution channel already working.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-if-im-wrong&quot;&gt;What if I’m wrong?&lt;/h2&gt;
+&lt;p&gt;There’s a &lt;strong&gt;very strong&lt;/strong&gt; possibility that I’m wrong about this idea. That I’ll spend a bunch of time for it to get nowhere, or that I have picked a problem that isn’t very valuable to solve.&lt;/p&gt;
+
+&lt;p&gt;This is my unique brand of fear of failure. I used to think I didn’t fear failing, because I had already failed many times. Instead, my fear of failure manifests as a fear of picking the wrong thing and wasting time on it. The way I am dealing with this is to realize that if I don’t pick anything - which I have frequently done in the past - I have an &lt;strong&gt;exactly&lt;/strong&gt; 0% chance of succeeding. Just trying something makes that probability &amp;gt; 0%.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You miss 100% of the shots you don’t take.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Another thing that’s helping me is to time box this idea. I will spend 6 weeks on building the blog and populating it with as much useful content as possible. After that I can spend an hour or two every week to add a few more pieces of content. I can start researching and working on a different idea after the 6 week period and wait for the SEO to have an impact before making a decision to continue or abandon this.&lt;/p&gt;</content><author><name></name></author><summary type="html">I’ve completed a freelance project I was working on for a few months, and have started saying no to new opportunities. It’s time to work on one of my own ideas again. This is part of my plan to start failing more.</summary></entry><entry><title type="html">Deploying Ruby on Rails to AWS with Kamal</title><link href="https://www.asadjb.com/blog/2024-06-22-deploying-ruby-on-rails-to-aws-with-kamal" rel="alternate" type="text/html" title="Deploying Ruby on Rails to AWS with Kamal" /><published>2024-06-22T00:00:00+04:00</published><updated>2024-06-22T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/deploying-ruby-on-rails-to-aws-with-kamal</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-06-22-deploying-ruby-on-rails-to-aws-with-kamal">&lt;p&gt;As part of a contracting project, I’ve been building an analytics dashboard for a feedback collection SaaS. The app is built in Ruby on Rails and given all the nice things I’ve heard about &lt;a href=&quot;https://kamal-deploy.org/&quot;&gt;Kamal&lt;/a&gt;; I decided to use it for deploying the app.&lt;/p&gt;
 
 &lt;p&gt;The experience has been phenomenal; outside of some frustration with the initial deployment.&lt;/p&gt;
 
@@ -649,69 +699,4 @@ Rename the existing &lt;code&gt;app/assets/stylesheets/application.css&lt;/code&
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The actual loading of the files is left to the Asset Pipeline. Which is why you can use the import map tag in your HTML file, while still using the //= require jquery directives in your JS files. The Asset Pipeline also provides the fingerprinting that you see in the filenames above.&lt;/p&gt;</content><author><name></name></author><summary type="html">If you have a brand new RoR 7 project that you created with the defaults by running rails new &amp;lt;PROJECT&amp;gt; then you can safely follow the following steps to get Bootstrap 5 installed in your project.</summary></entry><entry><title type="html">Thoughts on Zettelkasten and the slip box</title><link href="https://www.asadjb.com/blog/2022-07-28-thoughts-on-zetelkasten-and-the-slip-box" rel="alternate" type="text/html" title="Thoughts on Zettelkasten and the slip box" /><published>2022-07-28T00:00:00+04:00</published><updated>2022-07-28T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/thoughts-on-zetelkasten-and-the-slip-box</id><content type="html" xml:base="https://www.asadjb.com/blog/2022-07-28-thoughts-on-zetelkasten-and-the-slip-box">&lt;p&gt;I had a bunch of thoughts yesterday about the Zettelkasten method and how I could use it effectively to manage my knowledge base. I started the day by dumping my thoughts into Logseq. Here they are.&lt;/p&gt;
-
-&lt;p&gt;These are open questions for now. I plan to investigate this further and try out different iterations to see what works for me.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I’ve been in a place before where I used Roam to gather a small number of notes (&amp;gt; 100) but then found all of that to be an unmanageable mess.&lt;/li&gt;
-  &lt;li&gt;Issues that I see with this setup
-    &lt;ul&gt;
-      &lt;li&gt;With notes spread all over the place how do I find anything to link to? I can’t go through 200 notes every time I add a new one.&lt;/li&gt;
-      &lt;li&gt;All notes are in the same “directory”. Because there is no hierarchy, my notes about productivity are in the same place as my notes about data structures &amp;amp; algorithms. This seems unsustainable.&lt;/li&gt;
-      &lt;li&gt;There is 1 benefit I see to this. With everything being in the same place, I can find unexpected connections. Unfortunately, that doesn’t work for me because I don’t go through all my existing notes every time I add a new one.&lt;/li&gt;
-      &lt;li&gt;I am interested in many things; productivity, parentings, Islam, algorithms, data structures, system design, programming languages. Having everything in one place seems to add to the mess.&lt;/li&gt;
-      &lt;li&gt;As I understand, &lt;a href=&quot;https://en.wikipedia.org/wiki/Niklas_Luhmann&quot;&gt;Niklas Luhmann&lt;/a&gt; researched 1 topic extensively - social science. It would make sense for him to keep all his notes in 1 place.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The reason I’ve heard repeated for not having a hierarchy:
-    &lt;ul&gt;
-      &lt;li&gt;It promotes unexpected connections b/w notes&lt;/li&gt;
-      &lt;li&gt;A note isn’t tied to a single category. It can live in multiple places&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Is that a good enough reason to let go of the organization benefits of a hierarchical structure though?
-    &lt;ul&gt;
-      &lt;li&gt;It’s much easier to break down browsing notes to find connections if you can “save your place” in your notes. I can look through the notes in 5 folders today, and go through the 5 others later.&lt;/li&gt;
-      &lt;li&gt;Notes about the same thing fit differently in different categories. I can take 1 idea and have it fit differently in my notes on parenting and in my notes on productivity. It’s easy to copy and link notes together with our digital systems. I can even symlink the same note to multiple places in the hierarchy.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Zettelkasten also has index notes. Folders essentially serve the same purpose.&lt;/li&gt;
-  &lt;li&gt;Questions I have
-    &lt;ul&gt;
-      &lt;li&gt;Did Luhmann succeed because of his slip box, or in spite of it? Are there other examples of successful writers using such a system?&lt;/li&gt;
-      &lt;li&gt;Are slip boxes supposed (who decides?) to hold notes on disparate topics?&lt;/li&gt;
-      &lt;li&gt;How do people with large slip boxes navigate? Do they use index cards? If so, can I use folders to serve the same purpose as well as reduce the mental load of browsing through my knowledge base?
-        &lt;ul&gt;
-          &lt;li&gt;How did Luhmann manage his slip box with 90K notes? I can’t imagine he went through all 90K notes every time he added a new one.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;I imagine most courses around “building a 2nd brain” or “cultivating your knowledge garden” answer this question. I haven’t taken any yet, but I plan to. That knowledge might change my perspective on this.&lt;/li&gt;
-  &lt;li&gt;Roam/Logseq vs. Obsidian
-    &lt;ul&gt;
-      &lt;li&gt;Logseq is very structured. Everything is a bullet point. This provides a number of benefits to me.
-        &lt;ul&gt;
-          &lt;li&gt;Writing is much easier. With a forced structure in place, I can think in outlines and short paragraphs, without getting into the weed of how to structure my writing.&lt;/li&gt;
-          &lt;li&gt;If every thing is a block, I can easily reference other blocks inline with my writing.&lt;/li&gt;
-          &lt;li&gt;I can write queries that show me subsets of my blocks. For example I have a query to show me all notes with a “status:: incomplete” tag on my dashboard.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;The feature I like most about Logseq is the daily journal. I can write everything there and have it show up in different places. I was attracted to Roam due to this as well.
-        &lt;ul&gt;
-          &lt;li&gt;It’s great for gathering data and thinking, but didn’t work out for me when consolidating and keeping long term.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Obsidian offers free form writing. It’s not as great to think in, but I feel that it offers a better experience once the thinking is done and I’m writing the final artifact.&lt;/li&gt;
-      &lt;li&gt;Artifacts can be permanent notes, but also blog posts and other long form pieces.&lt;/li&gt;
-      &lt;li&gt;Here’s what I’m thinking of adapting
-        &lt;ul&gt;
-          &lt;li&gt;Temporary notes go in Logseq. These are fleeting notes, literature notes, my daily journals with todo items.&lt;/li&gt;
-          &lt;li&gt;Once I’ve gathered data and thought about it in Logseq, the final artifacts go into Obsidian, where they are neatly categorized in folders for easy browsing. I can then link b/w notes in Obsidian as well, using the folder hierarchy to easy searching.&lt;/li&gt;
-          &lt;li&gt;Because doing the same thing that I did in Roam again in Logseq isn’t useful. I’ll end up repeating the same situation where I get to a few 100 notes and then declare bankruptcy.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">I had a bunch of thoughts yesterday about the Zettelkasten method and how I could use it effectively to manage my knowledge base. I started the day by dumping my thoughts into Logseq. Here they are.</summary></entry></feed>
+&lt;p&gt;The actual loading of the files is left to the Asset Pipeline. Which is why you can use the import map tag in your HTML file, while still using the //= require jquery directives in your JS files. The Asset Pipeline also provides the fingerprinting that you see in the filenames above.&lt;/p&gt;</content><author><name></name></author><summary type="html">If you have a brand new RoR 7 project that you created with the defaults by running rails new &amp;lt;PROJECT&amp;gt; then you can safely follow the following steps to get Bootstrap 5 installed in your project.</summary></entry></feed>
