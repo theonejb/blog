@@ -1,13 +1,13 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.3"
+gem "jekyll"
 
-gem "minima", "~> 2.5"
+gem "minima"
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-feed"
 end
 
-gem "kramdown-syntax-coderay", "~> 1.0"
+gem "kramdown-syntax-coderay"
 
-gem "jekyll-redirect-from", "~> 0.16.0"
+gem "jekyll-redirect-from"

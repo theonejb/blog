@@ -1,702 +1,702 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.asadjb.com/" rel="alternate" type="text/html" /><updated>2024-11-11T22:47:17+04:00</updated><id>https://www.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">Project 2: Gift cards to Pakistan</title><link href="https://www.asadjb.com/blog/2024-11-11-project-2-gift-cards-to-pakistan" rel="alternate" type="text/html" title="Project 2: Gift cards to Pakistan" /><published>2024-11-11T00:00:00+04:00</published><updated>2024-11-11T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/project-2-gift-cards-to-pakistan</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-11-11-project-2-gift-cards-to-pakistan">&lt;p&gt;I’ve completed a freelance project I was working on for a few months, and have started saying no to new opportunities. &lt;em&gt;It’s time to work on one of my own ideas again.&lt;/em&gt; This is part of my plan to &lt;a href=&quot;/blog/2023-12-31-i-have-not-failed-enough&quot;&gt;start failing more&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://www.asadjb.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.asadjb.com/" rel="alternate" type="text/html" /><updated>2025-07-07T03:40:31+04:00</updated><id>https://www.asadjb.com/feed.xml</id><title type="html">Jibran’s Perspective</title><subtitle>A collection of my thoughts and stuff.</subtitle><entry><title type="html">Project 2: Gift cards to Pakistan</title><link href="https://www.asadjb.com/blog/2024-11-11-project-2-gift-cards-to-pakistan" rel="alternate" type="text/html" title="Project 2: Gift cards to Pakistan" /><published>2024-11-11T00:00:00+04:00</published><updated>2024-11-11T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/project-2-gift-cards-to-pakistan</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-11-11-project-2-gift-cards-to-pakistan"><![CDATA[<p>I’ve completed a freelance project I was working on for a few months, and have started saying no to new opportunities. <em>It’s time to work on one of my own ideas again.</em> This is part of my plan to <a href="/blog/2023-12-31-i-have-not-failed-enough">start failing more</a>.</p>
 
-&lt;p&gt;I’ve decided to build a business sending gift cards to Pakistan - and eventually other countries in that corner of the world.&lt;/p&gt;
+<p>I’ve decided to build a business sending gift cards to Pakistan - and eventually other countries in that corner of the world.</p>
 
-&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
-&lt;p&gt;A few years ago I had sent a gift card to a colleague in the UK. I found a number of very good options. They all had websites that inspired confidence, and used robust payment methods (Stripe in my example) that I could trust with my credit card.&lt;/p&gt;
+<h2 id="why">Why?</h2>
+<p>A few years ago I had sent a gift card to a colleague in the UK. I found a number of very good options. They all had websites that inspired confidence, and used robust payment methods (Stripe in my example) that I could trust with my credit card.</p>
 
-&lt;p&gt;I recently had to send a gift card to a colleague in Pakistan. I was confident that I would find a bunch of great options; instead I only &lt;a href=&quot;https://www.giftkarte.com/&quot; target=&quot;_new&quot;&gt;found one&lt;/a&gt; that I could think of trusting with my money.&lt;/p&gt;
+<p>I recently had to send a gift card to a colleague in Pakistan. I was confident that I would find a bunch of great options; instead I only <a href="https://www.giftkarte.com/" target="_new">found one</a> that I could think of trusting with my money.</p>
 
-&lt;p&gt;I ended up using their services and the card was delivered, but there were a number of problems I saw:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;No trust building around card payments. There was no clear mention of which provider they used. I did a bank transfer instead of using a CC. This meant my payment was manually verified and the card was only sent after a few hours.&lt;/li&gt;
-  &lt;li&gt;There was no confirmation email about my order. I was worried enough to call their helpline to confirm that my order had gone through.&lt;/li&gt;
-  &lt;li&gt;Once they had sent the card (which I also had to confirm via phone), I only got a confirmation email the next day.&lt;/li&gt;
-  &lt;li&gt;To get an invoice to expense this, I had to send them an email. I’m still waiting on an invoice.&lt;/li&gt;
-  &lt;li&gt;There were multiple colleagues who chipped in on this gift card. I had to collect the money from them and then pay for the card myself. In my previous experience of sending a gift card to the UK, I was able to include my colleagues in the process. They were able to add their contributions directly to the gift card I selected and a card of the total amount was sent to the recipient.&lt;/li&gt;
-  &lt;li&gt;Finally, there was no option for the receiver to choose which gift card they wanted. Instead I had to choose for them. There is a “Universal Gift Card” they claim works at all merchants and is the one I got, but redeeming that would be slightly more complicated.&lt;/li&gt;
-&lt;/ul&gt;
+<p>I ended up using their services and the card was delivered, but there were a number of problems I saw:</p>
+<ul>
+  <li>No trust building around card payments. There was no clear mention of which provider they used. I did a bank transfer instead of using a CC. This meant my payment was manually verified and the card was only sent after a few hours.</li>
+  <li>There was no confirmation email about my order. I was worried enough to call their helpline to confirm that my order had gone through.</li>
+  <li>Once they had sent the card (which I also had to confirm via phone), I only got a confirmation email the next day.</li>
+  <li>To get an invoice to expense this, I had to send them an email. I’m still waiting on an invoice.</li>
+  <li>There were multiple colleagues who chipped in on this gift card. I had to collect the money from them and then pay for the card myself. In my previous experience of sending a gift card to the UK, I was able to include my colleagues in the process. They were able to add their contributions directly to the gift card I selected and a card of the total amount was sent to the recipient.</li>
+  <li>Finally, there was no option for the receiver to choose which gift card they wanted. Instead I had to choose for them. There is a “Universal Gift Card” they claim works at all merchants and is the one I got, but redeeming that would be slightly more complicated.</li>
+</ul>
 
-&lt;p&gt;Interestingly, my colleague didn’t open the email they received with the gift card because they thought it was a spam/scam/malicious email. Only after I asked if they had received the card did they end up opening it.&lt;/p&gt;
+<p>Interestingly, my colleague didn’t open the email they received with the gift card because they thought it was a spam/scam/malicious email. Only after I asked if they had received the card did they end up opening it.</p>
 
-&lt;p&gt;I know a better user experience exists. I want to bring the same to Pakistan and solve my own problem at the same time.&lt;/p&gt;
+<p>I know a better user experience exists. I want to bring the same to Pakistan and solve my own problem at the same time.</p>
 
-&lt;p&gt;Is there a market for this? I believe so, because:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;It’s a problem I’ve just faced.&lt;/li&gt;
-  &lt;li&gt;I’ve seen my wife having to deal with low-trust companies sending gifts to Pakistan. Gift cards are different, but eventually I could also add the option to send physical gifts to the recipient.&lt;/li&gt;
-  &lt;li&gt;I’ve seen my employer deal with this. Recently a baby gift basket arrived 2 months after the baby was born. 🤯&lt;/li&gt;
-  &lt;li&gt;This is a recurring problem. People &amp;amp; companies need to send gift cards on birthdays, weddings, etc.&lt;/li&gt;
-  &lt;li&gt;With more companies starting to hire remotely in Pakistan, this could be a valuable service for businesses to subscribe to.&lt;/li&gt;
-&lt;/ul&gt;
+<p>Is there a market for this? I believe so, because:</p>
+<ul>
+  <li>It’s a problem I’ve just faced.</li>
+  <li>I’ve seen my wife having to deal with low-trust companies sending gifts to Pakistan. Gift cards are different, but eventually I could also add the option to send physical gifts to the recipient.</li>
+  <li>I’ve seen my employer deal with this. Recently a baby gift basket arrived 2 months after the baby was born. 🤯</li>
+  <li>This is a recurring problem. People &amp; companies need to send gift cards on birthdays, weddings, etc.</li>
+  <li>With more companies starting to hire remotely in Pakistan, this could be a valuable service for businesses to subscribe to.</li>
+</ul>
 
-&lt;h2 id=&quot;validation&quot;&gt;Validation?&lt;/h2&gt;
-&lt;p&gt;I haven’t found an easy way to validate this idea. There is no community of “people sending gift cards to Pakistan” that I can tap into. That isn’t a cohort I can find in one place.&lt;/p&gt;
+<h2 id="validation">Validation?</h2>
+<p>I haven’t found an easy way to validate this idea. There is no community of “people sending gift cards to Pakistan” that I can tap into. That isn’t a cohort I can find in one place.</p>
 
-&lt;p&gt;I could make a list of B2B customers; companies that hire remotely in Pakistan.&lt;/p&gt;
+<p>I could make a list of B2B customers; companies that hire remotely in Pakistan.</p>
 
-&lt;p&gt;However, I want to start with individual customers - because I’m starting from a place of solving my own problem. It should be possible to pivot to B2B if I don’t find any interest from individual customers.&lt;/p&gt;
+<p>However, I want to start with individual customers - because I’m starting from a place of solving my own problem. It should be possible to pivot to B2B if I don’t find any interest from individual customers.</p>
 
-&lt;p&gt;Validation then involves me starting with a blog - suggesting gift cards to send to Pakistan. I’ll use SEO to bring in traffic. If I see enough visitors, I could start building a business. This also means that if/when the actual product launches, I’ll have a distribution channel already working.&lt;/p&gt;
+<p>Validation then involves me starting with a blog - suggesting gift cards to send to Pakistan. I’ll use SEO to bring in traffic. If I see enough visitors, I could start building a business. This also means that if/when the actual product launches, I’ll have a distribution channel already working.</p>
 
-&lt;h2 id=&quot;what-if-im-wrong&quot;&gt;What if I’m wrong?&lt;/h2&gt;
-&lt;p&gt;There’s a &lt;strong&gt;very strong&lt;/strong&gt; possibility that I’m wrong about this idea. That I’ll spend a bunch of time for it to get nowhere, or that I have picked a problem that isn’t very valuable to solve.&lt;/p&gt;
+<h2 id="what-if-im-wrong">What if I’m wrong?</h2>
+<p>There’s a <strong>very strong</strong> possibility that I’m wrong about this idea. That I’ll spend a bunch of time for it to get nowhere, or that I have picked a problem that isn’t very valuable to solve.</p>
 
-&lt;p&gt;This is my unique brand of fear of failure. I used to think I didn’t fear failing, because I had already failed many times. Instead, my fear of failure manifests as a fear of picking the wrong thing and wasting time on it. The way I am dealing with this is to realize that if I don’t pick anything - which I have frequently done in the past - I have an &lt;strong&gt;exactly&lt;/strong&gt; 0% chance of succeeding. Just trying something makes that probability &amp;gt; 0%.&lt;/p&gt;
+<p>This is my unique brand of fear of failure. I used to think I didn’t fear failing, because I had already failed many times. Instead, my fear of failure manifests as a fear of picking the wrong thing and wasting time on it. The way I am dealing with this is to realize that if I don’t pick anything - which I have frequently done in the past - I have an <strong>exactly</strong> 0% chance of succeeding. Just trying something makes that probability &gt; 0%.</p>
 
-&lt;blockquote&gt;
-  &lt;p&gt;You miss 100% of the shots you don’t take.&lt;/p&gt;
-&lt;/blockquote&gt;
+<blockquote>
+  <p>You miss 100% of the shots you don’t take.</p>
+</blockquote>
 
-&lt;p&gt;Another thing that’s helping me is to time box this idea. I will spend 6 weeks on building the blog and populating it with as much useful content as possible. After that I can spend an hour or two every week to add a few more pieces of content. I can start researching and working on a different idea after the 6 week period and wait for the SEO to have an impact before making a decision to continue or abandon this.&lt;/p&gt;</content><author><name></name></author><summary type="html">I’ve completed a freelance project I was working on for a few months, and have started saying no to new opportunities. It’s time to work on one of my own ideas again. This is part of my plan to start failing more.</summary></entry><entry><title type="html">Deploying Ruby on Rails to AWS with Kamal</title><link href="https://www.asadjb.com/blog/2024-06-22-deploying-ruby-on-rails-to-aws-with-kamal" rel="alternate" type="text/html" title="Deploying Ruby on Rails to AWS with Kamal" /><published>2024-06-22T00:00:00+04:00</published><updated>2024-06-22T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/deploying-ruby-on-rails-to-aws-with-kamal</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-06-22-deploying-ruby-on-rails-to-aws-with-kamal">&lt;p&gt;As part of a contracting project, I’ve been building an analytics dashboard for a feedback collection SaaS. The app is built in Ruby on Rails and given all the nice things I’ve heard about &lt;a href=&quot;https://kamal-deploy.org/&quot;&gt;Kamal&lt;/a&gt;; I decided to use it for deploying the app.&lt;/p&gt;
+<p>Another thing that’s helping me is to time box this idea. I will spend 6 weeks on building the blog and populating it with as much useful content as possible. After that I can spend an hour or two every week to add a few more pieces of content. I can start researching and working on a different idea after the 6 week period and wait for the SEO to have an impact before making a decision to continue or abandon this.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I’ve completed a freelance project I was working on for a few months, and have started saying no to new opportunities. It’s time to work on one of my own ideas again. This is part of my plan to start failing more.]]></summary></entry><entry><title type="html">Deploying Ruby on Rails to AWS with Kamal</title><link href="https://www.asadjb.com/blog/2024-06-22-deploying-ruby-on-rails-to-aws-with-kamal" rel="alternate" type="text/html" title="Deploying Ruby on Rails to AWS with Kamal" /><published>2024-06-22T00:00:00+04:00</published><updated>2024-06-22T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/deploying-ruby-on-rails-to-aws-with-kamal</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-06-22-deploying-ruby-on-rails-to-aws-with-kamal"><![CDATA[<p>As part of a contracting project, I’ve been building an analytics dashboard for a feedback collection SaaS. The app is built in Ruby on Rails and given all the nice things I’ve heard about <a href="https://kamal-deploy.org/">Kamal</a>; I decided to use it for deploying the app.</p>
 
-&lt;p&gt;The experience has been phenomenal; outside of some frustration with the initial deployment.&lt;/p&gt;
+<p>The experience has been phenomenal; outside of some frustration with the initial deployment.</p>
 
-&lt;p&gt;The app is deployed on a pretty standard AWS setup; a couple of EC2 servers hosting the web app running inside Docker containers, and a load balancer in front.&lt;/p&gt;
+<p>The app is deployed on a pretty standard AWS setup; a couple of EC2 servers hosting the web app running inside Docker containers, and a load balancer in front.</p>
 
-&lt;p&gt;One of the problems I faced during the initial deployment was forwarding headers from the AWS application load balancer to the RoR server running in the Docker container.&lt;/p&gt;
+<p>One of the problems I faced during the initial deployment was forwarding headers from the AWS application load balancer to the RoR server running in the Docker container.</p>
 
-&lt;p&gt;The challenge with Kamal is that it relies heavily on &lt;a href=&quot;https://traefik.io/traefik/&quot;&gt;Traefik&lt;/a&gt;, and while Traefik is a great tool, it takes some getting used to. It’s configuration is not very intuitive, and there’s no easy way to see how things are configured outside of looking at the text logs.&lt;/p&gt;
+<p>The challenge with Kamal is that it relies heavily on <a href="https://traefik.io/traefik/">Traefik</a>, and while Traefik is a great tool, it takes some getting used to. It’s configuration is not very intuitive, and there’s no easy way to see how things are configured outside of looking at the text logs.</p>
 
-&lt;p&gt;The Traefik document is pretty thorough, so a bit of searching led me to this CLI argument which needs to be passed to the Traefik container:&lt;/p&gt;
+<p>The Traefik document is pretty thorough, so a bit of searching led me to this CLI argument which needs to be passed to the Traefik container:</p>
 
-&lt;p&gt;&lt;code&gt;entrypoints.http.forwardedheaders.insecure: true&lt;/code&gt;&lt;/p&gt;
+<p><code>entrypoints.http.forwardedheaders.insecure: true</code></p>
 
-&lt;p&gt;However, no matter what I tried, when I added this, the app container would stop responding to web requests. Without the config the container would work but throw an exception related to the &lt;code&gt;Origin&lt;/code&gt; header not matching the configured hosts.&lt;/p&gt;
+<p>However, no matter what I tried, when I added this, the app container would stop responding to web requests. Without the config the container would work but throw an exception related to the <code>Origin</code> header not matching the configured hosts.</p>
 
-&lt;p&gt;After a lot of experimentation, I stumbled upon the other config I needed to add by pure luck.&lt;/p&gt;
+<p>After a lot of experimentation, I stumbled upon the other config I needed to add by pure luck.</p>
 
-&lt;p&gt;&lt;code&gt;entrypoints.http.address: &quot;:80&quot;&lt;/code&gt;&lt;/p&gt;
+<p><code>entrypoints.http.address: ":80"</code></p>
 
-&lt;p&gt;As far as I can tell, when I added the &lt;code&gt;forwardedheaders&lt;/code&gt; config, the entrypoint no longer got the correct &lt;code&gt;address&lt;/code&gt; configuration. I’m not sure if this is related to Kamal or Traefik.&lt;/p&gt;
+<p>As far as I can tell, when I added the <code>forwardedheaders</code> config, the entrypoint no longer got the correct <code>address</code> configuration. I’m not sure if this is related to Kamal or Traefik.</p>
 
-&lt;h2 id=&quot;kamal-deployyml&quot;&gt;Kamal &lt;code&gt;deploy.yml&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;If you’re looking to replicate a similar setup, here’s the Kamal &lt;code&gt;deploy.yml&lt;/code&gt; file that I am using with this project to deploy to AWS, with a load balancer terminating the SSL connection and forwarding traffic to web servers that are configured via Kamal. As a bonus, this config also deploys &lt;a href=&quot;https://sidekiq.org/&quot;&gt;Sidekiq&lt;/a&gt; for background tasks.&lt;/p&gt;
+<h2 id="kamal-deployyml">Kamal <code>deploy.yml</code></h2>
+<p>If you’re looking to replicate a similar setup, here’s the Kamal <code>deploy.yml</code> file that I am using with this project to deploy to AWS, with a load balancer terminating the SSL connection and forwarding traffic to web servers that are configured via Kamal. As a bonus, this config also deploys <a href="https://sidekiq.org/">Sidekiq</a> for background tasks.</p>
 
-&lt;div class=&quot;language-yaml highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#606&quot;&gt;service&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;lt;SERVICE NAME&amp;gt;&lt;/span&gt;&lt;/span&gt;
+<div class="language-yaml highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#606">service</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">&lt;SERVICE NAME&gt;</span></span>
 
-&lt;span style=&quot;color:#606&quot;&gt;image&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;lt;IMAGE NAME&amp;gt;&lt;/span&gt;&lt;/span&gt;
+<span style="color:#606">image</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">&lt;IMAGE NAME&gt;</span></span>
 
-&lt;span style=&quot;color:#606&quot;&gt;ssh&lt;/span&gt;:
-  &lt;span style=&quot;color:#606&quot;&gt;user&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;ubuntu&lt;/span&gt;&lt;/span&gt;
-  &lt;span style=&quot;color:#606&quot;&gt;proxy&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;ubuntu@A.B.C.D&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+<span style="color:#606">ssh</span>:
+  <span style="color:#606">user</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">ubuntu</span></span>
+  <span style="color:#606">proxy</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">ubuntu@A.B.C.D</span><span style="color:#710">&quot;</span></span>
 
-&lt;span style=&quot;color:#606&quot;&gt;servers&lt;/span&gt;:
-  &lt;span style=&quot;color:#606&quot;&gt;web&lt;/span&gt;:
-    &lt;span style=&quot;color:#606&quot;&gt;hosts&lt;/span&gt;:
-      - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;A.B.C.D&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
-      - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;A.B.C.D&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
-    &lt;span style=&quot;color:#606&quot;&gt;labels&lt;/span&gt;:
-      &lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;traefik.http.routers.&amp;lt;SERVICE NAME&amp;gt;-web.rule: Host(`&amp;lt;YOUR HOST NAME&amp;gt;`)&lt;/span&gt;
-  &lt;span style=&quot;color:#606&quot;&gt;sidekiq&lt;/span&gt;:
-    &lt;span style=&quot;color:#606&quot;&gt;hosts&lt;/span&gt;:
-      - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;A.B.C.D&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
-      - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;A.B.C.D&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
-    &lt;span style=&quot;color:#606&quot;&gt;traefik&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;false&lt;/span&gt;&lt;/span&gt;
-    &lt;span style=&quot;color:#606&quot;&gt;cmd&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;bundle exec sidekiq&lt;/span&gt;&lt;/span&gt;
+<span style="color:#606">servers</span>:
+  <span style="color:#606">web</span>:
+    <span style="color:#606">hosts</span>:
+      - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">A.B.C.D</span><span style="color:#710">&quot;</span></span>
+      - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">A.B.C.D</span><span style="color:#710">&quot;</span></span>
+    <span style="color:#606">labels</span>:
+      <span style="color:#F00;background-color:#FAA">traefik.http.routers.&lt;SERVICE NAME&gt;-web.rule: Host(`&lt;YOUR HOST NAME&gt;`)</span>
+  <span style="color:#606">sidekiq</span>:
+    <span style="color:#606">hosts</span>:
+      - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">A.B.C.D</span><span style="color:#710">&quot;</span></span>
+      - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">A.B.C.D</span><span style="color:#710">&quot;</span></span>
+    <span style="color:#606">traefik</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">false</span></span>
+    <span style="color:#606">cmd</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">bundle exec sidekiq</span></span>
 
 
-&lt;span style=&quot;color:#606&quot;&gt;registry&lt;/span&gt;:
-  &lt;span style=&quot;color:#606&quot;&gt;server&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;lt;AWS ACCOUNT ID&amp;gt;.dkr.ecr.&amp;lt;AWS REGION&amp;gt;.amazonaws.com&lt;/span&gt;&lt;/span&gt;
-  &lt;span style=&quot;color:#606&quot;&gt;username&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;AWS&lt;/span&gt;&lt;/span&gt;
-  &lt;span style=&quot;color:#606&quot;&gt;password&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;&amp;lt;%= %x(aws ecr get-login-password --region &amp;lt;AWS REGION&amp;gt;) %&amp;gt;&lt;/span&gt;&lt;/span&gt;
+<span style="color:#606">registry</span>:
+  <span style="color:#606">server</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">&lt;AWS ACCOUNT ID&gt;.dkr.ecr.&lt;AWS REGION&gt;.amazonaws.com</span></span>
+  <span style="color:#606">username</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">AWS</span></span>
+  <span style="color:#606">password</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">&lt;%= %x(aws ecr get-login-password --region &lt;AWS REGION&gt;) %&gt;</span></span>
 
-&lt;span style=&quot;color:#606&quot;&gt;builder&lt;/span&gt;:
-  &lt;span style=&quot;color:#606&quot;&gt;local&lt;/span&gt;:
-    &lt;span style=&quot;color:#606&quot;&gt;arch&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;amd64&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#777&quot;&gt;# Because I develop on a Apple Silicon machine, I need to use a build target&lt;/span&gt;
+<span style="color:#606">builder</span>:
+  <span style="color:#606">local</span>:
+    <span style="color:#606">arch</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">amd64</span></span> <span style="color:#777"># Because I develop on a Apple Silicon machine, I need to use a build target</span>
 
-&lt;span style=&quot;color:#606&quot;&gt;env&lt;/span&gt;:
-  &lt;span style=&quot;color:#606&quot;&gt;clear&lt;/span&gt;:
-    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;DATABASE_URL: &amp;lt;DATABASE URL&amp;gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span style=&quot;color:#606&quot;&gt;secret&lt;/span&gt;:
-    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;RAILS_MASTER_KEY&lt;/span&gt;&lt;/span&gt;
-    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;DB_PASSWORD&lt;/span&gt;&lt;/span&gt;
+<span style="color:#606">env</span>:
+  <span style="color:#606">clear</span>:
+    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">DATABASE_URL: &lt;DATABASE URL&gt;</span></span>
+  <span style="color:#606">secret</span>:
+    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">RAILS_MASTER_KEY</span></span>
+    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">DB_PASSWORD</span></span>
 
-&lt;span style=&quot;color:#606&quot;&gt;traefik&lt;/span&gt;:
- &lt;span style=&quot;color:#606&quot;&gt;args&lt;/span&gt;:
-   &lt;span style=&quot;color:#606&quot;&gt;entrypoints.http.address&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;:80&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
-   &lt;span style=&quot;color:#606&quot;&gt;entrypoints.http.forwardedheaders.insecure&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;true&lt;/span&gt;&lt;/span&gt;
-   &lt;span style=&quot;color:#606&quot;&gt;log.level&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;DEBUG&lt;/span&gt;&lt;/span&gt;
-   &lt;span style=&quot;color:#606&quot;&gt;accesslog&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;true&lt;/span&gt;&lt;/span&gt;
-   &lt;span style=&quot;color:#606&quot;&gt;accesslog.format&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;json&lt;/span&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">As part of a contracting project, I’ve been building an analytics dashboard for a feedback collection SaaS. The app is built in Ruby on Rails and given all the nice things I’ve heard about Kamal; I decided to use it for deploying the app.</summary></entry><entry><title type="html">Failure 1: Django + NextJS Boilerplate</title><link href="https://www.asadjb.com/blog/2024-06-16-failure-1" rel="alternate" type="text/html" title="Failure 1: Django + NextJS Boilerplate" /><published>2024-06-16T00:00:00+04:00</published><updated>2024-06-16T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/failure-1</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-06-16-failure-1">&lt;p&gt;I have failed, and that is exactly what I had hoped for a few months ago in &lt;a href=&quot;/blog/2023-12-31-i-have-not-failed-enough&quot;&gt;this blog post&lt;/a&gt;.&lt;/p&gt;
+<span style="color:#606">traefik</span>:
+ <span style="color:#606">args</span>:
+   <span style="color:#606">entrypoints.http.address</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">:80</span><span style="color:#710">&quot;</span></span>
+   <span style="color:#606">entrypoints.http.forwardedheaders.insecure</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">true</span></span>
+   <span style="color:#606">log.level</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">DEBUG</span></span>
+   <span style="color:#606">accesslog</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">true</span></span>
+   <span style="color:#606">accesslog.format</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">json</span></span>
+</pre></div>
+</div>
+</div>]]></content><author><name></name></author><summary type="html"><![CDATA[As part of a contracting project, I’ve been building an analytics dashboard for a feedback collection SaaS. The app is built in Ruby on Rails and given all the nice things I’ve heard about Kamal; I decided to use it for deploying the app.]]></summary></entry><entry><title type="html">Failure 1: Django + NextJS Boilerplate</title><link href="https://www.asadjb.com/blog/2024-06-16-failure-1" rel="alternate" type="text/html" title="Failure 1: Django + NextJS Boilerplate" /><published>2024-06-16T00:00:00+04:00</published><updated>2024-06-16T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/failure-1</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-06-16-failure-1"><![CDATA[<p>I have failed, and that is exactly what I had hoped for a few months ago in <a href="/blog/2023-12-31-i-have-not-failed-enough">this blog post</a>.</p>
 
-&lt;p&gt;This is a good failure. It has taught me things, lessons I can use in the future to avoid failing this way again.&lt;/p&gt;
+<p>This is a good failure. It has taught me things, lessons I can use in the future to avoid failing this way again.</p>
 
-&lt;p&gt;But first a bit of context. What did I fail at?&lt;/p&gt;
+<p>But first a bit of context. What did I fail at?</p>
 
-&lt;hr /&gt;
+<hr />
 
-&lt;p&gt;In February of 2024 I decide to try my hands on my first “Indie Hacker” hustle, something that would make me money on the internet without having to trade my time for it. A product instead of consultancy services that I usually provide.&lt;/p&gt;
+<p>In February of 2024 I decide to try my hands on my first “Indie Hacker” hustle, something that would make me money on the internet without having to trade my time for it. A product instead of consultancy services that I usually provide.</p>
 
-&lt;p&gt;I had seen a number of people on Twitter (X) rave about how well their bootstrap templates were doing; and I had just gotten out of a consultancy project where I needed to connect a Next.js frontend to a Django backend. I thought it was the perfect project to start my indie hacking journey.&lt;/p&gt;
+<p>I had seen a number of people on Twitter (X) rave about how well their bootstrap templates were doing; and I had just gotten out of a consultancy project where I needed to connect a Next.js frontend to a Django backend. I thought it was the perfect project to start my indie hacking journey.</p>
 
-&lt;p&gt;I put up a &lt;a href=&quot;/blog/2024-02-15-project-1-django-nextjs-boilerplate&quot;&gt;launch post&lt;/a&gt; and started working, updating a &lt;a href=&quot;/build_logs/project-1&quot;&gt;build log&lt;/a&gt; as I went along.&lt;/p&gt;
+<p>I put up a <a href="/blog/2024-02-15-project-1-django-nextjs-boilerplate">launch post</a> and started working, updating a <a href="/build_logs/project-1">build log</a> as I went along.</p>
 
-&lt;p&gt;I gave myself until 28th March 2024 to finish it. That of course did not happen.&lt;/p&gt;
+<p>I gave myself until 28th March 2024 to finish it. That of course did not happen.</p>
 
-&lt;p&gt;Let’s talk about why I failed and what I learned.&lt;/p&gt;
+<p>Let’s talk about why I failed and what I learned.</p>
 
-&lt;hr /&gt;
+<hr />
 
-&lt;h2 id=&quot;episode-1-the-one-where-i-dont-understand-the-meaning-of-mvp&quot;&gt;Episode 1: The one where I don’t understand the meaning of MVP&lt;/h2&gt;
+<h2 id="episode-1-the-one-where-i-dont-understand-the-meaning-of-mvp">Episode 1: The one where I don’t understand the meaning of MVP</h2>
 
-&lt;p&gt;My initial plan was to build a Django+Next.js boilerplate template the provided all of these:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;the base template that provided a Django backend &amp;amp; Next.js frontend&lt;/li&gt;
-  &lt;li&gt;working authentication b/w the backend &amp;amp; frontend&lt;/li&gt;
-  &lt;li&gt;Dockerfile that would create the backend &amp;amp; frontend containers for deployment&lt;/li&gt;
-  &lt;li&gt;Terraform scripts to setup an infrastructure on AWS&lt;/li&gt;
-  &lt;li&gt;Celery + Redis for background task processing&lt;/li&gt;
-  &lt;li&gt;TailwindCSS for the frontend (comes mostly for free with Next.js)&lt;/li&gt;
-  &lt;li&gt;social auth&lt;/li&gt;
-&lt;/ul&gt;
+<p>My initial plan was to build a Django+Next.js boilerplate template the provided all of these:</p>
+<ul>
+  <li>the base template that provided a Django backend &amp; Next.js frontend</li>
+  <li>working authentication b/w the backend &amp; frontend</li>
+  <li>Dockerfile that would create the backend &amp; frontend containers for deployment</li>
+  <li>Terraform scripts to setup an infrastructure on AWS</li>
+  <li>Celery + Redis for background task processing</li>
+  <li>TailwindCSS for the frontend (comes mostly for free with Next.js)</li>
+  <li>social auth</li>
+</ul>
 
-&lt;p&gt;This looks like something achievable in a week or two of work - but only if you’re working full time on this. I failed to consider that I have a day job and a life. I was barely able to tick of the first two of these deliverables by the time my 6 week deadline came up.&lt;/p&gt;
+<p>This looks like something achievable in a week or two of work - but only if you’re working full time on this. I failed to consider that I have a day job and a life. I was barely able to tick of the first two of these deliverables by the time my 6 week deadline came up.</p>
 
-&lt;p&gt;As a good friend told me later, I should have focused on the minimum amount of value I could deliver. Just having the first two things on my list be done would have been enough. I couldn’t charge the $20 I had planned for, but I could have charged $1-$5 for just that.&lt;/p&gt;
+<p>As a good friend told me later, I should have focused on the minimum amount of value I could deliver. Just having the first two things on my list be done would have been enough. I couldn’t charge the $20 I had planned for, but I could have charged $1-$5 for just that.</p>
 
-&lt;p&gt;And if no one was interested in spending the cost of a coffee on the MVP of the template, that would have been a good signal that this wasn’t going anywhere in it’s current shape.&lt;/p&gt;
+<p>And if no one was interested in spending the cost of a coffee on the MVP of the template, that would have been a good signal that this wasn’t going anywhere in it’s current shape.</p>
 
-&lt;p&gt;Instead, by focusing on building something much bigger, I robbed myself of the ability to validate the idea quickly. I spent all my available time coding the template instead of trying to talk to potential customers about it.&lt;/p&gt;
+<p>Instead, by focusing on building something much bigger, I robbed myself of the ability to validate the idea quickly. I spent all my available time coding the template instead of trying to talk to potential customers about it.</p>
 
-&lt;p&gt;&lt;strong&gt;Lesson 1&lt;/strong&gt;: Scope down aggressively.&lt;/p&gt;
+<p><strong>Lesson 1</strong>: Scope down aggressively.</p>
 
-&lt;h2 id=&quot;episode-2-where-i-jumped-on-the-hype-wagon&quot;&gt;Episode 2: Where I jumped on the hype-wagon&lt;/h2&gt;
+<h2 id="episode-2-where-i-jumped-on-the-hype-wagon">Episode 2: Where I jumped on the hype-wagon</h2>
 
-&lt;p&gt;I settled on building a boilerplate template because that’s what I had seen a lot of people on Twitter/X doing lately; I’m chalking this down to recency bias.&lt;/p&gt;
+<p>I settled on building a boilerplate template because that’s what I had seen a lot of people on Twitter/X doing lately; I’m chalking this down to recency bias.</p>
 
-&lt;p&gt;I had no personal interest in a boilerplate template. It’s also not a product that I would personally use. I have so far made &lt;em&gt;one&lt;/em&gt; project that uses this tech stack. Most of my other projects are Django, and Ruby on Rails.&lt;/p&gt;
+<p>I had no personal interest in a boilerplate template. It’s also not a product that I would personally use. I have so far made <em>one</em> project that uses this tech stack. Most of my other projects are Django, and Ruby on Rails.</p>
 
-&lt;p&gt;The most successful boilerplate templates I come across are from people who made a bunch of projects in 1 tech stack then realized they needed to do the same thing over-and-over again; which they then packaged into a template they could use. Selling to others was a bonus at first I guess.&lt;/p&gt;
+<p>The most successful boilerplate templates I come across are from people who made a bunch of projects in 1 tech stack then realized they needed to do the same thing over-and-over again; which they then packaged into a template they could use. Selling to others was a bonus at first I guess.</p>
 
-&lt;p&gt;I was very enthusiastic about the project at the start, but as time went on I had to force myself to work on it. My lack of interest in this type of project was a big factor.&lt;/p&gt;
+<p>I was very enthusiastic about the project at the start, but as time went on I had to force myself to work on it. My lack of interest in this type of project was a big factor.</p>
 
-&lt;p&gt;Another factor was there being no way to see the fruits of my labor. I am currently working on an analytics dashboard for another client (a RoR project) and every time I build a feature, I love to play around with it in my free time. I test how it works, make sure the UX is a good one, and just play around and admire the app I’ve made.&lt;/p&gt;
+<p>Another factor was there being no way to see the fruits of my labor. I am currently working on an analytics dashboard for another client (a RoR project) and every time I build a feature, I love to play around with it in my free time. I test how it works, make sure the UX is a good one, and just play around and admire the app I’ve made.</p>
 
-&lt;p&gt;Without me using my template to build new projects, I lacked that feedback loop. Without the loop, I quickly lost interest.&lt;/p&gt;
+<p>Without me using my template to build new projects, I lacked that feedback loop. Without the loop, I quickly lost interest.</p>
 
-&lt;p&gt;&lt;strong&gt;Lesson 2&lt;/strong&gt;: Build something I can use myself. This isn’t a job I’m getting paid for, so the only motivation I have initially until it starts generating money is to build something interesting for myself.&lt;/p&gt;
+<p><strong>Lesson 2</strong>: Build something I can use myself. This isn’t a job I’m getting paid for, so the only motivation I have initially until it starts generating money is to build something interesting for myself.</p>
 
-&lt;h2 id=&quot;episode-3-where-i-had-nothing-for-potential-customers-to-play-around-with&quot;&gt;Episode 3: Where I had nothing for potential customers to play around with&lt;/h2&gt;
+<h2 id="episode-3-where-i-had-nothing-for-potential-customers-to-play-around-with">Episode 3: Where I had nothing for potential customers to play around with</h2>
 
-&lt;p&gt;This is related to the &lt;a href=&quot;#episode-1-the-one-where-i-dont-understand-the-meaning-of-mvp&quot;&gt;1st lesson&lt;/a&gt;. Because I didn’t have a path to quickly get something out there, there was no way for me to get my “product” into the hands of people who could test and provide feedback.&lt;/p&gt;
+<p>This is related to the <a href="#episode-1-the-one-where-i-dont-understand-the-meaning-of-mvp">1st lesson</a>. Because I didn’t have a path to quickly get something out there, there was no way for me to get my “product” into the hands of people who could test and provide feedback.</p>
 
-&lt;p&gt;I think the problem with a boilerplate template style of product is that you can’t give people a half-backed thing and ask them to test it. Unlike other SaaS apps, there’s no mid-way version of a template. Customers have to “buy-in” to use your template with any project they are starting. With SaaS, users can sign up and test, and then leave if they don’t like it. There’s no easy way of testing with a template.&lt;/p&gt;
+<p>I think the problem with a boilerplate template style of product is that you can’t give people a half-backed thing and ask them to test it. Unlike other SaaS apps, there’s no mid-way version of a template. Customers have to “buy-in” to use your template with any project they are starting. With SaaS, users can sign up and test, and then leave if they don’t like it. There’s no easy way of testing with a template.</p>
 
-&lt;p&gt;&lt;strong&gt;Lesson 3&lt;/strong&gt;: Build something that can be tested by potential customers easily. For now, I’m going to stick with SaaS style web apps.&lt;/p&gt;
+<p><strong>Lesson 3</strong>: Build something that can be tested by potential customers easily. For now, I’m going to stick with SaaS style web apps.</p>
 
-&lt;hr /&gt;
+<hr />
 
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+<h1 id="conclusion">Conclusion</h1>
 
-&lt;p&gt;Moving forward:&lt;/p&gt;
+<p>Moving forward:</p>
 
-&lt;ol&gt;
-  &lt;li&gt;I’ll be working on web app products that users can sign up for and test very quickly.&lt;/li&gt;
-  &lt;li&gt;My next few experiments/products will be things that I can use myself as well.&lt;/li&gt;
-&lt;/ol&gt;
+<ol>
+  <li>I’ll be working on web app products that users can sign up for and test very quickly.</li>
+  <li>My next few experiments/products will be things that I can use myself as well.</li>
+</ol>
 
-&lt;p&gt;I’ll post what I’m going to work on next when I decide and have some time away from my job &amp;amp; freelance projects that are currently in progress.&lt;/p&gt;</content><author><name></name></author><summary type="html">I have failed, and that is exactly what I had hoped for a few months ago in this blog post.</summary></entry><entry><title type="html">Cookie Based Auth for Django and NextJS</title><link href="https://www.asadjb.com/blog/2024-03-03-cookie-based-auth-for-django-and-nextjs" rel="alternate" type="text/html" title="Cookie Based Auth for Django and NextJS" /><published>2024-03-03T00:00:00+04:00</published><updated>2024-03-03T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/cookie-based-auth-for-django-and-nextjs</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-03-03-cookie-based-auth-for-django-and-nextjs">&lt;blockquote&gt;
-  &lt;p&gt;If you’re just looking for implementation instructions, skip my ramblings and go straight to the &lt;a href=&quot;#implementation&quot;&gt;code here&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+<p>I’ll post what I’m going to work on next when I decide and have some time away from my job &amp; freelance projects that are currently in progress.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I have failed, and that is exactly what I had hoped for a few months ago in this blog post.]]></summary></entry><entry><title type="html">Cookie Based Auth for Django and NextJS</title><link href="https://www.asadjb.com/blog/2024-03-03-cookie-based-auth-for-django-and-nextjs" rel="alternate" type="text/html" title="Cookie Based Auth for Django and NextJS" /><published>2024-03-03T00:00:00+04:00</published><updated>2024-03-03T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/cookie-based-auth-for-django-and-nextjs</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-03-03-cookie-based-auth-for-django-and-nextjs"><![CDATA[<blockquote>
+  <p>If you’re just looking for implementation instructions, skip my ramblings and go straight to the <a href="#implementation">code here</a>.</p>
+</blockquote>
 
-&lt;p&gt;I’m currently working on my &lt;a href=&quot;/blog/2024-02-15-project-1-django-nextjs-boilerplate&quot;&gt;first project&lt;/a&gt; after deciding that I needed to &lt;a href=&quot;/blog/2023-12-31-i-have-not-failed-enough&quot;&gt;fail more&lt;/a&gt; and practice finishing projects instead of abandoning them midway once they got “boring”.&lt;/p&gt;
+<p>I’m currently working on my <a href="/blog/2024-02-15-project-1-django-nextjs-boilerplate">first project</a> after deciding that I needed to <a href="/blog/2023-12-31-i-have-not-failed-enough">fail more</a> and practice finishing projects instead of abandoning them midway once they got “boring”.</p>
 
-&lt;p&gt;Anyways… This one is till in it’s interesting phase, so here’s a blog post with some things I learned yesterday while working on it.&lt;/p&gt;
+<p>Anyways… This one is till in it’s interesting phase, so here’s a blog post with some things I learned yesterday while working on it.</p>
 
-&lt;p&gt;The project is a &lt;a href=&quot;https://asadjb.gumroad.com/l/nextjs-django-template&quot;&gt;boilerplate template&lt;/a&gt; that should make it easy for devs. to start a new project with a Django backend and a Next.js frontend, something I had to struggle with recently.&lt;/p&gt;
+<p>The project is a <a href="https://asadjb.gumroad.com/l/nextjs-django-template">boilerplate template</a> that should make it easy for devs. to start a new project with a Django backend and a Next.js frontend, something I had to struggle with recently.</p>
 
-&lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
+<h2 id="the-problem">The problem</h2>
 
-&lt;p&gt;The first thing I’m looking to solve is authentication. That was my biggest challenge when working on the contracting project that inspired this template.&lt;/p&gt;
+<p>The first thing I’m looking to solve is authentication. That was my biggest challenge when working on the contracting project that inspired this template.</p>
 
-&lt;p&gt;While there are a number of good posts around how to setup authentication b/w Django &amp;amp; Next.js, nothing “definitive” came up and I had to cobble together a
+<p>While there are a number of good posts around how to setup authentication b/w Django &amp; Next.js, nothing “definitive” came up and I had to cobble together a
 weird mess of Django+DRF (Django Rest Framework) and Next.js+NextAuth, sharing
-a token from Django that was masquarading as a JWT token for Next.js. It wasn’t pretty and I knew I could do better.&lt;/p&gt;
+a token from Django that was masquarading as a JWT token for Next.js. It wasn’t pretty and I knew I could do better.</p>
 
-&lt;h2 id=&quot;the-options&quot;&gt;The options&lt;/h2&gt;
+<h2 id="the-options">The options</h2>
 
-&lt;p&gt;I considered 2 options for authenticating the Next.js frontend with the Django backend:&lt;/p&gt;
+<p>I considered 2 options for authenticating the Next.js frontend with the Django backend:</p>
 
-&lt;ol&gt;
-  &lt;li&gt;Token based auth. On logging in, a user receives a token that is stored in local storage by the frontend and send with every request to the backend.&lt;/li&gt;
-  &lt;li&gt;Session/Cookie based auth. This is how authentication works in Django by default and is very easy to get started with - it basically comes for free out of the box when you start a new Django project.&lt;/li&gt;
-&lt;/ol&gt;
+<ol>
+  <li>Token based auth. On logging in, a user receives a token that is stored in local storage by the frontend and send with every request to the backend.</li>
+  <li>Session/Cookie based auth. This is how authentication works in Django by default and is very easy to get started with - it basically comes for free out of the box when you start a new Django project.</li>
+</ol>
 
-&lt;p&gt;While token based auth. is what almost everyone suggests to use when using a Next.js frontend with any backend technology, I wanted to give session based auth. a try. I was curious what it would take to make it work - if it was even possible.&lt;/p&gt;
+<p>While token based auth. is what almost everyone suggests to use when using a Next.js frontend with any backend technology, I wanted to give session based auth. a try. I was curious what it would take to make it work - if it was even possible.</p>
 
-&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; It was possible to use cookie/session auth. b/w Django &amp;amp; Next.js - though with a few constraints which make it less appealing than the token based solution&lt;/p&gt;
+<p><strong>tl;dr:</strong> It was possible to use cookie/session auth. b/w Django &amp; Next.js - though with a few constraints which make it less appealing than the token based solution</p>
 
-&lt;p&gt;What follows are my notes on how to set it up, the problems I faced, and why for the template I’m going to go with token based auth. instead.&lt;/p&gt;
+<p>What follows are my notes on how to set it up, the problems I faced, and why for the template I’m going to go with token based auth. instead.</p>
 
-&lt;h2 id=&quot;learning-how-cors--set-cookie-works&quot;&gt;Learning how CORS &amp;amp; Set-Cookie works&lt;/h2&gt;
+<h2 id="learning-how-cors--set-cookie-works">Learning how CORS &amp; Set-Cookie works</h2>
 
-&lt;p&gt;It took me a few hours to get my head around how cross-origin requests and cookies work together, but the actual implementation was surprisingly straight forward.&lt;/p&gt;
+<p>It took me a few hours to get my head around how cross-origin requests and cookies work together, but the actual implementation was surprisingly straight forward.</p>
 
-&lt;p&gt;This “mini-quest” gave me a chance to learn a lot about how CORS and cookies work, and I’m happy with the time I spent on this. These are the resources which helped me the most (all are from MDN):&lt;/p&gt;
+<p>This “mini-quest” gave me a chance to learn a lot about how CORS and cookies work, and I’m happy with the time I spent on this. These are the resources which helped me the most (all are from MDN):</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS&quot;&gt;Cross-Origin Resource Sharing&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy&quot;&gt;Same-origin policy&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies&quot;&gt;Using HTTP cookies&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#samesitesamesite-value&quot;&gt;Set-Cookie&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">Cross-Origin Resource Sharing</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy">Same-origin policy</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">Using HTTP cookies</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#samesitesamesite-value">Set-Cookie</a></li>
+</ul>
 
-&lt;p&gt;And finally, there was a surprise waiting for me! Browsers are almost universally making changes to restrict 3rd party or cross-domain cookies because of their privacy implications. Here’s a nice article from MDN about it: &lt;a href=&quot;https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/&quot;&gt;Saying goodbye to third-party cookies in 2024&lt;/a&gt;.&lt;/p&gt;
+<p>And finally, there was a surprise waiting for me! Browsers are almost universally making changes to restrict 3rd party or cross-domain cookies because of their privacy implications. Here’s a nice article from MDN about it: <a href="https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/">Saying goodbye to third-party cookies in 2024</a>.</p>
 
-&lt;p&gt;This is the reason why; while this approach works, I won’t be using it in the template. &lt;a href=&quot;#why-not&quot;&gt;More on that later&lt;/a&gt;.&lt;/p&gt;
+<p>This is the reason why; while this approach works, I won’t be using it in the template. <a href="#why-not">More on that later</a>.</p>
 
-&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
+<h2 id="implementation">Implementation</h2>
 
-&lt;p&gt;Implementing the session based auth. b/w Django &amp;amp; Next.js is pretty simple.&lt;/p&gt;
+<p>Implementing the session based auth. b/w Django &amp; Next.js is pretty simple.</p>
 
-&lt;h3 id=&quot;django-configuration&quot;&gt;Django configuration&lt;/h3&gt;
+<h3 id="django-configuration">Django configuration</h3>
 
-&lt;ol&gt;
-  &lt;li&gt;Install the &lt;a href=&quot;https://github.com/adamchainz/django-cors-headers&quot;&gt;&lt;code&gt;django-cors-headers&lt;/code&gt;&lt;/a&gt; Python package.
-    &lt;ol&gt;
-      &lt;li&gt;Add &lt;code&gt;&quot;corsheaders&quot;,&lt;/code&gt; to your &lt;code&gt;INSTALLED_APPS&lt;/code&gt;.&lt;/li&gt;
-      &lt;li&gt;Add the &lt;code&gt;&quot;corsheaders.middleware.CorsMiddleware&quot;,&lt;/code&gt; middleware, right above the existing &lt;code&gt;CommonMiddleware&lt;/code&gt;.&lt;/li&gt;
-      &lt;li&gt;Set &lt;code&gt;CORS_ALLOWED_ORIGINS = [&quot;http://localhost:3000&quot;]&lt;/code&gt;, replacing the URL with your frontend URL.&lt;/li&gt;
-      &lt;li&gt;Set &lt;code&gt;CORS_ALLOW_CREDENTIALS = True&lt;/code&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Configure &lt;code&gt;settings.py&lt;/code&gt; to allow cross-domain access for the session cookie.
-    &lt;ol&gt;
-      &lt;li&gt;Set &lt;code&gt;SESSION_COOKIE_SAMESITE = &quot;None&quot;&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;Set &lt;code&gt;SESSION_COOKIE_SECURE = True&lt;/code&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+<ol>
+  <li>Install the <a href="https://github.com/adamchainz/django-cors-headers"><code>django-cors-headers</code></a> Python package.
+    <ol>
+      <li>Add <code>"corsheaders",</code> to your <code>INSTALLED_APPS</code>.</li>
+      <li>Add the <code>"corsheaders.middleware.CorsMiddleware",</code> middleware, right above the existing <code>CommonMiddleware</code>.</li>
+      <li>Set <code>CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]</code>, replacing the URL with your frontend URL.</li>
+      <li>Set <code>CORS_ALLOW_CREDENTIALS = True</code></li>
+    </ol>
+  </li>
+  <li>Configure <code>settings.py</code> to allow cross-domain access for the session cookie.
+    <ol>
+      <li>Set <code>SESSION_COOKIE_SAMESITE = "None"</code></li>
+      <li>Set <code>SESSION_COOKIE_SECURE = True</code></li>
+    </ol>
+  </li>
+</ol>
 
-&lt;h3 id=&quot;nextjs-configuration&quot;&gt;Next.js configuration&lt;/h3&gt;
+<h3 id="nextjs-configuration">Next.js configuration</h3>
 
-&lt;p&gt;No configuration is needed on the frontend. However, you do need to use the &lt;code&gt;credentials: &quot;include&quot;,&lt;/code&gt; option when using the &lt;code&gt;fetch()&lt;/code&gt; API to access your backend.&lt;/p&gt;
+<p>No configuration is needed on the frontend. However, you do need to use the <code>credentials: "include",</code> option when using the <code>fetch()</code> API to access your backend.</p>
 
-&lt;p&gt;Here’s a minimal example.&lt;/p&gt;
+<p>Here’s a minimal example.</p>
 
-&lt;div class=&quot;language-javascript highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;use client&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;;
+<div class="language-javascript highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">use client</span><span style="color:#710">&quot;</span></span>;
 
-&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;import&lt;/span&gt; { BACKEND_URL } from &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;@/constants&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;;
+<span style="color:#080;font-weight:bold">import</span> { BACKEND_URL } from <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">@/constants</span><span style="color:#710">&quot;</span></span>;
 
-async &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/span&gt; &lt;span style=&quot;color:#06B;font-weight:bold&quot;&gt;signIn&lt;/span&gt;() {
-  const loginData = &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;new&lt;/span&gt; FormData();
-  loginData.append(&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;username&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;admin&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
-  loginData.append(&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;password&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;admin&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+async <span style="color:#080;font-weight:bold">function</span> <span style="color:#06B;font-weight:bold">signIn</span>() {
+  const loginData = <span style="color:#080;font-weight:bold">new</span> FormData();
+  loginData.append(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">username</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">admin</span><span style="color:#710">&quot;</span></span>);
+  loginData.append(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">password</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">admin</span><span style="color:#710">&quot;</span></span>);
 
-  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;return&lt;/span&gt; await fetch(&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;`&lt;/span&gt;&lt;span style=&quot;color:#369;font-weight:bold&quot;&gt;$&lt;/span&gt;{BACKEND_URL}/accounts/login/&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;`&lt;/span&gt;, {
-    &lt;span style=&quot;color:#606&quot;&gt;method&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;POST&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
-    &lt;span style=&quot;color:#606&quot;&gt;body&lt;/span&gt;: loginData,
-    &lt;span style=&quot;color:#606&quot;&gt;credentials&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;include&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+  <span style="color:#080;font-weight:bold">return</span> await fetch(<span style="color:#F00;background-color:#FAA">`</span><span style="color:#369;font-weight:bold">$</span>{BACKEND_URL}/accounts/login/<span style="color:#F00;background-color:#FAA">`</span>, {
+    <span style="color:#606">method</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">POST</span><span style="color:#710">&quot;</span></span>,
+    <span style="color:#606">body</span>: loginData,
+    <span style="color:#606">credentials</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">include</span><span style="color:#710">&quot;</span></span>,
   });
 }
 
-async &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/span&gt; &lt;span style=&quot;color:#06B;font-weight:bold&quot;&gt;whoAmI&lt;/span&gt;() {
+async <span style="color:#080;font-weight:bold">function</span> <span style="color:#06B;font-weight:bold">whoAmI</span>() {
   console.log(
-    await fetch(&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;`&lt;/span&gt;&lt;span style=&quot;color:#369;font-weight:bold&quot;&gt;$&lt;/span&gt;{BACKEND_URL}/accounts/me/&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;`&lt;/span&gt;, {
-      &lt;span style=&quot;color:#606&quot;&gt;method&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;GET&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
-      &lt;span style=&quot;color:#606&quot;&gt;credentials&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;include&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
+    await fetch(<span style="color:#F00;background-color:#FAA">`</span><span style="color:#369;font-weight:bold">$</span>{BACKEND_URL}/accounts/me/<span style="color:#F00;background-color:#FAA">`</span>, {
+      <span style="color:#606">method</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">GET</span><span style="color:#710">&quot;</span></span>,
+      <span style="color:#606">credentials</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">include</span><span style="color:#710">&quot;</span></span>,
     }),
   );
 }
 
-&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;export&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;default&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;function&lt;/span&gt; &lt;span style=&quot;color:#06B;font-weight:bold&quot;&gt;Home&lt;/span&gt;() {
-  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;return&lt;/span&gt; (
-    &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;main&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;className&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;flex min-h-dvh w-full flex-col justify-around&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
-      &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;className&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;text-center&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;Home&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-      &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;className&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;onClick&lt;/span&gt;=&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;color:#700&quot;&gt;signIn&lt;/span&gt;&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;}&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
+<span style="color:#080;font-weight:bold">export</span> <span style="color:#080;font-weight:bold">default</span> <span style="color:#080;font-weight:bold">function</span> <span style="color:#06B;font-weight:bold">Home</span>() {
+  <span style="color:#080;font-weight:bold">return</span> (
+    <span style="color:#070;font-weight:bold">&lt;main</span> <span style="color:#b48">className</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">flex min-h-dvh w-full flex-col justify-around</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>
+      <span style="color:#070;font-weight:bold">&lt;h1</span> <span style="color:#b48">className</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">text-center</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>Home<span style="color:#070;font-weight:bold">&lt;/h1&gt;</span>
+      <span style="color:#070;font-weight:bold">&lt;button</span> <span style="color:#b48">className</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">onClick</span>=<span style="color:#F00;background-color:#FAA">{</span><span style="color:#700">signIn</span><span style="color:#F00;background-color:#FAA">}</span><span style="color:#070;font-weight:bold">&gt;</span>
         Sign In
-      &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
-      &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;onClick&lt;/span&gt;=&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;color:#700&quot;&gt;whoAmI&lt;/span&gt;&lt;span style=&quot;color:#F00;background-color:#FAA&quot;&gt;}&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;Who Am I&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
-    &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/main&amp;gt;&lt;/span&gt;
+      <span style="color:#070;font-weight:bold">&lt;/button&gt;</span>
+      <span style="color:#070;font-weight:bold">&lt;button</span> <span style="color:#b48">onClick</span>=<span style="color:#F00;background-color:#FAA">{</span><span style="color:#700">whoAmI</span><span style="color:#F00;background-color:#FAA">}</span><span style="color:#070;font-weight:bold">&gt;</span>Who Am I<span style="color:#070;font-weight:bold">&lt;/button&gt;</span>
+    <span style="color:#070;font-weight:bold">&lt;/main&gt;</span>
   );
 }
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+</pre></div>
+</div>
+</div>
 
-&lt;p&gt;That’s it. That simple piece of code &amp;amp; configuration took me hours to find. Hopefully you can use this example to skip all that time spent trying to figure things out.&lt;/p&gt;
+<p>That’s it. That simple piece of code &amp; configuration took me hours to find. Hopefully you can use this example to skip all that time spent trying to figure things out.</p>
 
-&lt;p&gt;&lt;em&gt;Side quest log&lt;/em&gt;: Initially, I was not using the &lt;code&gt;credentials: &quot;include&quot;&lt;/code&gt; option in the &lt;code&gt;signIn()&lt;/code&gt; function above; thinking that I didn’t need to send any cookies with the login call, only the second API call to the &lt;code&gt;/accounts/me&lt;/code&gt; endpoint.&lt;/p&gt;
+<p><em>Side quest log</em>: Initially, I was not using the <code>credentials: "include"</code> option in the <code>signIn()</code> function above; thinking that I didn’t need to send any cookies with the login call, only the second API call to the <code>/accounts/me</code> endpoint.</p>
 
-&lt;p&gt;That mistake cost me about 2 hours of debugging time. If I had &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/fetch#credentials&quot;&gt;RTFM&lt;/a&gt; correctly the first time, I would have seen this:&lt;/p&gt;
+<p>That mistake cost me about 2 hours of debugging time. If I had <a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch#credentials">RTFM</a> correctly the first time, I would have seen this:</p>
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code&gt;include&lt;/code&gt;: Tells browsers to include credentials in both same- and cross-origin requests, and always use any credentials sent back in responses.&lt;/p&gt;
-&lt;/blockquote&gt;
+<blockquote>
+  <p><code>include</code>: Tells browsers to include credentials in both same- and cross-origin requests, and always use any credentials sent back in responses.</p>
+</blockquote>
 
-&lt;p&gt;The &lt;code&gt;credentials: &quot;include&quot;&lt;/code&gt; not only controls if cookies are sent, but also if they are saved when returned by the server.&lt;/p&gt;
+<p>The <code>credentials: "include"</code> not only controls if cookies are sent, but also if they are saved when returned by the server.</p>
 
-&lt;h2 id=&quot;why-not&quot;&gt;Why I won’t use this solution in the template&lt;/h2&gt;
+<h2 id="why-not">Why I won’t use this solution in the template</h2>
 
-&lt;p&gt;Browsers are phasing out 3rd party cookies (&lt;a href=&quot;https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/&quot;&gt;Saying goodbye to third-party cookies in 2024&lt;/a&gt;) and adding features to work around that restriction where needed.&lt;/p&gt;
+<p>Browsers are phasing out 3rd party cookies (<a href="https://developer.mozilla.org/en-US/blog/goodbye-third-party-cookies/">Saying goodbye to third-party cookies in 2024</a>) and adding features to work around that restriction where needed.</p>
 
-&lt;p&gt;The simplest way that doesn’t require much change is to use &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Privacy/Privacy_sandbox/Partitioned_cookies&quot;&gt;Cookies Having Independent Partitioned State (CHIPS)&lt;/a&gt;.&lt;/p&gt;
+<p>The simplest way that doesn’t require much change is to use <a href="https://developer.mozilla.org/en-US/docs/Web/Privacy/Privacy_sandbox/Partitioned_cookies">Cookies Having Independent Partitioned State (CHIPS)</a>.</p>
 
-&lt;p&gt;To enable CHIPS, you simply put a &lt;code&gt;Partitioned&lt;/code&gt; flag on your &lt;code&gt;Set-Cookie&lt;/code&gt; header, like so:&lt;/p&gt;
+<p>To enable CHIPS, you simply put a <code>Partitioned</code> flag on your <code>Set-Cookie</code> header, like so:</p>
 
-&lt;p&gt;&lt;code&gt;Set-Cookie: session_id=1234; SameSite=None; Secure; Path=/; Partitioned;&lt;/code&gt;&lt;/p&gt;
+<p><code>Set-Cookie: session_id=1234; SameSite=None; Secure; Path=/; Partitioned;</code></p>
 
-&lt;p&gt;Unfortunately, there’s no straight forward way to do this in Django for now. There’s an open issue to resolve this, but looking at the comments, it won’t likely be solved anytime soon.&lt;/p&gt;
+<p>Unfortunately, there’s no straight forward way to do this in Django for now. There’s an open issue to resolve this, but looking at the comments, it won’t likely be solved anytime soon.</p>
 
-&lt;p&gt;Considering this, I opted to use the token based auth. method for my template. I’ll write a blog on that once I get it working over the next few days.&lt;/p&gt;</content><author><name></name></author><summary type="html">If you’re just looking for implementation instructions, skip my ramblings and go straight to the code here.</summary></entry><entry><title type="html">Project 1: Django + NextJS Boilerplate</title><link href="https://www.asadjb.com/blog/2024-02-15-project-1-django-nextjs-boilerplate" rel="alternate" type="text/html" title="Project 1: Django + NextJS Boilerplate" /><published>2024-02-15T00:00:00+04:00</published><updated>2024-02-15T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/project-1-django-nextjs-boilerplate</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-02-15-project-1-django-nextjs-boilerplate">&lt;p&gt;Links:&lt;/p&gt;
+<p>Considering this, I opted to use the token based auth. method for my template. I’ll write a blog on that once I get it working over the next few days.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[If you’re just looking for implementation instructions, skip my ramblings and go straight to the code here.]]></summary></entry><entry><title type="html">Project 1: Django + NextJS Boilerplate</title><link href="https://www.asadjb.com/blog/2024-02-15-project-1-django-nextjs-boilerplate" rel="alternate" type="text/html" title="Project 1: Django + NextJS Boilerplate" /><published>2024-02-15T00:00:00+04:00</published><updated>2024-02-15T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/project-1-django-nextjs-boilerplate</id><content type="html" xml:base="https://www.asadjb.com/blog/2024-02-15-project-1-django-nextjs-boilerplate"><![CDATA[<p>Links:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://asadjb.gumroad.com/l/nextjs-django-template&quot;&gt;Gumroad page&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/build-logs/project-1&quot;&gt;Build Log&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li><a href="https://asadjb.gumroad.com/l/nextjs-django-template">Gumroad page</a></li>
+  <li><a href="/build-logs/project-1">Build Log</a></li>
+</ul>
 
-&lt;hr /&gt;
+<hr />
 
-&lt;p&gt;My &lt;em&gt;accidental&lt;/em&gt; &lt;a href=&quot;/blog/2023-12-31-i-have-not-failed-enough&quot;&gt;new years resolution&lt;/a&gt; was to work on the 1 problem that has plagued me for my entire adult life; failure to commit and focus. I decided to work in 6 week “sprints” (inspired by &lt;a href=&quot;https://basecamp.com/shapeup&quot;&gt;Shape Up&lt;/a&gt;) and complete the projects I start - for some &lt;strong&gt;known&lt;/strong&gt; definition of complete.&lt;/p&gt;
+<p>My <em>accidental</em> <a href="/blog/2023-12-31-i-have-not-failed-enough">new years resolution</a> was to work on the 1 problem that has plagued me for my entire adult life; failure to commit and focus. I decided to work in 6 week “sprints” (inspired by <a href="https://basecamp.com/shapeup">Shape Up</a>) and complete the projects I start - for some <strong>known</strong> definition of complete.</p>
 
-&lt;p&gt;This is the 1st project I have decided to work on. I’ll work on this from today (15th Feb 2024) to (28th Mar 2024). I’ll follow-up then with another post talking about how it went.&lt;/p&gt;
+<p>This is the 1st project I have decided to work on. I’ll work on this from today (15th Feb 2024) to (28th Mar 2024). I’ll follow-up then with another post talking about how it went.</p>
 
-&lt;h2 id=&quot;the-project&quot;&gt;The project&lt;/h2&gt;
+<h2 id="the-project">The project</h2>
 
-&lt;p&gt;The goal is to make &amp;amp; sell a Django + NextJS boilerplate template. What’s a boilerplate template?&lt;/p&gt;
+<p>The goal is to make &amp; sell a Django + NextJS boilerplate template. What’s a boilerplate template?</p>
 
-&lt;p&gt;It’s the source code for a project that’s already setup with many things that are needed in a new project; for example:&lt;/p&gt;
+<p>It’s the source code for a project that’s already setup with many things that are needed in a new project; for example:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Stripe subscriptions functionality&lt;/li&gt;
-  &lt;li&gt;Background jobs&lt;/li&gt;
-  &lt;li&gt;CSS framework&lt;/li&gt;
-  &lt;li&gt;User/team management&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Stripe subscriptions functionality</li>
+  <li>Background jobs</li>
+  <li>CSS framework</li>
+  <li>User/team management</li>
+</ul>
 
-&lt;p&gt;A great example is &lt;a href=&quot;https://www.saaspegasus.com/&quot;&gt;Saas Pegasus&lt;/a&gt;, which seems like an amazing boilerplate loved by many people.&lt;/p&gt;
+<p>A great example is <a href="https://www.saaspegasus.com/">Saas Pegasus</a>, which seems like an amazing boilerplate loved by many people.</p>
 
-&lt;p&gt;My boilerplate is going to be &lt;em&gt;much&lt;/em&gt; simpler - and also much cheaper. SaaS Pegasus comes with so many features that it’s worth the $249 starting price. I’m aiming for $5-$10.&lt;/p&gt;
+<p>My boilerplate is going to be <em>much</em> simpler - and also much cheaper. SaaS Pegasus comes with so many features that it’s worth the $249 starting price. I’m aiming for $5-$10.</p>
 
-&lt;h2 id=&quot;goals&quot;&gt;Goals&lt;/h2&gt;
+<h2 id="goals">Goals</h2>
 
-&lt;p&gt;My goal is to sell this boilerplate to at least 10 people - and have them be happy using it. This means:&lt;/p&gt;
+<p>My goal is to sell this boilerplate to at least 10 people - and have them be happy using it. This means:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;talking to prospective customers and seeing if this can be useful to them. People will have the option of scheduling a 15 minute pre-purchase call with me for $5 to see if this would be useful to them. The payment is purely to make sure that I only spend time talking to people who are somewhat serious about purchasing.&lt;/li&gt;
-  &lt;li&gt;providing excellent after sales support. I’ll include a 60 minute setup call with me for any purchase. While a 60 minute call for a $10 sale isn’t scalable, it’s a great way for me to talk to customers at the start.&lt;/li&gt;
-  &lt;li&gt;having a no questions asked refund policy. My experiences with running an &lt;a href=&quot;https://khalil-ahmed.com/&quot;&gt;e-commerce store&lt;/a&gt; in the past tell me this is an amazing way to build trust.&lt;/li&gt;
-  &lt;li&gt;provide on-going support, updates, and fixes over email.&lt;/li&gt;
-  &lt;li&gt;build a mailing list of people interested in my work who I can email when I launch my future projects.&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>talking to prospective customers and seeing if this can be useful to them. People will have the option of scheduling a 15 minute pre-purchase call with me for $5 to see if this would be useful to them. The payment is purely to make sure that I only spend time talking to people who are somewhat serious about purchasing.</li>
+  <li>providing excellent after sales support. I’ll include a 60 minute setup call with me for any purchase. While a 60 minute call for a $10 sale isn’t scalable, it’s a great way for me to talk to customers at the start.</li>
+  <li>having a no questions asked refund policy. My experiences with running an <a href="https://khalil-ahmed.com/">e-commerce store</a> in the past tell me this is an amazing way to build trust.</li>
+  <li>provide on-going support, updates, and fixes over email.</li>
+  <li>build a mailing list of people interested in my work who I can email when I launch my future projects.</li>
+</ul>
 
-&lt;h2 id=&quot;the-deliverable&quot;&gt;The deliverable&lt;/h2&gt;
+<h2 id="the-deliverable">The deliverable</h2>
 
-&lt;p&gt;The boilerplate will allow developers to quickly start a project that uses Django for the backend and NextJS for the frontend. My recent experiences with another project in this tech stack required me to spend significant time on:&lt;/p&gt;
+<p>The boilerplate will allow developers to quickly start a project that uses Django for the backend and NextJS for the frontend. My recent experiences with another project in this tech stack required me to spend significant time on:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;figuring out how to setup authentication b/w Django &amp;amp; NextJS (this took the most time &amp;amp; effort)&lt;/li&gt;
-  &lt;li&gt;setting up Django Rest Framework so I could write APIs that would be used by the frontend&lt;/li&gt;
-  &lt;li&gt;writing Docker files that would build 2 containers - backend &amp;amp; frontend&lt;/li&gt;
-  &lt;li&gt;writing Terraform scripts to deploy those containers to AWS ECS&lt;/li&gt;
-  &lt;li&gt;writing config &amp;amp; scripts to run the project on Gitpod so it could be easily worked on by my team members&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>figuring out how to setup authentication b/w Django &amp; NextJS (this took the most time &amp; effort)</li>
+  <li>setting up Django Rest Framework so I could write APIs that would be used by the frontend</li>
+  <li>writing Docker files that would build 2 containers - backend &amp; frontend</li>
+  <li>writing Terraform scripts to deploy those containers to AWS ECS</li>
+  <li>writing config &amp; scripts to run the project on Gitpod so it could be easily worked on by my team members</li>
+</ul>
 
-&lt;p&gt;My plan is to build a boilerplate that already has most those features built in, plus a few extras:&lt;/p&gt;
+<p>My plan is to build a boilerplate that already has most those features built in, plus a few extras:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Celery with Redis for background task processing&lt;/li&gt;
-  &lt;li&gt;Tailwind CSS for the frontend (in my project I used ChakraUI but Tailwind would be a better option for a boilerplate)&lt;/li&gt;
-  &lt;li&gt;If there’s demand for it, a stretch goal is to include social auth (sign-in with Google/Apple/etc)&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Celery with Redis for background task processing</li>
+  <li>Tailwind CSS for the frontend (in my project I used ChakraUI but Tailwind would be a better option for a boilerplate)</li>
+  <li>If there’s demand for it, a stretch goal is to include social auth (sign-in with Google/Apple/etc)</li>
+</ul>
 
-&lt;p&gt;Once complete, I’ll put this on Gumroad and create a landing page there. From then on, it’s all about marketing it; that’s the part which I have no experience with and hope to learn the most from.&lt;/p&gt;
+<p>Once complete, I’ll put this on Gumroad and create a landing page there. From then on, it’s all about marketing it; that’s the part which I have no experience with and hope to learn the most from.</p>
 
-&lt;h2 id=&quot;the-marketing-plan&quot;&gt;The marketing plan&lt;/h2&gt;
+<h2 id="the-marketing-plan">The marketing plan</h2>
 
-&lt;p&gt;This is the area where I lack &lt;em&gt;any&lt;/em&gt; experience; so I’m not sure how I’m going to market this. Some ideas I have:&lt;/p&gt;
+<p>This is the area where I lack <em>any</em> experience; so I’m not sure how I’m going to market this. Some ideas I have:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;build it in public on Twitter. I have a tiny Twitter following (312 followers) so not sure how useful this could be. But I have to try something.&lt;/li&gt;
-  &lt;li&gt;share it with people asking how to setup Django &amp;amp; NextJS on forums like Reddit, Stackoverflow, and others.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;maybe&lt;/em&gt; write a blog post on how to setup Django &amp;amp; NextJS and then link to the boilerplate from there. The blog post would provider all the steps necessary for the basic setup and the boilerplate would go beyond that with something that’s ready to use.&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>build it in public on Twitter. I have a tiny Twitter following (312 followers) so not sure how useful this could be. But I have to try something.</li>
+  <li>share it with people asking how to setup Django &amp; NextJS on forums like Reddit, Stackoverflow, and others.</li>
+  <li><em>maybe</em> write a blog post on how to setup Django &amp; NextJS and then link to the boilerplate from there. The blog post would provider all the steps necessary for the basic setup and the boilerplate would go beyond that with something that’s ready to use.</li>
+</ul>
 
-&lt;h2 id=&quot;the-build-log&quot;&gt;The build log&lt;/h2&gt;
+<h2 id="the-build-log">The build log</h2>
 
-&lt;p&gt;I’d also like to create a build log with this project. This will be a daily note of what I did for this project. I’ll keep it in my notes app &lt;a href=&quot;https://reflect.app/&quot;&gt;Reflect&lt;/a&gt; and periodically put it here in this blog post. These daily notes might also serve as content for my build-in-public marketing strategy.&lt;/p&gt;</content><author><name></name></author><summary type="html">Links:</summary></entry><entry><title type="html">I have not failed enough</title><link href="https://www.asadjb.com/blog/2023-12-31-i-have-not-failed-enough" rel="alternate" type="text/html" title="I have not failed enough" /><published>2023-12-31T00:00:00+04:00</published><updated>2023-12-31T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/i-have-not-failed-enough</id><content type="html" xml:base="https://www.asadjb.com/blog/2023-12-31-i-have-not-failed-enough">&lt;p&gt;I was recently listening through the &lt;a href=&quot;https://freakonomics.com/podcast-tag/how-to-succeed-at-failing/&quot;&gt;How to succeed at failing&lt;/a&gt; series on the Freakonomics podcast and started to think about how often I had failed in the past few years. The first answer was - not too much. I couldn’t think of too many instances of where I had “failed”.&lt;/p&gt;
+<p>I’d also like to create a build log with this project. This will be a daily note of what I did for this project. I’ll keep it in my notes app <a href="https://reflect.app/">Reflect</a> and periodically put it here in this blog post. These daily notes might also serve as content for my build-in-public marketing strategy.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Links:]]></summary></entry><entry><title type="html">I have not failed enough</title><link href="https://www.asadjb.com/blog/2023-12-31-i-have-not-failed-enough" rel="alternate" type="text/html" title="I have not failed enough" /><published>2023-12-31T00:00:00+04:00</published><updated>2023-12-31T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/i-have-not-failed-enough</id><content type="html" xml:base="https://www.asadjb.com/blog/2023-12-31-i-have-not-failed-enough"><![CDATA[<p>I was recently listening through the <a href="https://freakonomics.com/podcast-tag/how-to-succeed-at-failing/">How to succeed at failing</a> series on the Freakonomics podcast and started to think about how often I had failed in the past few years. The first answer was - not too much. I couldn’t think of too many instances of where I had “failed”.</p>
 
-&lt;p&gt;This was not a good thing. It was very much a sad thing that I couldn’t quickly think of many things I had failed at.&lt;/p&gt;
+<p>This was not a good thing. It was very much a sad thing that I couldn’t quickly think of many things I had failed at.</p>
 
-&lt;h2 id=&quot;why-is-not-failing-bad&quot;&gt;Why is not failing bad?&lt;/h2&gt;
-&lt;p&gt;I realized I didn’t fail a lot because - &lt;strong&gt;I didn’t try a lot.&lt;/strong&gt; I didn’t fail because I didn’t have good goals.&lt;/p&gt;
+<h2 id="why-is-not-failing-bad">Why is not failing bad?</h2>
+<p>I realized I didn’t fail a lot because - <strong>I didn’t try a lot.</strong> I didn’t fail because I didn’t have good goals.</p>
 
-&lt;p&gt;Sure, I have a folder full of projects I thought of, researched, some that I even started working on; that I gave up on pretty soon after starting. &lt;em&gt;But those don’t count as failures right?&lt;/em&gt; I was just &lt;em&gt;playing around&lt;/em&gt;, not really aiming for anything. It was just a fun side project.&lt;/p&gt;
+<p>Sure, I have a folder full of projects I thought of, researched, some that I even started working on; that I gave up on pretty soon after starting. <em>But those don’t count as failures right?</em> I was just <em>playing around</em>, not really aiming for anything. It was just a fun side project.</p>
 
-&lt;p&gt;That’s why I didn’t fail a lot, and that’s also why it’s not a good thing.&lt;/p&gt;
+<p>That’s why I didn’t fail a lot, and that’s also why it’s not a good thing.</p>
 
-&lt;h2 id=&quot;i-need-to-fail-more&quot;&gt;I need to fail more&lt;/h2&gt;
-&lt;p&gt;Which means that I need to set goals and work towards them. Without goals to aim for, I keep spending my time in the same unproductive loop.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Think of a shiny new project.&lt;/li&gt;
-  &lt;li&gt;Play around a bit, maybe learn a few things.&lt;/li&gt;
-  &lt;li&gt;Give up when things get hard or boring.&lt;/li&gt;
-  &lt;li&gt;Repeat&lt;/li&gt;
-&lt;/ol&gt;
+<h2 id="i-need-to-fail-more">I need to fail more</h2>
+<p>Which means that I need to set goals and work towards them. Without goals to aim for, I keep spending my time in the same unproductive loop.</p>
+<ol>
+  <li>Think of a shiny new project.</li>
+  <li>Play around a bit, maybe learn a few things.</li>
+  <li>Give up when things get hard or boring.</li>
+  <li>Repeat</li>
+</ol>
 
-&lt;p&gt;While I do learn some things, I don’t really learn new things. Picking up another web backend framework when I’m very good at 1 already (Django if you’re looking to get something built 🙂) is very small incremental progress.&lt;/p&gt;
+<p>While I do learn some things, I don’t really learn new things. Picking up another web backend framework when I’m very good at 1 already (Django if you’re looking to get something built 🙂) is very small incremental progress.</p>
 
-&lt;p&gt;I should be learning about running a business, marketing, sales, how to talk to people, cold calling, etc. Instead I’m playing around with NextJS/Remix because it’s easier to do and there’s very little chance of me failing at it.&lt;/p&gt;
+<p>I should be learning about running a business, marketing, sales, how to talk to people, cold calling, etc. Instead I’m playing around with NextJS/Remix because it’s easier to do and there’s very little chance of me failing at it.</p>
 
-&lt;h2 id=&quot;what-im-planning-to-do&quot;&gt;What I’m planning to do&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Any new project that I start, I will have an achievable goal for it. Something that can be called “done”.
-    &lt;ul&gt;
-      &lt;li&gt;&lt;em&gt;Achievable&lt;/em&gt; is different for everyone. Creating a small SaaS and have 5 people pay for it might be childs play for some, it’s my Everest for now.&lt;/li&gt;
-      &lt;li&gt;The plan is to aim for things just outside of my reach – to work towards those and grow in the process.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Have a deadline. For now I’m starting with 6 week cycles of project work.&lt;/li&gt;
-  &lt;li&gt;In order meet deadlines, I need to have a clear picture of the goal. Goes back to the first thing on this list. Having a clear definition of “done” is important. But being able to cut scope to achieve some version of the goal is also important.
+<h2 id="what-im-planning-to-do">What I’m planning to do</h2>
+<ul>
+  <li>Any new project that I start, I will have an achievable goal for it. Something that can be called “done”.
+    <ul>
+      <li><em>Achievable</em> is different for everyone. Creating a small SaaS and have 5 people pay for it might be childs play for some, it’s my Everest for now.</li>
+      <li>The plan is to aim for things just outside of my reach – to work towards those and grow in the process.</li>
+    </ul>
+  </li>
+  <li>Have a deadline. For now I’m starting with 6 week cycles of project work.</li>
+  <li>In order meet deadlines, I need to have a clear picture of the goal. Goes back to the first thing on this list. Having a clear definition of “done” is important. But being able to cut scope to achieve some version of the goal is also important.
     - I’ve just finished reading Shape Up by Jason Fried and I like the Basecamp approach of deciding on an appetite (time commitment) to a project and cutting scope to meet that appetite.
-    - That’s my plan moving forward. Each project I work on will be “shapped” into an achievable outcome and will have an allocated appetite - when I want to launch it or decide to abandon it. Continuing it for the next 6 week cycle will be another option but should be done sparingly.&lt;/li&gt;
-&lt;/ul&gt;
+    - That’s my plan moving forward. Each project I work on will be “shapped” into an achievable outcome and will have an allocated appetite - when I want to launch it or decide to abandon it. Continuing it for the next 6 week cycle will be another option but should be done sparingly.</li>
+</ul>
 
-&lt;p&gt;This approach of timeboxing projects and having an achievable goal is also discussed by Zack Freedman in this video &lt;a href=&quot;https://www.youtube.com/watch?v=L1j93RnIxEo&quot;&gt;Here’s what’s preventing you from finishing projects&lt;/a&gt;. See it when you get the chance.&lt;/p&gt;
+<p>This approach of timeboxing projects and having an achievable goal is also discussed by Zack Freedman in this video <a href="https://www.youtube.com/watch?v=L1j93RnIxEo">Here’s what’s preventing you from finishing projects</a>. See it when you get the chance.</p>
 
-&lt;h2 id=&quot;this-wasnt-supposed-to-be-a-new-years-resolution&quot;&gt;This wasn’t supposed to be a new years resolution&lt;/h2&gt;
-&lt;p&gt;I started thinking about this over 2 months ago and have been planning to write a post on it. Today seemed like a good day for it. So I guess this is my new year’s resolution. &lt;strong&gt;Fail more, fail better.&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I was recently listening through the How to succeed at failing series on the Freakonomics podcast and started to think about how often I had failed in the past few years. The first answer was - not too much. I couldn’t think of too many instances of where I had “failed”.</summary></entry><entry><title type="html">My buildspace project</title><link href="https://www.asadjb.com/blog/2023-04-13-my-buildspace-project" rel="alternate" type="text/html" title="My buildspace project" /><published>2023-04-13T00:00:00+04:00</published><updated>2023-04-13T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/my-buildspace-project</id><content type="html" xml:base="https://www.asadjb.com/blog/2023-04-13-my-buildspace-project">&lt;p&gt;&lt;img src=&quot;/assets/images/my-buildspace-project-01.png&quot; alt=&quot;My buildspace project idea launch post image&quot; /&gt;&lt;/p&gt;
+<h2 id="this-wasnt-supposed-to-be-a-new-years-resolution">This wasn’t supposed to be a new years resolution</h2>
+<p>I started thinking about this over 2 months ago and have been planning to write a post on it. Today seemed like a good day for it. So I guess this is my new year’s resolution. <strong>Fail more, fail better.</strong></p>]]></content><author><name></name></author><summary type="html"><![CDATA[I was recently listening through the How to succeed at failing series on the Freakonomics podcast and started to think about how often I had failed in the past few years. The first answer was - not too much. I couldn’t think of too many instances of where I had “failed”.]]></summary></entry><entry><title type="html">My buildspace project</title><link href="https://www.asadjb.com/blog/2023-04-13-my-buildspace-project" rel="alternate" type="text/html" title="My buildspace project" /><published>2023-04-13T00:00:00+04:00</published><updated>2023-04-13T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/my-buildspace-project</id><content type="html" xml:base="https://www.asadjb.com/blog/2023-04-13-my-buildspace-project"><![CDATA[<p><img src="/assets/images/my-buildspace-project-01.png" alt="My buildspace project idea launch post image" /></p>
 
-&lt;p&gt;For the next 6 weeks, I’m taking part in &lt;a href=&quot;https://twitter.com/_buildspace&quot;&gt;buildspace&lt;/a&gt; &lt;a href=&quot;https://buildspace.so/more&quot;&gt;nights &amp;amp; weekends&lt;/a&gt;. It’s a cohort of people that participate in a 6-week long “school” where they work towards any idea they have. The goal is to launch a “product” by the end of these 6 weeks, and to gain as much traction as possible.&lt;/p&gt;
+<p>For the next 6 weeks, I’m taking part in <a href="https://twitter.com/_buildspace">buildspace</a> <a href="https://buildspace.so/more">nights &amp; weekends</a>. It’s a cohort of people that participate in a 6-week long “school” where they work towards any idea they have. The goal is to launch a “product” by the end of these 6 weeks, and to gain as much traction as possible.</p>
 
-&lt;p&gt;It also includes helpful sessions by people who’ve done this before. This isn’t an accelerator or an incubator though, it’s more like a forcing function to get you motivated to build and launch. The community provides the motivation, and the sessions provide useful knowledge you can apply towards the goal of the program; show your product on demo day at the end of the 6-week period.&lt;/p&gt;
+<p>It also includes helpful sessions by people who’ve done this before. This isn’t an accelerator or an incubator though, it’s more like a forcing function to get you motivated to build and launch. The community provides the motivation, and the sessions provide useful knowledge you can apply towards the goal of the program; show your product on demo day at the end of the 6-week period.</p>
 
-&lt;p&gt;Yesterday was the first session, the goal of which was to select an idea to work on. I keep a list of ideas that I want to work on, and from that, I found a few that I thought would be good candidates for n&amp;amp;w:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;An app to help send take home exercises for programmer interviews.&lt;/li&gt;
-  &lt;li&gt;Keep Your Tribe: A personal CRM that can help you keep in touch with the people you value in your life.&lt;/li&gt;
-  &lt;li&gt;Dubai schools list. I’ve been researching schools for my daughter and couldn’t find a single source of information that I really liked.&lt;/li&gt;
-  &lt;li&gt;A personal &amp;lt;&amp;gt; work calendar sync system. I’ve struggled with making sure that my personal calendar syncs (privately) to my work calendar, so stuff like school pickups, doctor appointments, etc. are blocked on my work cal.&lt;/li&gt;
-  &lt;li&gt;A GTD task management system in Notion. I’ve been personally using a system I created over a few weeks for the past 3 years (recently I switched to Things 3) and I found great value in my system for the 3 years that I used it for.&lt;/li&gt;
-&lt;/ul&gt;
+<p>Yesterday was the first session, the goal of which was to select an idea to work on. I keep a list of ideas that I want to work on, and from that, I found a few that I thought would be good candidates for n&amp;w:</p>
+<ul>
+  <li>An app to help send take home exercises for programmer interviews.</li>
+  <li>Keep Your Tribe: A personal CRM that can help you keep in touch with the people you value in your life.</li>
+  <li>Dubai schools list. I’ve been researching schools for my daughter and couldn’t find a single source of information that I really liked.</li>
+  <li>A personal &lt;&gt; work calendar sync system. I’ve struggled with making sure that my personal calendar syncs (privately) to my work calendar, so stuff like school pickups, doctor appointments, etc. are blocked on my work cal.</li>
+  <li>A GTD task management system in Notion. I’ve been personally using a system I created over a few weeks for the past 3 years (recently I switched to Things 3) and I found great value in my system for the 3 years that I used it for.</li>
+</ul>
 
-&lt;p&gt;I originally wanted to build one of the SaaS like ideas from the list, but the Notion GTD idea immediately stuck out to me as something that I &lt;em&gt;should&lt;/em&gt; do. It felt like the right size of project that I should take on, and felt like something I could do well.&lt;/p&gt;
+<p>I originally wanted to build one of the SaaS like ideas from the list, but the Notion GTD idea immediately stuck out to me as something that I <em>should</em> do. It felt like the right size of project that I should take on, and felt like something I could do well.</p>
 
-&lt;p&gt;But more importantly, it felt &lt;em&gt;very&lt;/em&gt; uncomfortable selecting this project. I could feel my discomfort with this idea. Why?&lt;/p&gt;
+<p>But more importantly, it felt <em>very</em> uncomfortable selecting this project. I could feel my discomfort with this idea. Why?</p>
 
-&lt;p&gt;I think the discomfort comes from how much potential there is for me to make this idea work in the limited time. With the other SaaS-based ideas, I could justify not launching or growing by building feature after feature.&lt;/p&gt;
+<p>I think the discomfort comes from how much potential there is for me to make this idea work in the limited time. With the other SaaS-based ideas, I could justify not launching or growing by building feature after feature.</p>
 
-&lt;p&gt;With the Notion GTD system, I can’t do that. The system is already built; I’ve been using it for 3 years. I only need to package it up nicely for other people and then focus on selling. Which, I think, is what makes me uncomfortable. Sales is something I’ve never done, and it’s something I believe I’ll suck at.&lt;/p&gt;
+<p>With the Notion GTD system, I can’t do that. The system is already built; I’ve been using it for 3 years. I only need to package it up nicely for other people and then focus on selling. Which, I think, is what makes me uncomfortable. Sales is something I’ve never done, and it’s something I believe I’ll suck at.</p>
 
-&lt;p&gt;Being bad at something is not a great feeling, which is why even though I immediately felt how great a fit the Notion GTD idea is for n&amp;amp;w, I very much wanted to avoid it.&lt;/p&gt;
+<p>Being bad at something is not a great feeling, which is why even though I immediately felt how great a fit the Notion GTD idea is for n&amp;w, I very much wanted to avoid it.</p>
 
-&lt;p&gt;So, that’s what &lt;a href=&quot;https://twitter.com/asadjibranahmed/status/1646209196508037123?s=20&quot;&gt;I’m committing to&lt;/a&gt;. This feeling of discomfort is what pushed me to commit to this idea. I need to get over my fear, and learn how to sell. I can justify procrastinating on feature development with the other ideas, I can’t do that here.&lt;/p&gt;
+<p>So, that’s what <a href="https://twitter.com/asadjibranahmed/status/1646209196508037123?s=20">I’m committing to</a>. This feeling of discomfort is what pushed me to commit to this idea. I need to get over my fear, and learn how to sell. I can justify procrastinating on feature development with the other ideas, I can’t do that here.</p>
 
-&lt;p&gt;This discomfort is good. It’s a sign of what I need to work on.&lt;/p&gt;
+<p>This discomfort is good. It’s a sign of what I need to work on.</p>
 
-&lt;p&gt;Let’s see how the next 6 weeks go.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">State machines - Why and how to use them in web development.</title><link href="https://www.asadjb.com/blog/2022-12-18-state-machines-in-web-development" rel="alternate" type="text/html" title="State machines - Why and how to use them in web development." /><published>2022-12-18T00:00:00+04:00</published><updated>2022-12-18T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/state-machines-in-web-development</id><content type="html" xml:base="https://www.asadjb.com/blog/2022-12-18-state-machines-in-web-development">&lt;h2 id=&quot;what-is-a-state-machine&quot;&gt;What is a state machine?&lt;/h2&gt;
+<p>Let’s see how the next 6 weeks go.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">State machines - Why and how to use them in web development.</title><link href="https://www.asadjb.com/blog/2022-12-18-state-machines-in-web-development" rel="alternate" type="text/html" title="State machines - Why and how to use them in web development." /><published>2022-12-18T00:00:00+04:00</published><updated>2022-12-18T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/state-machines-in-web-development</id><content type="html" xml:base="https://www.asadjb.com/blog/2022-12-18-state-machines-in-web-development"><![CDATA[<h2 id="what-is-a-state-machine">What is a state machine?</h2>
 
-&lt;p&gt;I think Wikipedia does a very good job of &lt;a href=&quot;https://en.wikipedia.org/wiki/Finite-state_machine&quot;&gt;defining a state machine&lt;/a&gt;.&lt;/p&gt;
+<p>I think Wikipedia does a very good job of <a href="https://en.wikipedia.org/wiki/Finite-state_machine">defining a state machine</a>.</p>
 
-&lt;blockquote&gt;
-  &lt;p&gt;A finite-state machine (FSM) or finite-state automaton (FSA, plural: automata), finite automaton, or simply a state machine, is a mathematical model of computation. It is an abstract machine that can be in exactly one of a finite number of states at any given time. The FSM can change from one state to another in response to some inputs; the change from one state to another is called a transition. An FSM is defined by a list of its states, its initial state, and the inputs that trigger each transition.&lt;/p&gt;
-&lt;/blockquote&gt;
+<blockquote>
+  <p>A finite-state machine (FSM) or finite-state automaton (FSA, plural: automata), finite automaton, or simply a state machine, is a mathematical model of computation. It is an abstract machine that can be in exactly one of a finite number of states at any given time. The FSM can change from one state to another in response to some inputs; the change from one state to another is called a transition. An FSM is defined by a list of its states, its initial state, and the inputs that trigger each transition.</p>
+</blockquote>
 
-&lt;p&gt;In software development, a state machine is usually represented by some aggregate data structure; an object in an OOP language, or a hash-map in a functional language like Clojure. A state machine can also be saved to your DB as a row in a table.&lt;/p&gt;
+<p>In software development, a state machine is usually represented by some aggregate data structure; an object in an OOP language, or a hash-map in a functional language like Clojure. A state machine can also be saved to your DB as a row in a table.</p>
 
-&lt;p&gt;This &lt;em&gt;object&lt;/em&gt; has fields for current state and the data in needs to do it’s job. There is also code associated with this object that defines how it transitions between it’s states.&lt;/p&gt;
+<p>This <em>object</em> has fields for current state and the data in needs to do it’s job. There is also code associated with this object that defines how it transitions between it’s states.</p>
 
-&lt;h2 id=&quot;an-example&quot;&gt;An example&lt;/h2&gt;
+<h2 id="an-example">An example</h2>
 
-&lt;p&gt;Let’s look at an example. A user trying to change their primary email address, which is also their username.&lt;/p&gt;
+<p>Let’s look at an example. A user trying to change their primary email address, which is also their username.</p>
 
-&lt;p&gt;The states are:&lt;/p&gt;
+<p>The states are:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;initial =&amp;gt; This is the starting state in which the machine is initialized.&lt;/li&gt;
-  &lt;li&gt;change-in-progress =&amp;gt; The user has asked for the email address to be changed.
-verification-in-progress =&amp;gt; We have sent an email to the old email address, asking the user to confirm the change.&lt;/li&gt;
-  &lt;li&gt;verification-done =&amp;gt; The user has verified the change.
-validation-in-progress =&amp;gt; We have sent an email to the new email address, asking the user to validate that they can receive emails there.&lt;/li&gt;
-  &lt;li&gt;validation-done =&amp;gt; The user has validated their new email address.&lt;/li&gt;
-  &lt;li&gt;changed =&amp;gt; The change has been applied.&lt;/li&gt;
-  &lt;li&gt;request-cancelled =&amp;gt; The request has been cancelled.&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>initial =&gt; This is the starting state in which the machine is initialized.</li>
+  <li>change-in-progress =&gt; The user has asked for the email address to be changed.
+verification-in-progress =&gt; We have sent an email to the old email address, asking the user to confirm the change.</li>
+  <li>verification-done =&gt; The user has verified the change.
+validation-in-progress =&gt; We have sent an email to the new email address, asking the user to validate that they can receive emails there.</li>
+  <li>validation-done =&gt; The user has validated their new email address.</li>
+  <li>changed =&gt; The change has been applied.</li>
+  <li>request-cancelled =&gt; The request has been cancelled.</li>
+</ul>
 
-&lt;p&gt;Transitions are:&lt;/p&gt;
+<p>Transitions are:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;initial =&amp;gt; change-in-progress. Initiated when the user requests the change via a web form.
-change-in-progress =&amp;gt; verification-in-progress. We have sent the verification email to the current email address.&lt;/li&gt;
-  &lt;li&gt;verification-in-progress =&amp;gt; verification-done. The user has verified that they intended to make this change by clicking a link sent to their existing email.&lt;/li&gt;
-  &lt;li&gt;verification-done =&amp;gt; validation-in-progress. We have send the validation email to the new email address.
-validation-in-progress =&amp;gt; validation-done. The user has validated the new email address by clicking a link in the email sent to it.&lt;/li&gt;
-  &lt;li&gt;validation-done =&amp;gt; changed. We have made the change in our DBs, and run any other processing required for this change.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;any&lt;/em&gt; =&amp;gt; request-cancelled. The request was cancelled by either the user or our systems.&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>initial =&gt; change-in-progress. Initiated when the user requests the change via a web form.
+change-in-progress =&gt; verification-in-progress. We have sent the verification email to the current email address.</li>
+  <li>verification-in-progress =&gt; verification-done. The user has verified that they intended to make this change by clicking a link sent to their existing email.</li>
+  <li>verification-done =&gt; validation-in-progress. We have send the validation email to the new email address.
+validation-in-progress =&gt; validation-done. The user has validated the new email address by clicking a link in the email sent to it.</li>
+  <li>validation-done =&gt; changed. We have made the change in our DBs, and run any other processing required for this change.</li>
+  <li><em>any</em> =&gt; request-cancelled. The request was cancelled by either the user or our systems.</li>
+</ul>
 
-&lt;p&gt;You could also add states for verification or validation failures. Also for failures of our system to send an email.&lt;/p&gt;
+<p>You could also add states for verification or validation failures. Also for failures of our system to send an email.</p>
 
-&lt;p&gt;The reason to have states like change-in-progress and validation-done is to make sure we only change to the in-progress states after we have sent the email. A failure in our email sending system should not put the user in a state where they need an email to proceed further but our system thinks the email has been sent.
-There are more states that can be added to make this more robust. I’ve skipped any states that deal with error conditions (validation failure, etc). For this hypothetical system, we can transition to request-cancelled but you might want more granular states to record exact points of failure.&lt;/p&gt;
+<p>The reason to have states like change-in-progress and validation-done is to make sure we only change to the in-progress states after we have sent the email. A failure in our email sending system should not put the user in a state where they need an email to proceed further but our system thinks the email has been sent.
+There are more states that can be added to make this more robust. I’ve skipped any states that deal with error conditions (validation failure, etc). For this hypothetical system, we can transition to request-cancelled but you might want more granular states to record exact points of failure.</p>
 
-&lt;h2 id=&quot;how-do-we-communicatedocument-state-machines&quot;&gt;How do we communicate/document state machines?&lt;/h2&gt;
+<h2 id="how-do-we-communicatedocument-state-machines">How do we communicate/document state machines?</h2>
 
-&lt;p&gt;While we can describe state machines with written descriptions, it’s much easier to use state diagrams. These are the standard way of describing a state machine, and are great at communicating how a state machine functions.&lt;/p&gt;
+<p>While we can describe state machines with written descriptions, it’s much easier to use state diagrams. These are the standard way of describing a state machine, and are great at communicating how a state machine functions.</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/state-machines-01.jpg&quot; alt=&quot;State diagram for changing a users email address&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/images/state-machines-01.jpg" alt="State diagram for changing a users email address" /></p>
 
-&lt;h2 id=&quot;whats-the-point&quot;&gt;What’s the point?&lt;/h2&gt;
+<h2 id="whats-the-point">What’s the point?</h2>
 
-&lt;p&gt;Looking at the example above, you may be thinking; what’s the point of using a state machine? It seems like we’re needlessly adding a layer of complexity to a simple feature that most web applications built today support happily without a state machine.&lt;/p&gt;
+<p>Looking at the example above, you may be thinking; what’s the point of using a state machine? It seems like we’re needlessly adding a layer of complexity to a simple feature that most web applications built today support happily without a state machine.</p>
 
-&lt;p&gt;&lt;em&gt;Here’s a secret. All software development is building state machines.&lt;/em&gt;&lt;/p&gt;
+<p><em>Here’s a secret. All software development is building state machines.</em></p>
 
-&lt;p&gt;&lt;a href=&quot;https://wiki.c2.com/?FiniteStateMachine&quot;&gt;Computers are themselves FSMs&lt;/a&gt;. As is all the software we write on top of them. It’s just that we don’t normally think of the enormous space of possible states, instead we think in terms of values of variables and what they represent in our software.&lt;/p&gt;
+<p><a href="https://wiki.c2.com/?FiniteStateMachine">Computers are themselves FSMs</a>. As is all the software we write on top of them. It’s just that we don’t normally think of the enormous space of possible states, instead we think in terms of values of variables and what they represent in our software.</p>
 
-&lt;p&gt;Thinking explicitly in terms of FSMs for small parts of our software makes it easy to reason about  it, which is why it’s very useful to model our software as an FSM on smaller scales, in critical modules where we must be absolutely sure of how the software will react to different inputs.&lt;/p&gt;
+<p>Thinking explicitly in terms of FSMs for small parts of our software makes it easy to reason about  it, which is why it’s very useful to model our software as an FSM on smaller scales, in critical modules where we must be absolutely sure of how the software will react to different inputs.</p>
 
-&lt;h2 id=&quot;a-practical-example&quot;&gt;A practical example&lt;/h2&gt;
+<h2 id="a-practical-example">A practical example</h2>
 
-&lt;p&gt;I think this whole state machine business is a lot easier to explain with a code sample. &lt;a href=&quot;https://github.com/davidkpiano/xstate&quot;&gt;Xstate&lt;/a&gt; is a popular JS library that makes it easy to build state machines. Instead of copying the code here, I’ll just link it.&lt;/p&gt;
+<p>I think this whole state machine business is a lot easier to explain with a code sample. <a href="https://github.com/davidkpiano/xstate">Xstate</a> is a popular JS library that makes it easy to build state machines. Instead of copying the code here, I’ll just link it.</p>
 
-&lt;p&gt;Here’s a &lt;a href=&quot;https://xstate.js.org/docs/tutorials/reddit.html&quot;&gt;tutorial from the Xstate site&lt;/a&gt; that walks you through building an app that displays post from a sub-Reddit. Notice how the code is simpler to reason about. You’re almost breaking the functionality into it’s constituent pieces; what to do while the posts are loading, what behavior to expose when the posts are loaded, and how to react if loading fails.&lt;/p&gt;</content><author><name></name></author><summary type="html">What is a state machine?</summary></entry><entry><title type="html">My knowledge management system</title><link href="https://www.asadjb.com/blog/2022-08-09-my-knowledge-management-system" rel="alternate" type="text/html" title="My knowledge management system" /><published>2022-08-09T00:00:00+04:00</published><updated>2022-08-09T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/my-knowledge-management-system</id><content type="html" xml:base="https://www.asadjb.com/blog/2022-08-09-my-knowledge-management-system">&lt;p&gt;This is a follow-up on my previous notes about Zettelkasten; &lt;a href=&quot;https://blog.asadjb.com/thoughts-on-zettelkasten-and-the-slip-box&quot;&gt;Thoughts on Zettelkasten and the slip box&lt;/a&gt;. Since then, I’ve had a chance to read and think more about the problems I listed out with trying to adapt a Zettelkasten style slip box for my knowledge management system.&lt;/p&gt;
+<p>Here’s a <a href="https://xstate.js.org/docs/tutorials/reddit.html">tutorial from the Xstate site</a> that walks you through building an app that displays post from a sub-Reddit. Notice how the code is simpler to reason about. You’re almost breaking the functionality into it’s constituent pieces; what to do while the posts are loading, what behavior to expose when the posts are loaded, and how to react if loading fails.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[What is a state machine?]]></summary></entry><entry><title type="html">My knowledge management system</title><link href="https://www.asadjb.com/blog/2022-08-09-my-knowledge-management-system" rel="alternate" type="text/html" title="My knowledge management system" /><published>2022-08-09T00:00:00+04:00</published><updated>2022-08-09T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/my-knowledge-management-system</id><content type="html" xml:base="https://www.asadjb.com/blog/2022-08-09-my-knowledge-management-system"><![CDATA[<p>This is a follow-up on my previous notes about Zettelkasten; <a href="https://blog.asadjb.com/thoughts-on-zettelkasten-and-the-slip-box">Thoughts on Zettelkasten and the slip box</a>. Since then, I’ve had a chance to read and think more about the problems I listed out with trying to adapt a Zettelkasten style slip box for my knowledge management system.</p>
 
-&lt;p&gt;I’ve found a few answers and I’ve come up with a new system that I hope will serve me better.&lt;/p&gt;
+<p>I’ve found a few answers and I’ve come up with a new system that I hope will serve me better.</p>
 
-&lt;h2 id=&quot;why-did-i-struggle-with-using-the-zettelkasten&quot;&gt;Why did I struggle with using the Zettelkasten?&lt;/h2&gt;
+<h2 id="why-did-i-struggle-with-using-the-zettelkasten">Why did I struggle with using the Zettelkasten?</h2>
 
-&lt;p&gt;The most important learning I’ve had while searching for an answer to this is something that should have been obvious to me from the start.&lt;/p&gt;
+<p>The most important learning I’ve had while searching for an answer to this is something that should have been obvious to me from the start.</p>
 
-&lt;blockquote&gt;
-  &lt;p&gt;A Zettlekasten is a system designed to facilitate publishing. It’s wasn’t meant to be used as a general knowledge management system.&lt;/p&gt;
-&lt;/blockquote&gt;
+<blockquote>
+  <p>A Zettlekasten is a system designed to facilitate publishing. It’s wasn’t meant to be used as a general knowledge management system.</p>
+</blockquote>
 
-&lt;p&gt;This fact very quickly cleared up why the slip box wasn’t working for me as a knowledge management system.&lt;/p&gt;
+<p>This fact very quickly cleared up why the slip box wasn’t working for me as a knowledge management system.</p>
 
-&lt;p&gt;When you’re using a Zettelkasten system, you “ask” your slip box for questions you should find answers to. This “asking” can be by looking at questions you have open in your notes, or by seeing where you’re forming lumps or groups of notes and expanding on the knowledge already there.&lt;/p&gt;
+<p>When you’re using a Zettelkasten system, you “ask” your slip box for questions you should find answers to. This “asking” can be by looking at questions you have open in your notes, or by seeing where you’re forming lumps or groups of notes and expanding on the knowledge already there.</p>
 
-&lt;p&gt;Since the starting point for your reading and research is a bunch of notes already in your slip box, any new notes will be taken with an eye towards linking it to your existing notes. You naturally build up a group of interconnected notes.&lt;/p&gt;
+<p>Since the starting point for your reading and research is a bunch of notes already in your slip box, any new notes will be taken with an eye towards linking it to your existing notes. You naturally build up a group of interconnected notes.</p>
 
-&lt;p&gt;This is the reason why a slip box doesn’t need much hierarchy or a well maintained index/table of contents. Most notes you add will be linked to older ones. You build up your graph by adding connected notes to it. You seldom add a completely unconnected note to your slip box.&lt;/p&gt;
+<p>This is the reason why a slip box doesn’t need much hierarchy or a well maintained index/table of contents. Most notes you add will be linked to older ones. You build up your graph by adding connected notes to it. You seldom add a completely unconnected note to your slip box.</p>
 
-&lt;p&gt;&lt;strong&gt;I didn’t need a system to facilitate publishing. I needed a system to store knowledge. These 2 goals might overlap a bit, but they are quite distinct.&lt;/strong&gt;&lt;/p&gt;
+<p><strong>I didn’t need a system to facilitate publishing. I needed a system to store knowledge. These 2 goals might overlap a bit, but they are quite distinct.</strong></p>
 
-&lt;p&gt;Most of my notes are on completely unrelated topics. I read based on whatever I find interesting on social media; Hacker News, Indie Hackers, my collection of books on disparate topics, etc. Sometimes I read to understand a topic better by trying to answer questions I had in older notes, in which case I can build a small network of notes - but that’s an infrequent activity for me.&lt;/p&gt;
+<p>Most of my notes are on completely unrelated topics. I read based on whatever I find interesting on social media; Hacker News, Indie Hackers, my collection of books on disparate topics, etc. Sometimes I read to understand a topic better by trying to answer questions I had in older notes, in which case I can build a small network of notes - but that’s an infrequent activity for me.</p>
 
-&lt;p&gt;A Zettelkasten is a poor system to hold notes on a wide variety of subjects, with only few notes per subject. It’s difficult to go back to disconnected notes you have written without maintaining some sort of hierarchy. Trying to shoe horn a hierarchy into a Zettelkasten felt foreign, and was frowned upon in most literature I read about the subject.&lt;/p&gt;
+<p>A Zettelkasten is a poor system to hold notes on a wide variety of subjects, with only few notes per subject. It’s difficult to go back to disconnected notes you have written without maintaining some sort of hierarchy. Trying to shoe horn a hierarchy into a Zettelkasten felt foreign, and was frowned upon in most literature I read about the subject.</p>
 
-&lt;h2 id=&quot;my-new-system&quot;&gt;My new system&lt;/h2&gt;
+<h2 id="my-new-system">My new system</h2>
 
-&lt;p&gt;With this new information, I can finally get rid of the self-inflicted pain of trying to use the Zettelkasten system to manage my knowledge. Using hierarchical tools makes sense, because my knowledge graph isn’t well connected. It’s mostly a set of disparate notes.&lt;/p&gt;
+<p>With this new information, I can finally get rid of the self-inflicted pain of trying to use the Zettelkasten system to manage my knowledge. Using hierarchical tools makes sense, because my knowledge graph isn’t well connected. It’s mostly a set of disparate notes.</p>
 
-&lt;p&gt;Some notes form lumps or groups when I become interested in researching something in detail. Most don’t. I need a system I can put my knowledge into and get it back out when needed, without relying on linking between notes.&lt;/p&gt;
+<p>Some notes form lumps or groups when I become interested in researching something in detail. Most don’t. I need a system I can put my knowledge into and get it back out when needed, without relying on linking between notes.</p>
 
-&lt;p&gt;I will use MOC (Map of content) instead of folders. Folder give me everything I need for building a hierarchy, but miss out on 1 important feature. There’s no way to demonstrate relationship b/w notes in the same folder. In a MOC, notes can be near to each other when they are related, can form a hierarchical relationship by being indented under other notes, etc.&lt;/p&gt;
+<p>I will use MOC (Map of content) instead of folders. Folder give me everything I need for building a hierarchy, but miss out on 1 important feature. There’s no way to demonstrate relationship b/w notes in the same folder. In a MOC, notes can be near to each other when they are related, can form a hierarchical relationship by being indented under other notes, etc.</p>
 
-&lt;p&gt;I got introduced to the concept of MOCs by &lt;a href=&quot;https://medium.com/@nickmilo22/in-what-ways-can-we-form-useful-relationships-between-notes-9b9ec46973c6&quot;&gt;this excellent blog post&lt;/a&gt; from Nick Milo. He also has a course - &lt;a href=&quot;https://www.linkingyourthinking.com/&quot;&gt;Linking Your Thinking&lt;/a&gt;, that talks about building a personal knowledge management system.&lt;/p&gt;
+<p>I got introduced to the concept of MOCs by <a href="https://medium.com/@nickmilo22/in-what-ways-can-we-form-useful-relationships-between-notes-9b9ec46973c6">this excellent blog post</a> from Nick Milo. He also has a course - <a href="https://www.linkingyourthinking.com/">Linking Your Thinking</a>, that talks about building a personal knowledge management system.</p>
 
-&lt;p&gt;I’ve decided to use Logseq as my writing tool. Here’s how my new system will work day to day.&lt;/p&gt;
+<p>I’ve decided to use Logseq as my writing tool. Here’s how my new system will work day to day.</p>
 
-&lt;ul&gt;
-  &lt;li&gt;I take fleeting or literature notes anywhere. They all come to my dashboard through the queries I have. Mostly this means these notes are in the journal pages.&lt;/li&gt;
-  &lt;li&gt;Once a fleeting or literature note is done, it’s marked as status:: complete and it disappears from the dashboard.&lt;/li&gt;
-  &lt;li&gt;Permanent notes have to be created from one of the MOC pages. This includes MOCs for topics, but also MOCs for courses, books, etc. This allows me to have a browsable list of notes in my system.&lt;/li&gt;
-  &lt;li&gt;What do I make permanent notes out of? To answer this, I need to answer a deeper question. What is the primary reason for my writing?
-    &lt;ul&gt;
-      &lt;li&gt;To make things clearer to me, to understand deeply. Thus I can make notes of things that I want to make sure I understand. Topics that I don’t care about don’t need a permanent note.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;I can add any tags that I think are necessary. Not sure how I can make this more efficient now, but I will add tags for now as another way to discover related notes.&lt;/li&gt;
-  &lt;li&gt;When I want to write for publishing, I will use Ulysses as I really like that interface and I can then easily copy to my blogging platform from there. This does mean that I end up writing twice, but I think of my notes in Logseq as a first draft. Rewriting them again before publishing makes the final piece better.&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>I take fleeting or literature notes anywhere. They all come to my dashboard through the queries I have. Mostly this means these notes are in the journal pages.</li>
+  <li>Once a fleeting or literature note is done, it’s marked as status:: complete and it disappears from the dashboard.</li>
+  <li>Permanent notes have to be created from one of the MOC pages. This includes MOCs for topics, but also MOCs for courses, books, etc. This allows me to have a browsable list of notes in my system.</li>
+  <li>What do I make permanent notes out of? To answer this, I need to answer a deeper question. What is the primary reason for my writing?
+    <ul>
+      <li>To make things clearer to me, to understand deeply. Thus I can make notes of things that I want to make sure I understand. Topics that I don’t care about don’t need a permanent note.</li>
+    </ul>
+  </li>
+  <li>I can add any tags that I think are necessary. Not sure how I can make this more efficient now, but I will add tags for now as another way to discover related notes.</li>
+  <li>When I want to write for publishing, I will use Ulysses as I really like that interface and I can then easily copy to my blogging platform from there. This does mean that I end up writing twice, but I think of my notes in Logseq as a first draft. Rewriting them again before publishing makes the final piece better.</li>
+</ul>
 
-&lt;p&gt;This system is very much an experiment. Once I have been using it for a few months, I should have a better idea of how effective it is in helping me manage my knowledge. I might do a follow-up post then.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is a follow-up on my previous notes about Zettelkasten; Thoughts on Zettelkasten and the slip box. Since then, I’ve had a chance to read and think more about the problems I listed out with trying to adapt a Zettelkasten style slip box for my knowledge management system.</summary></entry><entry><title type="html">Bootstrap with Ruby on Rails 7</title><link href="https://www.asadjb.com/blog/2022-08-07-bootstrap-with-ror-7" rel="alternate" type="text/html" title="Bootstrap with Ruby on Rails 7" /><published>2022-08-07T00:00:00+04:00</published><updated>2022-08-07T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/bootstrap-with-ror-7</id><content type="html" xml:base="https://www.asadjb.com/blog/2022-08-07-bootstrap-with-ror-7">&lt;p&gt;If you have a brand new RoR 7 project that you created with the defaults by running &lt;code&gt;rails new &amp;lt;PROJECT&amp;gt;&lt;/code&gt; then you can safely follow the following steps to get Bootstrap 5 installed in your project.&lt;/p&gt;
+<p>This system is very much an experiment. Once I have been using it for a few months, I should have a better idea of how effective it is in helping me manage my knowledge. I might do a follow-up post then.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[This is a follow-up on my previous notes about Zettelkasten; Thoughts on Zettelkasten and the slip box. Since then, I’ve had a chance to read and think more about the problems I listed out with trying to adapt a Zettelkasten style slip box for my knowledge management system.]]></summary></entry><entry><title type="html">Bootstrap with Ruby on Rails 7</title><link href="https://www.asadjb.com/blog/2022-08-07-bootstrap-with-ror-7" rel="alternate" type="text/html" title="Bootstrap with Ruby on Rails 7" /><published>2022-08-07T00:00:00+04:00</published><updated>2022-08-07T00:00:00+04:00</updated><id>https://www.asadjb.com/blog/bootstrap-with-ror-7</id><content type="html" xml:base="https://www.asadjb.com/blog/2022-08-07-bootstrap-with-ror-7"><![CDATA[<p>If you have a brand new RoR 7 project that you created with the defaults by running <code>rails new &lt;PROJECT&gt;</code> then you can safely follow the following steps to get Bootstrap 5 installed in your project.</p>
 
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Install gems&lt;/strong&gt;
-Add the following to your &lt;code&gt;Gemfile&lt;/code&gt; and run &lt;code&gt;bundle install&lt;/code&gt;.
-    &lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;gem &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;bootstrap&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;~&amp;gt; 5.2.0&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;
-gem &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;jquery-rails&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt;
-gem &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;sass-rails&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#777&quot;&gt;# This may already be present in the file in a commented line, in which case you should uncomment it.&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Setup Javascript&lt;/strong&gt;
-In your &lt;code&gt;app/javascript/application.js&lt;/code&gt;, add the following at the top.
-    &lt;div class=&quot;language-javascript highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#777&quot;&gt;//= require jquery3&lt;/span&gt;
-&lt;span style=&quot;color:#777&quot;&gt;//= require popper&lt;/span&gt;
-&lt;span style=&quot;color:#777&quot;&gt;//= require bootstrap&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Load Javascript in your views&lt;/strong&gt;
-In the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; section of your &lt;code&gt;app/views/layouts/application.html.erb&lt;/code&gt;, add this:
-    &lt;div class=&quot;language-erb highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;background-color:hsla(0,0%,0%,0.07);color:black&quot;&gt;&lt;span style=&quot;font-weight:bold;color:#666&quot;&gt;&amp;lt;%=&lt;/span&gt; javascript_importmap_tags &lt;span style=&quot;font-weight:bold;color:#666&quot;&gt;%&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Import Bootstrap CSS&lt;/strong&gt;
-Rename the existing &lt;code&gt;app/assets/stylesheets/application.css&lt;/code&gt; to &lt;code&gt;app/assets/stylesheets/application.scss&lt;/code&gt; and add a line with &lt;code&gt;@import &quot;bootstrap&quot;&lt;/code&gt; near the top.&lt;/li&gt;
-&lt;/ol&gt;
+<ol>
+  <li><strong>Install gems</strong>
+Add the following to your <code>Gemfile</code> and run <code>bundle install</code>.
+    <div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>gem <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">bootstrap</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">~&gt; 5.2.0</span><span style="color:#710">'</span></span>
+gem <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">jquery-rails</span><span style="color:#710">'</span></span>
+gem <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">sass-rails</span><span style="color:#710">'</span></span> <span style="color:#777"># This may already be present in the file in a commented line, in which case you should uncomment it.</span>
+</pre></div>
+</div>
+    </div>
+  </li>
+  <li><strong>Setup Javascript</strong>
+In your <code>app/javascript/application.js</code>, add the following at the top.
+    <div class="language-javascript highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#777">//= require jquery3</span>
+<span style="color:#777">//= require popper</span>
+<span style="color:#777">//= require bootstrap</span>
+</pre></div>
+</div>
+    </div>
+  </li>
+  <li><strong>Load Javascript in your views</strong>
+In the <code>&lt;head&gt;</code> section of your <code>app/views/layouts/application.html.erb</code>, add this:
+    <div class="language-erb highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">&lt;%=</span> javascript_importmap_tags <span style="font-weight:bold;color:#666">%&gt;</span></span>
+</pre></div>
+</div>
+    </div>
+  </li>
+  <li><strong>Import Bootstrap CSS</strong>
+Rename the existing <code>app/assets/stylesheets/application.css</code> to <code>app/assets/stylesheets/application.scss</code> and add a line with <code>@import "bootstrap"</code> near the top.</li>
+</ol>
 
-&lt;p&gt;The &lt;code&gt;sass-rails&lt;/code&gt; Gem allows processing SCSS files to CSS on the fly. RoR 7 is already setup to make use of it without any additional configuration beyond installing the Gem.&lt;/p&gt;
+<p>The <code>sass-rails</code> Gem allows processing SCSS files to CSS on the fly. RoR 7 is already setup to make use of it without any additional configuration beyond installing the Gem.</p>
 
-&lt;p&gt;In your HTML the CSS is loaded by the tag &lt;code&gt;&amp;lt;%= stylesheet_link_tag &quot;application&quot;, &quot;data-turbo-track&quot;: &quot;reload&quot; %&amp;gt;&lt;/code&gt; which should already be present in your &lt;code&gt;app/views/layouts/application.html.erb&lt;/code&gt;.&lt;/p&gt;
+<p>In your HTML the CSS is loaded by the tag <code>&lt;%= stylesheet_link_tag "application", "data-turbo-track": "reload" %&gt;</code> which should already be present in your <code>app/views/layouts/application.html.erb</code>.</p>
 
-&lt;h2 id=&quot;why-did-i-write-this&quot;&gt;Why did I write this?&lt;/h2&gt;
+<h2 id="why-did-i-write-this">Why did I write this?</h2>
 
-&lt;p&gt;I’ve been helping a non-tech fried learn programming for the past few months. He’s working through a Ruby on Rails course, and he’s now at the point where the course walks him through building mini apps; simple web socket based chat, stock trackers, etc…&lt;/p&gt;
+<p>I’ve been helping a non-tech fried learn programming for the past few months. He’s working through a Ruby on Rails course, and he’s now at the point where the course walks him through building mini apps; simple web socket based chat, stock trackers, etc…</p>
 
-&lt;p&gt;Unfortunately the course uses Rail 6, and Rails 7 introduced a couple of new things that changed how JS and CSS files were processed and added. My friend has had constant problems getting Bootstrap to work nicely inside the apps he creates.&lt;/p&gt;
+<p>Unfortunately the course uses Rail 6, and Rails 7 introduced a couple of new things that changed how JS and CSS files were processed and added. My friend has had constant problems getting Bootstrap to work nicely inside the apps he creates.</p>
 
-&lt;p&gt;I’ve tried helping him by hacking away over Zoom, following instructions from a bunch of different sources. It worked sometimes, but the last few times he’s asked me to help, I couldn’t not get Bootstrap working, and I had to ask him to move to the next lesson without Bootstrap. It wasn’t a blocker, but it wasn’t a great experience either.&lt;/p&gt;
+<p>I’ve tried helping him by hacking away over Zoom, following instructions from a bunch of different sources. It worked sometimes, but the last few times he’s asked me to help, I couldn’t not get Bootstrap working, and I had to ask him to move to the next lesson without Bootstrap. It wasn’t a blocker, but it wasn’t a great experience either.</p>
 
-&lt;p&gt;So today, I spent a few hours pouring over the documentation. What always confused me before was the 2 different ways of processing Javascript that RoR 7 has:&lt;/p&gt;
+<p>So today, I spent a few hours pouring over the documentation. What always confused me before was the 2 different ways of processing Javascript that RoR 7 has:</p>
 
-&lt;ol&gt;
-  &lt;li&gt;Import maps: &lt;a href=&quot;https://guides.rubyonrails.org/working_with_javascript_in_rails.html&quot;&gt;Working with Javascript in Rails&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://guides.rubyonrails.org/asset_pipeline.html&quot;&gt;The asset pipeline&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
+<ol>
+  <li>Import maps: <a href="https://guides.rubyonrails.org/working_with_javascript_in_rails.html">Working with Javascript in Rails</a></li>
+  <li><a href="https://guides.rubyonrails.org/asset_pipeline.html">The asset pipeline</a></li>
+</ol>
 
-&lt;p&gt;I thought these were 2 different systems and you had to choose one over the other. Unfortunately the official Rails Guides (linked above) don’t clarify this in the guides for both of these systems.&lt;/p&gt;
+<p>I thought these were 2 different systems and you had to choose one over the other. Unfortunately the official Rails Guides (linked above) don’t clarify this in the guides for both of these systems.</p>
 
-&lt;p&gt;After reading the documentation and experimenting with a local Rails app, I was able to finally understand the basics of these two systems, and how they work together. I’ll describe it next for the next person who faces this confusion.&lt;/p&gt;
+<p>After reading the documentation and experimenting with a local Rails app, I was able to finally understand the basics of these two systems, and how they work together. I’ll describe it next for the next person who faces this confusion.</p>
 
-&lt;h2 id=&quot;how-import-maps-and-the-asset-pipeline-fit-together&quot;&gt;How import maps and the asset pipeline fit together&lt;/h2&gt;
+<h2 id="how-import-maps-and-the-asset-pipeline-fit-together">How import maps and the asset pipeline fit together</h2>
 
-&lt;p&gt;Import maps are a way to import Javascript modules directly from the browser. Here’s a nice official (I think) resource about it: https://github.com/WICG/import-maps&lt;/p&gt;
+<p>Import maps are a way to import Javascript modules directly from the browser. Here’s a nice official (I think) resource about it: https://github.com/WICG/import-maps</p>
 
-&lt;p&gt;Import maps in Rails 7 let you define mappings between the “bare” name you want to use in &lt;code&gt;import React from &quot;react&quot;&lt;/code&gt; and the ESM compatible specifier that must be one of; absolute path, relative path, or a URI.&lt;/p&gt;
+<p>Import maps in Rails 7 let you define mappings between the “bare” name you want to use in <code>import React from "react"</code> and the ESM compatible specifier that must be one of; absolute path, relative path, or a URI.</p>
 
-&lt;p&gt;That’s it. Import maps have no business in how the files are pre-processed on loaded. If you use the import map tag in your HTML file, it will spit out the following code in the HTML:&lt;/p&gt;
+<p>That’s it. Import maps have no business in how the files are pre-processed on loaded. If you use the import map tag in your HTML file, it will spit out the following code in the HTML:</p>
 
-&lt;div class=&quot;language-html highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;script&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;type&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;importmap&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;data-turbo-track&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;reload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;background-color:hsla(0,0%,0%,0.07);color:black&quot;&gt;    {
-      &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;imports&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: {
-        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;application&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/application-45b83ea01a8c68b3493391ceecb79f31baf4159ca091fee6fd122bf413d79500.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;@hotwired/turbo-rails&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/turbo.min-e5023178542f05fc063cd1dc5865457259cc01f3fba76a28454060d33de6f429.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;@hotwired/stimulus&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/stimulus.min-b8a9738499c7a8362910cd545375417370d72a9776fb4e766df7671484e2beb7.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;@hotwired/stimulus-loading&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;controllers/application&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;controllers/hello_controller&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;,
-        &lt;span style=&quot;color:#606&quot;&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span&gt;controllers&lt;/span&gt;&lt;span style=&quot;color:#404&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+<div class="language-html highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">importmap</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">data-turbo-track</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">reload</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>
+<span style="background-color:hsla(0,0%,0%,0.07);color:black">    {
+      <span style="color:#606"><span style="color:#404">&quot;</span><span>imports</span><span style="color:#404">&quot;</span></span>: {
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>application</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/application-45b83ea01a8c68b3493391ceecb79f31baf4159ca091fee6fd122bf413d79500.js</span><span style="color:#710">&quot;</span></span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>@hotwired/turbo-rails</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/turbo.min-e5023178542f05fc063cd1dc5865457259cc01f3fba76a28454060d33de6f429.js</span><span style="color:#710">&quot;</span></span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>@hotwired/stimulus</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/stimulus.min-b8a9738499c7a8362910cd545375417370d72a9776fb4e766df7671484e2beb7.js</span><span style="color:#710">&quot;</span></span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>@hotwired/stimulus-loading</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js</span><span style="color:#710">&quot;</span></span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>controllers/application</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js</span><span style="color:#710">&quot;</span></span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>controllers/hello_controller</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js</span><span style="color:#710">&quot;</span></span>,
+        <span style="color:#606"><span style="color:#404">&quot;</span><span>controllers</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js</span><span style="color:#710">&quot;</span></span>
       }
-    }&lt;/span&gt;
-&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;rel&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;modulepreload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/application-45b83ea01a8c68b3493391ceecb79f31baf4159ca091fee6fd122bf413d79500.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;rel&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;modulepreload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/turbo.min-e5023178542f05fc063cd1dc5865457259cc01f3fba76a28454060d33de6f429.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;rel&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;modulepreload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/stimulus.min-b8a9738499c7a8362910cd545375417370d72a9776fb4e766df7671484e2beb7.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;rel&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;modulepreload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;href&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;script&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;src&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/assets/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;async&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;async&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;data-turbo-track&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;reload&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;script&lt;/span&gt; &lt;span style=&quot;color:#b48&quot;&gt;type&lt;/span&gt;=&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;module&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;background-color:hsla(0,0%,0%,0.07);color:black&quot;&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;application&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+    }</span>
+<span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
+<span style="color:#070;font-weight:bold">&lt;link</span> <span style="color:#b48">rel</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">modulepreload</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/application-45b83ea01a8c68b3493391ceecb79f31baf4159ca091fee6fd122bf413d79500.js</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>
+<span style="color:#070;font-weight:bold">&lt;link</span> <span style="color:#b48">rel</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">modulepreload</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/turbo.min-e5023178542f05fc063cd1dc5865457259cc01f3fba76a28454060d33de6f429.js</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>
+<span style="color:#070;font-weight:bold">&lt;link</span> <span style="color:#b48">rel</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">modulepreload</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/stimulus.min-b8a9738499c7a8362910cd545375417370d72a9776fb4e766df7671484e2beb7.js</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>
+<span style="color:#070;font-weight:bold">&lt;link</span> <span style="color:#b48">rel</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">modulepreload</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">href</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>
+<span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/assets/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">async</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">async</span><span style="color:#710">&quot;</span></span> <span style="color:#b48">data-turbo-track</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">reload</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
+<span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">type</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">module</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span>
+<span style="background-color:hsla(0,0%,0%,0.07);color:black">  <span style="color:#080;font-weight:bold">import</span> <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">application</span><span style="color:#710">&quot;</span></span></span>
+<span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
+</pre></div>
+</div>
+</div>
 
-&lt;p&gt;The actual loading of the files is left to the Asset Pipeline. Which is why you can use the import map tag in your HTML file, while still using the //= require jquery directives in your JS files. The Asset Pipeline also provides the fingerprinting that you see in the filenames above.&lt;/p&gt;</content><author><name></name></author><summary type="html">If you have a brand new RoR 7 project that you created with the defaults by running rails new &amp;lt;PROJECT&amp;gt; then you can safely follow the following steps to get Bootstrap 5 installed in your project.</summary></entry></feed>
+<p>The actual loading of the files is left to the Asset Pipeline. Which is why you can use the import map tag in your HTML file, while still using the //= require jquery directives in your JS files. The Asset Pipeline also provides the fingerprinting that you see in the filenames above.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[If you have a brand new RoR 7 project that you created with the defaults by running rails new &lt;PROJECT&gt; then you can safely follow the following steps to get Bootstrap 5 installed in your project.]]></summary></entry></feed>
