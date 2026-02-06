@@ -2,7 +2,6 @@
 layout: post
 title: I have not failed enough
 date: 2023-12-31
-redirect_from: /i-have-not-failed-enough
 ---
 I was recently listening through the [How to succeed at failing](https://freakonomics.com/podcast-tag/how-to-succeed-at-failing/) series on the Freakonomics podcast and started to think about how often I had failed in the past few years. The first answer was - not too much. I couldn't think of too many instances of where I had "failed".
 

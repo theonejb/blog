@@ -2,7 +2,6 @@
 layout: post
 title: Giving up on deadlines
 date: 2021-07-23
-redirect_from: /giving-up-on-deadlines
 ---
 For the last few years, I've really struggled with making progress on my side projects.
 

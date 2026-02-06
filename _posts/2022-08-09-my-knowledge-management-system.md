@@ -2,7 +2,6 @@
 layout: post
 title: My knowledge management system
 date: 2022-08-09
-redirect_from: /my-knowledge-management-system
 ---
 This is a follow-up on my previous notes about Zettelkasten; [Thoughts on Zettelkasten and the slip box](https://blog.asadjb.com/thoughts-on-zettelkasten-and-the-slip-box). Since then, I’ve had a chance to read and think more about the problems I listed out with trying to adapt a Zettelkasten style slip box for my knowledge management system.
 

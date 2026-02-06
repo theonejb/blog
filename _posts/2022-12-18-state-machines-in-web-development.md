@@ -2,7 +2,6 @@
 layout: post
 title: State machines - Why and how to use them in web development.
 date: 2022-12-18
-redirect_from: /state-machines-why-and-how-to-use-them-in-web-development
 ---
 ## What is a state machine?
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: My buildspace project
-redirect_from: /my-buildspace-project
 ---
 ![My buildspace project idea launch post image](/assets/images/my-buildspace-project-01.png)
 

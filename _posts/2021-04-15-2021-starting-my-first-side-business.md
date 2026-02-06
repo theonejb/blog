@@ -2,7 +2,6 @@
 layout: post
 title: 2021 - Starting my first side business
 date: 2021-04-15
-redirect_from: /2021-starting-my-first-side-business
 ---
 My plan for 2021 is to build a small side business that can generate some revenue. Not for the money, but for the experience of starting a business from scratch. I'm going to spend 2021 trying to make that happen.
 

@@ -2,7 +2,6 @@
 layout: post
 title: How Horo timer educates users
 date: 2022-07-04
-redirect_from: /how-horo-timer-educates-users
 ---
 [Horo](https://apps.apple.com/us/app/horo-timer-for-menu-bar/id1437226581?mt=12) is a simple menu bar timer app for the Mac.
 

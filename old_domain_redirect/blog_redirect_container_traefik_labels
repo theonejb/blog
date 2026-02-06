@@ -1,4 +1,0 @@
-traefik.http.routers.blog-redirect.rule=Host(`blog.asadjb.com`)
-traefik.http.routers.blog-redirect.entrypoints=websecure
-traefik.http.routers.blog-redirect.tls=true
-traefik.http.routers.blog-redirect.tls.certresolver=letsencrypt

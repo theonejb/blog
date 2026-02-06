@@ -2,7 +2,6 @@
 layout: post
 title: "Follow up: Giving up on deadlines"
 date: 2021-09-27
-redirect_from: /follow-up-giving-up-on-deadlines
 ---
 2 months ago I made the decision to not assign arbitrary deadlines to personal/side projects. You can read about that in the post [Giving up on deadlines](https://blog.asadjb.com/giving-up-on-deadlines).
 

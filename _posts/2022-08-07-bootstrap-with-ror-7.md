@@ -2,7 +2,6 @@
 layout: post
 title: Bootstrap with Ruby on Rails 7
 date: 2022-08-07
-redirect_from: /bootstrap-with-ruby-on-rails-7
 ---
 If you have a brand new RoR 7 project that you created with the defaults by running `rails new <PROJECT>` then you can safely follow the following steps to get Bootstrap 5 installed in your project.
 

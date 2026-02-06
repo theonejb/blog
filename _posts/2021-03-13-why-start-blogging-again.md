@@ -2,7 +2,6 @@
 layout: post
 title: Why start blogging again?
 date: 2021-03-13
-redirect_from: /why-start-blogging-again
 ---
 I have written blog posts on [Medium](https://medium.com/@asadjb) once or twice a year for the past decade. I have posted 14 times from 2011 to 2018. Every few years I would start blogging with renewed passion, and after 1 or 2 posts my enthusiasm would run out and I wouldn't post for another year or so.
 

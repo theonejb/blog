@@ -12,18 +12,8 @@ collections:
     output: true
     permalink: /build-logs/:name
 
-# Build settings
-
-exclude:
-  - old_domain_redirect
-
-destination: docs
-
 plugins:
-  - jekyll-redirect-from
-
-whitelist:
-  - jekyll-redirect-from
+  - jekyll-feed
 
 markdown: kramdown
 

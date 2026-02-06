@@ -2,7 +2,6 @@
 layout: post
 title: Thoughts on Zettelkasten and the slip box
 date: 2022-07-28
-redirect_from: /thoughts-on-zettelkasten-and-the-slip-box
 ---
 I had a bunch of thoughts yesterday about the Zettelkasten method and how I could use it effectively to manage my knowledge base. I started the day by dumping my thoughts into Logseq. Here they are.
 
