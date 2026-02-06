@@ -1,4 +1,4 @@
-/*@import "syntax_hl.css";*/
+@import "syntax_hl.css";
 
 body {
     font-family: Verdana, sans-serif;
@@ -142,20 +142,20 @@ img {
 code {
     font-family: monospace;
     padding: 2px;
-    background-color: #f2f2f2;
-    color: #222;
     border-radius: 3px;
 }
 
 .highlight,
 .code {
     padding: 1px 15px;
-    background-color: #f2f2f2;
-    color: #222;
     border-radius: 3px;
     margin-block-start: 1em;
     margin-block-end: 1em;
     overflow: auto;
+}
+
+:not(pre) > code {
+  background-color: #ccc;
 }
 
 blockquote {
@@ -296,14 +296,6 @@ ul.discover-posts li small a {
         color: #8cc2dd;
     }
 
-    code {
-        background-color: #aaa;
-    }
-
-    pre code {
-        color: #ddd;
-    }
-
     blockquote {
         color: #ccc;
     }
@@ -312,8 +304,8 @@ ul.discover-posts li small a {
         color: #aaa;
     }
 
-    .CodeRay > .code {
-        background-color: #ccc;
+    :not(pre) > code {
+      background-color: #555;
     }
 }
 

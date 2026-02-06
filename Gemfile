@@ -1,13 +1,13 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "jekyll"
+source 'https://rubygems.org'
 
-gem "minima"
+gem 'jekyll'
+
+gem 'minima'
 
 group :jekyll_plugins do
-  gem "jekyll-feed"
+  gem 'jekyll-feed'
 end
 
-gem "kramdown-syntax-coderay"
-
-gem "jekyll-redirect-from"
+gem 'jekyll-redirect-from'

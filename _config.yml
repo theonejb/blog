@@ -28,7 +28,6 @@ whitelist:
 markdown: kramdown
 
 kramdown:
-  syntax_highlighter: coderay
   syntax_highlighter_opts:
     line_numbers:
 
@@ -62,7 +61,7 @@ compress_html:
     envs: []
 
 permalink: /blog/:year-:month-:day-:title
-timezone: Asia/Dubai
+timezone: Europe/London
 future: false
 
 links:
