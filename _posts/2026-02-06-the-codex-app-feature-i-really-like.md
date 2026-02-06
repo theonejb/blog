@@ -17,6 +17,8 @@ While I've only been using Codex for a few days, I'm really enjoying using it. I
 
 That part about being an app instead of a CLI has some great benefits; the one I'm really liking is their Git diff viewer and commenting system.
 
+![Codex Screenshot](/assets/images/codex-comments.png)
+
 In other agents if I have to ask for some changes, I have to refer to code by its file and maybe line number if I can find it, or try other ways like saying "change this variable inside this function in this file". With Codex, I can comment inline in the diff. This is really nice.
 
 It's certainly doable in other agents, asking it to change specific lines of code it generated, but the GitHub PR-like commenting mechanism just makes it so easy. You go through your list of changes, comment on the things you need changed, and then submit all your comments to the agent.
