@@ -4,35 +4,38 @@ layout: compress
 
 {% include head.html %}
 
-<main>
-
+<div class="site-shell">
     {% include header.html %}
-
-    {{ content }}
-
-    <ul class="blog-posts">
+    <main id="content">
+        <section class="hero" aria-labelledby="hero-title">
+            <p class="eyebrow">A personal notebook</p>
+            <h1 id="hero-title">Ideas in progress,<br><em>shared in public.</em></h1>
+            <div class="hero-intro">
+                {{ content }}
+                <p>I write about software, building products, and the occasional idea that refuses to leave me alone.</p>
+            </div>
+        </section>
+        <section class="writing-index" aria-labelledby="writing-heading">
+            <div class="section-heading">
+                <h2 id="writing-heading">All writing</h2>
+                <span>{{ site.posts | size }} notes</span>
+            </div>
+            <ol class="blog-posts">
         {% for post in site.posts %}
-        <li>
-            <span>
-                <i>
-                    <time datetime="{{ post.date | date: '%Y-%m-%d' }}" pubdate="">
-                        {{ post.date | date: "%b %-d, %Y" }}
-                    </time>
-                </i>
-            </span>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            {% if post.build_log %}
-            &nbsp;(<a href="{{ post.build_log }}">build log</a>)
-            {% endif %}
+        <li class="post-item">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                <span class="post-number" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+                <span class="post-title">{{ post.title }}</span>
+                <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+                <span class="post-arrow" aria-hidden="true">↗</span>
+            </a>
+            {% if post.build_log %}<a class="build-log" href="{{ post.build_log }}">View build log</a>{% endif %}
         </li>
         {% endfor %}
-
-    </ul>
-
-</main>
-
-{% include footer.html %}
-
+            </ol>
+        </section>
+    </main>
+    {% include footer.html %}
+</div>
 </body>
-
 </html>

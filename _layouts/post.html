@@ -3,24 +3,29 @@ layout: compress
 ---
 
 {% include head.html %}
-
-<main>
-
+<div class="reading-progress" aria-hidden="true"></div>
+<div class="site-shell">
     {% include header.html %}
-
-    
-    <h1>{{ page.title }}</h1>
-    <i>{{ page.date | date: "%b %d, %Y" }}</i>
-    <h4 class="subtitle">{{ page.subtitle }}</h4>
-
-    {{ page.content }}
-
-
-
-</main>
-
-{% include footer-post.html %}
-
+    <main id="content">
+        <article class="prose post-content">
+            <header class="post-header">
+                <p class="eyebrow">Essay · <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+                <h1>{{ page.title }}</h1>
+                {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+            </header>
+            <div class="article-body">{{ content }}</div>
+        </article>
+    </main>
+    {% include footer-post.html %}
+</div>
+<script>
+    const progress = document.querySelector('.reading-progress');
+    const updateProgress = () => {
+        const height = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.transform = `scaleX(${height > 0 ? window.scrollY / height : 0})`;
+    };
+    addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+</script>
 </body>
-
 </html>

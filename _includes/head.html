@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>{{ page.title }} | {{ site.title }}</title>
+        <meta name="theme-color" content="#f7f5ef" />
+        <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
         <meta
             name="description"
             content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
@@ -26,6 +27,5 @@
         </script>
         {% endif %}
     </head>
-
-    <body></body>
-</html>
+    <body class="layout-{{ page.layout }}">
+        <a class="skip-link" href="#content">Skip to content</a>
