@@ -14,6 +14,7 @@ layout: compress
                 {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
             </header>
             <div class="article-body">{{ content }}</div>
+            {% if page.hn_link %}<p class="hn-discuss"><a href="{{ page.hn_link }}" target="_blank">Discuss on Hacker News</a></p>{% endif %}
         </article>
     </main>
     {% include footer-post.html %}

@@ -2,6 +2,7 @@
 layout: post
 title: "Production deployments to exe.dev"
 date: 2026-07-19
+hn_link: https://news.ycombinator.com/item?id=48973087
 ---
 
 Recently I've been doing most of my personal development work on VMs from [https://exe.dev](https://exe.dev){:target="_blank"}. More on why in a future post, but in summary; these [long lived VMs](https://exe.dev/docs/serverful){:target="_blank"} offer a safe way to run agentic coding tools like Claude Code in `--dangerously-skip-permissions` mode, which makes the models really shine.
