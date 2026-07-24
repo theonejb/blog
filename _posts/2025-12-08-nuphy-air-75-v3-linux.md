@@ -18,9 +18,6 @@ I created `/etc/udev/rules.d/50-nuphy.rules` and put the following content in it
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="19f5", ATTR{idProduct}=="1028", MODE="0666"
 KERNEL=="hidraw*", ATTRS{idVendor}=="19f5", ATTRS{idProduct}=="1028", MODE="0666"
 ```
-```
-```
-
 
 For other Nuphy keyboards, the vendor id would stay `19f5`, but the product id will change. Use `lsusb` to find yours. On Omarchy I use the USBView application since `lsusb` isn't installed by default.
 
