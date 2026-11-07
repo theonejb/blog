@@ -1,0 +1,13 @@
+services:
+  blog:
+    command: >-
+      "$HOME/.local/bin/mise" exec ruby@3.4.12 -- bundle exec jekyll serve
+      --host 0.0.0.0 --port "$PORT"
+    port: 4000
+    env:
+      JEKYLL_ENV: development
+      BUNDLE_FROZEN: "true"
+    health: /
+    portal:
+      title: Blog preview
+      description: Jekyll development server with automatic rebuilding.

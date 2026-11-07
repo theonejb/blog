@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+echo "Checking Ruby build prerequisites"
+missing_packages=()
+for package in build-essential ca-certificates curl libffi-dev libreadline-dev libssl-dev libyaml-dev pkg-config zlib1g-dev; do
+  if ! dpkg-query -W -f='${Status}' "$package" 2>/dev/null | grep -qx 'install ok installed'; then
+    missing_packages+=("$package")
+  fi
+done
+if ((${#missing_packages[@]})); then
+  sudo apt-get update
+  sudo apt-get install -y --no-install-recommends "${missing_packages[@]}"
+fi
+
+mise="$HOME/.local/bin/mise"
+if [[ ! -x "$mise" ]]; then
+  curl -fsSL https://mise.run | sh
+fi
+
+echo "Installing Ruby 3.4.12"
+"$mise" install ruby@3.4.12
+
+echo "Installing locked Bundler and blog dependencies"
+bundler_version="$(awk '/^BUNDLED WITH$/ { getline; print $1 }' Gemfile.lock)"
+if ! "$mise" exec ruby@3.4.12 -- gem list --installed --exact bundler --version "$bundler_version"; then
+  "$mise" exec ruby@3.4.12 -- gem install bundler --version "$bundler_version" --no-document
+fi
+export BUNDLE_FROZEN=true
+"$mise" exec ruby@3.4.12 -- bundle "_${bundler_version}_" check ||
+  BUNDLE_JOBS=4 "$mise" exec ruby@3.4.12 -- bundle "_${bundler_version}_" install
